@@ -1,0 +1,1445 @@
+408
+35) STATE: 2
+[0;32mI (281035) RESPONSE: Sending response: 15092929408[0m
+[0;32mI (252035) STATE: 2[0m
+[0;32mI (252035) RESPONSE: Sending response: 150929408[0m
+[0;32mI (252235) STATE: 2[0m
+[0;32mI (252235) RESPONSE: Sending response: 150929408[0m
+[0;32mI (252435) STATE: 2[0m
+[0;32mI (252435) RESPONSE: Sending response: 150929408[0m
+[0;32mI (252635) STATE: 2[0m
+[0;32mI (252635) RESP408[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x17ec
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xf28
+load:0x403cb700,len:0x35c8
+entry 0x403c89c8
+[0;32mI (23) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Mar  6 2025 23:38:28[0m
+[0;32mI (24) boot: Multicore bootloader[0m
+[0;32mI (26) boot: chip revision: v0.1[0m
+[0;32mI (29) boot: efuse block revision: v1.2[0m
+[0;32mI (32) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (37) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (41) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (44) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (53) boot: Partition Table:[0m
+[0;32mI (55) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (62) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (68) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (75) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (81) boot: End of partition table[0m
+[0;32mI (84) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0d468h ( 54376) map[0m
+[0;32mI (100) esp_image: segment 1: paddr=0001d490 vaddr=3fc93400 size=02948h ( 10568) load[0m
+[0;32mI (102) esp_image: segment 2: paddr=0001fde0 vaddr=40374000 size=00238h (   568) load[0m
+[0;32mI (107) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=2e780h (190336) map[0m
+[0;32mI (141) esp_image: segment 4: paddr=0004e7a8 vaddr=40374238 size=0f1ach ( 61868) load[0m
+[0;32mI (152) esp_image: segment 5: paddr=0005d95c vaddr=600fe100 size=00018h (    24) load[0m
+[0;32mI (158) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (158) boot: Disabling RNG early entropy source...[0m
+[0;32mI (169) cpu_start: Multicore app[0m
+[0;32mI (178) cpu_start: Pro cpu start user code[0m
+[0;32mI (178) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (178) app_init: Application information:[0m
+[0;32mI (178) app_init: Project name:     sd_card[0m
+[0;32mI (182) app_init: App version:      v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (188) app_init: Compile time:     Mar  6 2025 23:38:39[0m
+[0;32mI (193) app_init: ELF file SHA256:  bf9905e3a...[0m
+[0;32mI (197) app_init: ESP-IDF:          v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (203) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (207) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (211) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (215) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (221) heap_init: At 3FC96698 len 00053078 (332 KiB): RAM[0m
+[0;32mI (226) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (232) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (237) heap_init: At 600FE118 len 00001ED0 (7 KiB): RTCRAM[0m
+[0;32mI (243) spi_flash: detected chip: gd[0m
+[0;32mI (245) spi_flash: flash io: qio[0m
+[0;32mI (248) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (255) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (261) main_task: Started on CPU0[0m
+[0;32mI (271) main_task: Calling app_main()[0m
+[0;32mI (271) SDCARD: Initializing SD card[0m
+[0;32mI (271) SDCARD: Mounting filesystem[0m
+[0;32mI (311) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+[0;32mI (351) SDCARD: Filesystem mounted[0m
+Name: SE32G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 30436MB
+CSD: ver=2, sector_size=512, capacity=62333952 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (351) GEN_FILES: Count: 15[0m
+[0;32mI (511) CURRENT_FILE: size: 4194304[0m
+[0;32mI (511) STATE: 0[0m
+[0;32mI (701) STATE: 1[0m
+[0;32mI (701) PINS_READ: READ VALUE: 117440512[0m
+[0;32mI (701) FPGA_FILESYS_HANDLE_COMMAND: Handling incoming command: 117440512[0m
+[0;32mI (901) STATE: 2[0m
+[0;32mI (901) RESPONSE: Sending response: 150929408[0m
+[0;32mI (1101) STATE: 2[0m
+[0;32mI (1101) RESPONSE: Sending response: 150929408[0m
+[0;32mI (1301) STATE: 2[0m
+[0;32mI (1301) RESPONSE: Sending response: 150929408[0m
+[0;32mI (1501) STATE: 2[0m
+[0;32mI (1501) RESPONSE: Sending response: 150929408[0m
+[0;32mI (1701) STATE: 2[0m
+[0;32mI (1701) RESPONSE: Sending response: 150929408[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x17ec
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xf28
+load:0x403cb700,len:0x35c8
+entry 0x403c89c8
+[0;32mI (23) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Mar  6 2025 23:38:28[0m
+[0;32mI (24) boot: Multicore bootloader[0m
+[0;32mI (26) boot: chip revision: v0.1[0m
+[0;32mI (29) boot: efuse block revision: v1.2[0m
+[0;32mI (32) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (37) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (41) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (44) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (53) boot: Partition Table:[0m
+[0;32mI (55) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (62) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (68) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (75) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (81) boot: End of partition table[0m
+[0;32mI (84) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0d468h ( 54376) map[0m
+[0;32mI (100) esp_image: segment 1: paddr=0001d490 vaddr=3fc93400 size=02948h ( 10568) load[0m
+[0;32mI (102) esp_image: segment 2: paddr=0001fde0 vaddr=40374000 size=00238h (   568) load[0m
+[0;32mI (107) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=2e780h (190336) map[0m
+[0;32mI (141) esp_image: segment 4: paddr=0004e7a8 vaddr=40374238 size=0f1ach ( 61868) load[0m
+[0;32mI (152) esp_image: segment 5: paddr=0005d95c vaddr=600fe100 size=00018h (    24) load[0m
+[0;32mI (158) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (158) boot: Disabling RNG early entropy source...[0m
+[0;32mI (169) cpu_start: Multicore app[0m
+[0;32mI (178) cpu_start: Pro cpu start user code[0m
+[0;32mI (178) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (178) app_init: Application information:[0m
+[0;32mI (178) app_init: Project name:     sd_card[0m
+[0;32mI (182) app_init: App version:      v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (188) app_init: Compile time:     Mar  6 2025 23:38:39[0m
+[0;32mI (193) app_init: ELF file SHA256:  bf9905e3a...[0m
+[0;32mI (197) app_init: ESP-IDF:          v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (203) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (207) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (211) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (215) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (221) heap_init: At 3FC96698 len 00053078 (332 KiB): RAM[0m
+[0;32mI (226) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (232) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (237) heap_init: At 600FE118 len 00001ED0 (7 KiB): RTCRAM[0m
+[0;32mI (243) spi_flash: detected chip: gd[0m
+[0;32mI (245) spi_flash: flash io: qio[0m
+[0;32mI (248) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (255) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (261) main_task: Started on CPU0[0m
+[0;32mI (271) main_task: Calling app_main()[0m
+[0;32mI (271) SDCARD: Initializing SD card[0m
+[0;32mI (271) SDCARD: Mounting filesystem[0m
+[0;32mI (311) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+[0;32mI (351) SDCARD: Filesystem mounted[0m
+Name: SE32G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 30436MB
+CSD: ver=2, sector_size=512, capacity=62333952 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (351) GEN_FILES: Count: 15[0m
+[0;32mI (501) CURRENT_FILE: size: 4194304[0m
+[0;32mI (571) STATE: 0[0m
+[0;32mI (771) STATE: 1[0m
+[0;32mI (771) PINS_READ: READ VALUE: 117440512[0m
+[0;32mI (771) FPGA_FILESYS_HANDLE_COMMAND: Handling incoming command: 117440512[0m
+[0;32mI (971) STATE: 2[0m
+[0;32mI (971) RESPONSE: Sending response: 150929408[0m
+[0;32mI (1171) STATE: 2[0m
+[0;32mI (1171) RESPONSE: Sending response: 150929408[0m
+[0;32mI (1371) STATE: 2[0m
+[0;32mI (1371) RESPONSE: Sending response: 150929408[0m
+[0;32mI (1571) STATE: 2[0m
+[0;32mI (1571) RESPONSE: Sending response: 150929408[0m
+[0;32mI (1771) STATE: 2[0m
+[0;32mI (1771) RESPONSE: Sending response: 150929408[0m
+[0;32mI (1971) STATE: 2[0m
+[0;32mI (1971) RESPONSE: Sending response: 150929408[0m
+[0;32mI (2171) STATE: 2[0m
+[0;32mI (2171) RESPONSE: Sending response: 150929408[0m
+[0;32mI (2371) STATE: 2[0m
+[0;32mI (2371) RESPONSE: Sending response: 150929408[0m
+[0;32mI (2571) STATE: 2[0m
+[0;32mI (2571) RESPONSE: Sending response: 150929408[0m
+[0;32mI (2771) STATE: 2[0m
+[0;32mI (2771) RESPONSE: Sending response: 150929408[0m
+[0;32mI (2971) STATE: 2[0m
+[0;32mI (2971) RESPONSE: Sending response: 150929408[0m
+[0;32mI (3171) STATE: 2[0m
+[0;32mI (3171) RESPONSE: Sending response: 150929408[0m
+[0;32mI (3371) STATE: 2[0m
+[0;32mI (3371) RESPONSE: Sending response: 150929408[0m
+[0;32mI (3571) STATE: 2[0m
+[0;32mI (3571) RESPONSE: Sending response: 150929408[0m
+[0;32mI (3771) STATE: 2[0m
+[0;32mI (3771) RESPONSE: Sending response: 150929408[0m
+[0;32mI (3971) STATE: 2[0m
+[0;32mI (3971) RESPONSE: Sending response: 150929408[0m
+[0;32mI (4171) STATE: 2[0m
+[0;32mI (4171) RESPONSE: Sending response: 150929408[0m
+[0;32mI (4371) STATE: 2[0m
+[0;32mI (4371) RESPONSE: Sending response: 150929408[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x17ec
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xf28
+load:0x403cb700,len:0x35c8
+entry 0x403c89c8
+[0;32mI (23) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Mar  6 2025 23:38:28[0m
+[0;32mI (24) boot: Multicore bootloader[0m
+[0;32mI (26) boot: chip revision: v0.1[0m
+[0;32mI (29) boot: efuse block revision: v1.2[0m
+[0;32mI (32) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (37) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (41) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (44) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (53) boot: Partition Table:[0m
+[0;32mI (55) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (62) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (68) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (75) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (81) boot: End of partition table[0m
+[0;32mI (84) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0d468h ( 54376) map[0m
+[0;32mI (100) esp_image: segment 1: paddr=0001d490 vaddr=3fc93400 size=02948h ( 10568) load[0m
+[0;32mI (102) esp_image: segment 2: paddr=0001fde0 vaddr=40374000 size=00238h (   568) load[0m
+[0;32mI (107) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=2e780h (190336) map[0m
+[0;32mI (141) esp_image: segment 4: paddr=0004e7a8 vaddr=40374238 size=0f1ach ( 61868) load[0m
+[0;32mI (152) esp_image: segment 5: paddr=0005d95c vaddr=600fe100 size=00018h (    24) load[0m
+[0;32mI (158) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (158) boot: Disabling RNG early entropy source...[0m
+[0;32mI (169) cpu_start: Multicore app[0m
+[0;32mI (178) cpu_start: Pro cpu start user code[0m
+[0;32mI (178) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (178) app_init: Application information:[0m
+[0;32mI (178) app_init: Project name:     sd_card[0m
+[0;32mI (182) app_init: App version:      v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (188) app_init: Compile time:     Mar  6 2025 23:38:39[0m
+[0;32mI (193) app_init: ELF file SHA256:  bf9905e3a...[0m
+[0;32mI (197) app_init: ESP-IDF:          v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (203) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (207) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (211) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (215) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (221) heap_init: At 3FC96698 len 00053078 (332 KiB): RAM[0m
+[0;32mI (226) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (232) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (237) heap_init: At 600FE118 len 00001ED0 (7 KiB): RTCRAM[0m
+[0;32mI (243) spi_flash: detected chip: gd[0m
+[0;32mI (245) spi_flash: flash io: qio[0m
+[0;32mI (248) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (255) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (261) main_task: Started on CPU0[0m
+[0;32mI (271) main_task: Calling app_main()[0m
+[0;32mI (271) SDCARD: Initializing SD card[0m
+[0;32mI (271) SDCARD: Mounting filesystem[0m
+[0;32mI (311) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+[0;32mI (351) SDCARD: Filesystem mounted[0m
+Name: SE32G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 30436MB
+CSD: ver=2, sector_size=512, capacity=62333952 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (351) GEN_FILES: Count: 15[0m
+[0;32mI (501) CURRENT_FILE: size: 4194304[0m
+[0;32mI (501) STATE: 0[0m
+[0;32mI (651) STATE: 1[0m
+[0;32mI (651) PINS_READ: READ VALUE: 117440512[0m
+[0;32mI (651) FPGA_FILESYS_HANDLE_COMMAND: Handling incoming command: 117440512[0m
+[0;32mI (851) STATE: 2[0m
+[0;32mI (851) RESPONSE: Sending response: 150929408[0m
+[0;32mI (1051) STATE: 2[0m
+[0;32mI (1051) RESPONSE: Sending response: 150929408[0m
+[0;32mI (1251) STATE: 2[0m
+[0;32mI (1251) RESPONSE: Sending response: 150929408[0m
+[0;32mI (1451) STATE: 2[0m
+[0;32mI (1451) RESPONSE: Sending response: 150929408[0m
+[0;32mI (1651) STATE: 2[0m
+[0;32mI (1651) RESPONSE: Sending response: 150929408[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x17ec
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xf28
+load:0x403cb700,len:0x35c8
+entry 0x403c89c8
+[0;32mI (23) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Mar  6 2025 23:38:28[0m
+[0;32mI (24) boot: Multicore bootloader[0m
+[0;32mI (26) boot: chip revision: v0.1[0m
+[0;32mI (29) boot: efuse block revision: v1.2[0m
+[0;32mI (32) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (37) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (41) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (44) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (53) boot: Partition Table:[0m
+[0;32mI (55) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (62) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (68) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (75) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (81) boot: End of partition table[0m
+[0;32mI (84) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0d468h ( 54376) map[0m
+[0;32mI (100) esp_image: segment 1: paddr=0001d490 vaddr=3fc93400 size=02948h ( 10568) load[0m
+[0;32mI (102) esp_image: segment 2: paddr=0001fde0 vaddr=40374000 size=00238h (   568) load[0m
+[0;32mI (107) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=2e780h (190336) map[0m
+[0;32mI (141) esp_image: segment 4: paddr=0004e7a8 vaddr=40374238 size=0f1ach ( 61868) load[0m
+[0;32mI (152) esp_image: segment 5: paddr=0005d95c vaddr=600fe100 size=00018h (    24) load[0m
+[0;32mI (158) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (158) boot: Disabling RNG early entropy source...[0m
+[0;32mI (169) cpu_start: Multicore app[0m
+[0;32mI (178) cpu_start: Pro cpu start user code[0m
+[0;32mI (178) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (178) app_init: Application information:[0m
+[0;32mI (178) app_init: Project name:     sd_card[0m
+[0;32mI (182) app_init: App version:      v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (188) app_init: Compile time:     Mar  6 2025 23:38:39[0m
+[0;32mI (193) app_init: ELF file SHA256:  bf9905e3a...[0m
+[0;32mI (197) app_init: ESP-IDF:          v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (203) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (207) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (211) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (215) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (221) heap_init: At 3FC96698 len 00053078 (332 KiB): RAM[0m
+[0;32mI (226) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (232) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (237) heap_init: At 600FE118 len 00001ED0 (7 KiB): RTCRAM[0m
+[0;32mI (243) spi_flash: detected chip: gd[0m
+[0;32mI (245) spi_flash: flash io: qio[0m
+[0;32mI (248) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (255) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (261) main_task: Started on CPU0[0m
+[0;32mI (271) main_task: Calling app_main()[0m
+[0;32mI (271) SDCARD: Initializing SD card[0m
+[0;32mI (271) SDCARD: Mounting filesystem[0m
+[0;32mI (311) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+[0;32mI (351) SDCARD: Filesystem mounted[0m
+Name: SE32G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 30436MB
+CSD: ver=2, sector_size=512, capacity=62333952 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (351) GEN_FILES: Count: 15[0m
+[0;32mI (501) CURRENT_FILE: size: 4194304[0m
+[0;32mI (501) STATE: 0[0m
+[0;32mI (611) STATE: 1[0m
+[0;32mI (611) PINS_READ: READ VALUE: 117440512[0m
+[0;32mI (611) FPGA_FILESYS_HANDLE_COMMAND: Handling incoming command: 117440512[0m
+[0;32mI (811) STATE: 2[0m
+[0;32mI (811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (1011) STATE: 2[0m
+[0;32mI (1011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (1211) STATE: 2[0m
+[0;32mI (1211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (1411) STATE: 2[0m
+[0;32mI (1411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (1611) STATE: 2[0m
+[0;32mI (1611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (1811) STATE: 2[0m
+[0;32mI (1811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (2011) STATE: 2[0m
+[0;32mI (2011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (2211) STATE: 2[0m
+[0;32mI (2211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (2411) STATE: 2[0m
+[0;32mI (2411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (2611) STATE: 2[0m
+[0;32mI (2611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (2811) STATE: 2[0m
+[0;32mI (2811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (3011) STATE: 2[0m
+[0;32mI (3011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (3211) STATE: 2[0m
+[0;32mI (3211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (3411) STATE: 2[0m
+[0;32mI (3411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (3611) STATE: 2[0m
+[0;32mI (3611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (3811) STATE: 2[0m
+[0;32mI (3811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (4011) STATE: 2[0m
+[0;32mI (4011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (4211) STATE: 2[0m
+[0;32mI (4211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (4411) STATE: 2[0m
+[0;32mI (4411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (4611) STATE: 2[0m
+[0;32mI (4611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (4811) STATE: 2[0m
+[0;32mI (4811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (5011) STATE: 2[0m
+[0;32mI (5011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (5211) STATE: 2[0m
+[0;32mI (5211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (5411) STATE: 2[0m
+[0;32mI (5411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (5611) STATE: 2[0m
+[0;32mI (5611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (5811) STATE: 2[0m
+[0;32mI (5811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (6011) STATE: 2[0m
+[0;32mI (6011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (6211) STATE: 2[0m
+[0;32mI (6211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (6411) STATE: 2[0m
+[0;32mI (6411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (6611) STATE: 2[0m
+[0;32mI (6611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (6811) STATE: 2[0m
+[0;32mI (6811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (7011) STATE: 2[0m
+[0;32mI (7011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (7211) STATE: 2[0m
+[0;32mI (7211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (7411) STATE: 2[0m
+[0;32mI (7411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (7611) STATE: 2[0m
+[0;32mI (7611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (7811) STATE: 2[0m
+[0;32mI (7811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (8011) STATE: 2[0m
+[0;32mI (8011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (8211) STATE: 2[0m
+[0;32mI (8211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (8411) STATE: 2[0m
+[0;32mI (8411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (8611) STATE: 2[0m
+[0;32mI (8611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (8811) STATE: 2[0m
+[0;32mI (8811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (9011) STATE: 2[0m
+[0;32mI (9011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (9211) STATE: 2[0m
+[0;32mI (9211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (9411) STATE: 2[0m
+[0;32mI (9411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (9611) STATE: 2[0m
+[0;32mI (9611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (9811) STATE: 2[0m
+[0;32mI (9811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (10011) STATE: 2[0m
+[0;32mI (10011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (10211) STATE: 2[0m
+[0;32mI (10211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (10411) STATE: 2[0m
+[0;32mI (10411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (10611) STATE: 2[0m
+[0;32mI (10611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (10811) STATE: 2[0m
+[0;32mI (10811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (11011) STATE: 2[0m
+[0;32mI (11011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (11211) STATE: 2[0m
+[0;32mI (11211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (11411) STATE: 2[0m
+[0;32mI (11411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (11611) STATE: 2[0m
+[0;32mI (11611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (11811) STATE: 2[0m
+[0;32mI (11811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (12011) STATE: 2[0m
+[0;32mI (12011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (12211) STATE: 2[0m
+[0;32mI (12211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (12411) STATE: 2[0m
+[0;32mI (12411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (12611) STATE: 2[0m
+[0;32mI (12611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (12811) STATE: 2[0m
+[0;32mI (12811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (13011) STATE: 2[0m
+[0;32mI (13011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (13211) STATE: 2[0m
+[0;32mI (13211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (13411) STATE: 2[0m
+[0;32mI (13411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (13611) STATE: 2[0m
+[0;32mI (13611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (13811) STATE: 2[0m
+[0;32mI (13811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (14011) STATE: 2[0m
+[0;32mI (14011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (14211) STATE: 2[0m
+[0;32mI (14211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (14411) STATE: 2[0m
+[0;32mI (14411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (14611) STATE: 2[0m
+[0;32mI (14611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (14811) STATE: 2[0m
+[0;32mI (14811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (15011) STATE: 2[0m
+[0;32mI (15011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (15211) STATE: 2[0m
+[0;32mI (15211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (15411) STATE: 2[0m
+[0;32mI (15411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (15611) STATE: 2[0m
+[0;32mI (15611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (15811) STATE: 2[0m
+[0;32mI (15811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (16011) STATE: 2[0m
+[0;32mI (16011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (16211) STATE: 2[0m
+[0;32mI (16211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (16411) STATE: 2[0m
+[0;32mI (16411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (16611) STATE: 2[0m
+[0;32mI (16611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (16811) STATE: 2[0m
+[0;32mI (16811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (17011) STATE: 2[0m
+[0;32mI (17011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (17211) STATE: 2[0m
+[0;32mI (17211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (17411) STATE: 2[0m
+[0;32mI (17411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (17611) STATE: 2[0m
+[0;32mI (17611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (17811) STATE: 2[0m
+[0;32mI (17811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (18011) STATE: 2[0m
+[0;32mI (18011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (18211) STATE: 2[0m
+[0;32mI (18211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (18411) STATE: 2[0m
+[0;32mI (18411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (18611) STATE: 2[0m
+[0;32mI (18611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (18811) STATE: 2[0m
+[0;32mI (18811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (19011) STATE: 2[0m
+[0;32mI (19011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (19211) STATE: 2[0m
+[0;32mI (19211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (19411) STATE: 2[0m
+[0;32mI (19411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (19611) STATE: 2[0m
+[0;32mI (19611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (19811) STATE: 2[0m
+[0;32mI (19811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (20011) STATE: 2[0m
+[0;32mI (20011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (20211) STATE: 2[0m
+[0;32mI (20211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (20411) STATE: 2[0m
+[0;32mI (20411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (20611) STATE: 2[0m
+[0;32mI (20611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (20811) STATE: 2[0m
+[0;32mI (20811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (21011) STATE: 2[0m
+[0;32mI (21011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (21211) STATE: 2[0m
+[0;32mI (21211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (21411) STATE: 2[0m
+[0;32mI (21411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (21611) STATE: 2[0m
+[0;32mI (21611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (21811) STATE: 2[0m
+[0;32mI (21811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (22011) STATE: 2[0m
+[0;32mI (22011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (22211) STATE: 2[0m
+[0;32mI (22211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (22411) STATE: 2[0m
+[0;32mI (22411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (22611) STATE: 2[0m
+[0;32mI (22611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (22811) STATE: 2[0m
+[0;32mI (22811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (23011) STATE: 2[0m
+[0;32mI (23011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (23211) STATE: 2[0m
+[0;32mI (23211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (23411) STATE: 2[0m
+[0;32mI (23411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (23611) STATE: 2[0m
+[0;32mI (23611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (23811) STATE: 2[0m
+[0;32mI (23811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (24011) STATE: 2[0m
+[0;32mI (24011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (24211) STATE: 2[0m
+[0;32mI (24211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (24411) STATE: 2[0m
+[0;32mI (24411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (24611) STATE: 2[0m
+[0;32mI (24611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (24811) STATE: 2[0m
+[0;32mI (24811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (25011) STATE: 2[0m
+[0;32mI (25011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (25211) STATE: 2[0m
+[0;32mI (25211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (25411) STATE: 2[0m
+[0;32mI (25411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (25611) STATE: 2[0m
+[0;32mI (25611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (25811) STATE: 2[0m
+[0;32mI (25811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (26011) STATE: 2[0m
+[0;32mI (26011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (26211) STATE: 2[0m
+[0;32mI (26211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (26411) STATE: 2[0m
+[0;32mI (26411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (26611) STATE: 2[0m
+[0;32mI (26611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (26811) STATE: 2[0m
+[0;32mI (26811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (27011) STATE: 2[0m
+[0;32mI (27011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (27211) STATE: 2[0m
+[0;32mI (27211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (27411) STATE: 2[0m
+[0;32mI (27411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (27611) STATE: 2[0m
+[0;32mI (27611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (27811) STATE: 2[0m
+[0;32mI (27811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (28011) STATE: 2[0m
+[0;32mI (28011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (28211) STATE: 2[0m
+[0;32mI (28211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (28411) STATE: 2[0m
+[0;32mI (28411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (28611) STATE: 2[0m
+[0;32mI (28611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (28811) STATE: 2[0m
+[0;32mI (28811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (29011) STATE: 2[0m
+[0;32mI (29011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (29211) STATE: 2[0m
+[0;32mI (29211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (29411) STATE: 2[0m
+[0;32mI (29411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (29611) STATE: 2[0m
+[0;32mI (29611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (29811) STATE: 2[0m
+[0;32mI (29811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (30011) STATE: 2[0m
+[0;32mI (30011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (30211) STATE: 2[0m
+[0;32mI (30211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (30411) STATE: 2[0m
+[0;32mI (30411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (30611) STATE: 2[0m
+[0;32mI (30611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (30811) STATE: 2[0m
+[0;32mI (30811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (31011) STATE: 2[0m
+[0;32mI (31011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (31211) STATE: 2[0m
+[0;32mI (31211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (31411) STATE: 2[0m
+[0;32mI (31411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (31611) STATE: 2[0m
+[0;32mI (31611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (31811) STATE: 2[0m
+[0;32mI (31811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (32011) STATE: 2[0m
+[0;32mI (32011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (32211) STATE: 2[0m
+[0;32mI (32211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (32411) STATE: 2[0m
+[0;32mI (32411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (32611) STATE: 2[0m
+[0;32mI (32611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (32811) STATE: 2[0m
+[0;32mI (32811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (33011) STATE: 2[0m
+[0;32mI (33011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (33211) STATE: 2[0m
+[0;32mI (33211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (33411) STATE: 2[0m
+[0;32mI (33411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (33611) STATE: 2[0m
+[0;32mI (33611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (33811) STATE: 2[0m
+[0;32mI (33811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (34011) STATE: 2[0m
+[0;32mI (34011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (34211) STATE: 2[0m
+[0;32mI (34211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (34411) STATE: 2[0m
+[0;32mI (34411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (34611) STATE: 2[0m
+[0;32mI (34611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (34811) STATE: 2[0m
+[0;32mI (34811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (35011) STATE: 2[0m
+[0;32mI (35011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (35211) STATE: 2[0m
+[0;32mI (35211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (35411) STATE: 2[0m
+[0;32mI (35411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (35611) STATE: 2[0m
+[0;32mI (35611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (35811) STATE: 2[0m
+[0;32mI (35811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (36011) STATE: 2[0m
+[0;32mI (36011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (36211) STATE: 2[0m
+[0;32mI (36211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (36411) STATE: 2[0m
+[0;32mI (36411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (36611) STATE: 2[0m
+[0;32mI (36611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (36811) STATE: 2[0m
+[0;32mI (36811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (37011) STATE: 2[0m
+[0;32mI (37011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (37211) STATE: 2[0m
+[0;32mI (37211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (37411) STATE: 2[0m
+[0;32mI (37411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (37611) STATE: 2[0m
+[0;32mI (37611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (37811) STATE: 2[0m
+[0;32mI (37811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (38011) STATE: 2[0m
+[0;32mI (38011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (38211) STATE: 2[0m
+[0;32mI (38211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (38411) STATE: 2[0m
+[0;32mI (38411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (38611) STATE: 2[0m
+[0;32mI (38611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (38811) STATE: 2[0m
+[0;32mI (38811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (39011) STATE: 2[0m
+[0;32mI (39011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (39211) STATE: 2[0m
+[0;32mI (39211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (39411) STATE: 2[0m
+[0;32mI (39411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (39611) STATE: 2[0m
+[0;32mI (39611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (39811) STATE: 2[0m
+[0;32mI (39811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (40011) STATE: 2[0m
+[0;32mI (40011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (40211) STATE: 2[0m
+[0;32mI (40211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (40411) STATE: 2[0m
+[0;32mI (40411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (40611) STATE: 2[0m
+[0;32mI (40611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (40811) STATE: 2[0m
+[0;32mI (40811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (41011) STATE: 2[0m
+[0;32mI (41011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (41211) STATE: 2[0m
+[0;32mI (41211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (41411) STATE: 2[0m
+[0;32mI (41411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (41611) STATE: 2[0m
+[0;32mI (41611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (41811) STATE: 2[0m
+[0;32mI (41811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (42011) STATE: 2[0m
+[0;32mI (42011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (42211) STATE: 2[0m
+[0;32mI (42211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (42411) STATE: 2[0m
+[0;32mI (42411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (42611) STATE: 2[0m
+[0;32mI (42611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (42811) STATE: 2[0m
+[0;32mI (42811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (43011) STATE: 2[0m
+[0;32mI (43011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (43211) STATE: 2[0m
+[0;32mI (43211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (43411) STATE: 2[0m
+[0;32mI (43411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (43611) STATE: 2[0m
+[0;32mI (43611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (43811) STATE: 2[0m
+[0;32mI (43811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (44011) STATE: 2[0m
+[0;32mI (44011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (44211) STATE: 2[0m
+[0;32mI (44211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (44411) STATE: 2[0m
+[0;32mI (44411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (44611) STATE: 2[0m
+[0;32mI (44611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (44811) STATE: 2[0m
+[0;32mI (44811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (45011) STATE: 2[0m
+[0;32mI (45011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (45211) STATE: 2[0m
+[0;32mI (45211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (45411) STATE: 2[0m
+[0;32mI (45411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (45611) STATE: 2[0m
+[0;32mI (45611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (45811) STATE: 2[0m
+[0;32mI (45811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (46011) STATE: 2[0m
+[0;32mI (46011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (46211) STATE: 2[0m
+[0;32mI (46211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (46411) STATE: 2[0m
+[0;32mI (46411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (46611) STATE: 2[0m
+[0;32mI (46611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (46811) STATE: 2[0m
+[0;32mI (46811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (47011) STATE: 2[0m
+[0;32mI (47011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (47211) STATE: 2[0m
+[0;32mI (47211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (47411) STATE: 2[0m
+[0;32mI (47411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (47611) STATE: 2[0m
+[0;32mI (47611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (47811) STATE: 2[0m
+[0;32mI (47811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (48011) STATE: 2[0m
+[0;32mI (48011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (48211) STATE: 2[0m
+[0;32mI (48211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (48411) STATE: 2[0m
+[0;32mI (48411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (48611) STATE: 2[0m
+[0;32mI (48611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (48811) STATE: 2[0m
+[0;32mI (48811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (49011) STATE: 2[0m
+[0;32mI (49011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (49211) STATE: 2[0m
+[0;32mI (49211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (49411) STATE: 2[0m
+[0;32mI (49411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (49611) STATE: 2[0m
+[0;32mI (49611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (49811) STATE: 2[0m
+[0;32mI (49811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (50011) STATE: 2[0m
+[0;32mI (50011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (50211) STATE: 2[0m
+[0;32mI (50211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (50411) STATE: 2[0m
+[0;32mI (50411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (50611) STATE: 2[0m
+[0;32mI (50611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (50811) STATE: 2[0m
+[0;32mI (50811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (51011) STATE: 2[0m
+[0;32mI (51011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (51211) STATE: 2[0m
+[0;32mI (51211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (51411) STATE: 2[0m
+[0;32mI (51411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (51611) STATE: 2[0m
+[0;32mI (51611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (51811) STATE: 2[0m
+[0;32mI (51811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (52011) STATE: 2[0m
+[0;32mI (52011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (52211) STATE: 2[0m
+[0;32mI (52211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (52411) STATE: 2[0m
+[0;32mI (52411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (52611) STATE: 2[0m
+[0;32mI (52611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (52811) STATE: 2[0m
+[0;32mI (52811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (53011) STATE: 2[0m
+[0;32mI (53011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (53211) STATE: 2[0m
+[0;32mI (53211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (53411) STATE: 2[0m
+[0;32mI (53411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (53611) STATE: 2[0m
+[0;32mI (53611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (53811) STATE: 2[0m
+[0;32mI (53811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (54011) STATE: 2[0m
+[0;32mI (54011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (54211) STATE: 2[0m
+[0;32mI (54211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (54411) STATE: 2[0m
+[0;32mI (54411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (54611) STATE: 2[0m
+[0;32mI (54611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (54811) STATE: 2[0m
+[0;32mI (54811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (55011) STATE: 2[0m
+[0;32mI (55011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (55211) STATE: 2[0m
+[0;32mI (55211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (55411) STATE: 2[0m
+[0;32mI (55411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (55611) STATE: 2[0m
+[0;32mI (55611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (55811) STATE: 2[0m
+[0;32mI (55811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (56011) STATE: 2[0m
+[0;32mI (56011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (56211) STATE: 2[0m
+[0;32mI (56211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (56411) STATE: 2[0m
+[0;32mI (56411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (56611) STATE: 2[0m
+[0;32mI (56611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (56811) STATE: 2[0m
+[0;32mI (56811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (57011) STATE: 2[0m
+[0;32mI (57011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (57211) STATE: 2[0m
+[0;32mI (57211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (57411) STATE: 2[0m
+[0;32mI (57411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (57611) STATE: 2[0m
+[0;32mI (57611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (57811) STATE: 2[0m
+[0;32mI (57811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (58011) STATE: 2[0m
+[0;32mI (58011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (58211) STATE: 2[0m
+[0;32mI (58211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (58411) STATE: 2[0m
+[0;32mI (58411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (58611) STATE: 2[0m
+[0;32mI (58611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (58811) STATE: 2[0m
+[0;32mI (58811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (59011) STATE: 2[0m
+[0;32mI (59011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (59211) STATE: 2[0m
+[0;32mI (59211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (59411) STATE: 2[0m
+[0;32mI (59411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (59611) STATE: 2[0m
+[0;32mI (59611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (59811) STATE: 2[0m
+[0;32mI (59811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (60011) STATE: 2[0m
+[0;32mI (60011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (60211) STATE: 2[0m
+[0;32mI (60211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (60411) STATE: 2[0m
+[0;32mI (60411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (60611) STATE: 2[0m
+[0;32mI (60611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (60811) STATE: 2[0m
+[0;32mI (60811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (61011) STATE: 2[0m
+[0;32mI (61011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (61211) STATE: 2[0m
+[0;32mI (61211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (61411) STATE: 2[0m
+[0;32mI (61411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (61611) STATE: 2[0m
+[0;32mI (61611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (61811) STATE: 2[0m
+[0;32mI (61811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (62011) STATE: 2[0m
+[0;32mI (62011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (62211) STATE: 2[0m
+[0;32mI (62211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (62411) STATE: 2[0m
+[0;32mI (62411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (62611) STATE: 2[0m
+[0;32mI (62611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (62811) STATE: 2[0m
+[0;32mI (62811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (63011) STATE: 2[0m
+[0;32mI (63011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (63211) STATE: 2[0m
+[0;32mI (63211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (63411) STATE: 2[0m
+[0;32mI (63411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (63611) STATE: 2[0m
+[0;32mI (63611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (63811) STATE: 2[0m
+[0;32mI (63811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (64011) STATE: 2[0m
+[0;32mI (64011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (64211) STATE: 2[0m
+[0;32mI (64211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (64411) STATE: 2[0m
+[0;32mI (64411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (64611) STATE: 2[0m
+[0;32mI (64611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (64811) STATE: 2[0m
+[0;32mI (64811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (65011) STATE: 2[0m
+[0;32mI (65011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (65211) STATE: 2[0m
+[0;32mI (65211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (65411) STATE: 2[0m
+[0;32mI (65411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (65611) STATE: 2[0m
+[0;32mI (65611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (65811) STATE: 2[0m
+[0;32mI (65811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (66011) STATE: 2[0m
+[0;32mI (66011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (66211) STATE: 2[0m
+[0;32mI (66211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (66411) STATE: 2[0m
+[0;32mI (66411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (66611) STATE: 2[0m
+[0;32mI (66611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (66811) STATE: 2[0m
+[0;32mI (66811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (67011) STATE: 2[0m
+[0;32mI (67011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (67211) STATE: 2[0m
+[0;32mI (67211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (67411) STATE: 2[0m
+[0;32mI (67411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (67611) STATE: 2[0m
+[0;32mI (67611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (67811) STATE: 2[0m
+[0;32mI (67811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (68011) STATE: 2[0m
+[0;32mI (68011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (68211) STATE: 2[0m
+[0;32mI (68211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (68411) STATE: 2[0m
+[0;32mI (68411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (68611) STATE: 2[0m
+[0;32mI (68611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (68811) STATE: 2[0m
+[0;32mI (68811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (69011) STATE: 2[0m
+[0;32mI (69011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (69211) STATE: 2[0m
+[0;32mI (69211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (69411) STATE: 2[0m
+[0;32mI (69411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (69611) STATE: 2[0m
+[0;32mI (69611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (69811) STATE: 2[0m
+[0;32mI (69811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (70011) STATE: 2[0m
+[0;32mI (70011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (70211) STATE: 2[0m
+[0;32mI (70211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (70411) STATE: 2[0m
+[0;32mI (70411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (70611) STATE: 2[0m
+[0;32mI (70611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (70811) STATE: 2[0m
+[0;32mI (70811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (71011) STATE: 2[0m
+[0;32mI (71011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (71211) STATE: 2[0m
+[0;32mI (71211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (71411) STATE: 2[0m
+[0;32mI (71411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (71611) STATE: 2[0m
+[0;32mI (71611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (71811) STATE: 2[0m
+[0;32mI (71811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (72011) STATE: 2[0m
+[0;32mI (72011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (72211) STATE: 2[0m
+[0;32mI (72211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (72411) STATE: 2[0m
+[0;32mI (72411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (72611) STATE: 2[0m
+[0;32mI (72611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (72811) STATE: 2[0m
+[0;32mI (72811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (73011) STATE: 2[0m
+[0;32mI (73011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (73211) STATE: 2[0m
+[0;32mI (73211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (73411) STATE: 2[0m
+[0;32mI (73411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (73611) STATE: 2[0m
+[0;32mI (73611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (73811) STATE: 2[0m
+[0;32mI (73811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (74011) STATE: 2[0m
+[0;32mI (74011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (74211) STATE: 2[0m
+[0;32mI (74211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (74411) STATE: 2[0m
+[0;32mI (74411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (74611) STATE: 2[0m
+[0;32mI (74611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (74811) STATE: 2[0m
+[0;32mI (74811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (75011) STATE: 2[0m
+[0;32mI (75011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (75211) STATE: 2[0m
+[0;32mI (75211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (75411) STATE: 2[0m
+[0;32mI (75411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (75611) STATE: 2[0m
+[0;32mI (75611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (75811) STATE: 2[0m
+[0;32mI (75811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (76011) STATE: 2[0m
+[0;32mI (76011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (76211) STATE: 2[0m
+[0;32mI (76211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (76411) STATE: 2[0m
+[0;32mI (76411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (76611) STATE: 2[0m
+[0;32mI (76611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (76811) STATE: 2[0m
+[0;32mI (76811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (77011) STATE: 2[0m
+[0;32mI (77011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (77211) STATE: 2[0m
+[0;32mI (77211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (77411) STATE: 2[0m
+[0;32mI (77411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (77611) STATE: 2[0m
+[0;32mI (77611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (77811) STATE: 2[0m
+[0;32mI (77811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (78011) STATE: 2[0m
+[0;32mI (78011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (78211) STATE: 2[0m
+[0;32mI (78211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (78411) STATE: 2[0m
+[0;32mI (78411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (78611) STATE: 2[0m
+[0;32mI (78611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (78811) STATE: 2[0m
+[0;32mI (78811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (79011) STATE: 2[0m
+[0;32mI (79011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (79211) STATE: 2[0m
+[0;32mI (79211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (79411) STATE: 2[0m
+[0;32mI (79411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (79611) STATE: 2[0m
+[0;32mI (79611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (79811) STATE: 2[0m
+[0;32mI (79811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (80011) STATE: 2[0m
+[0;32mI (80011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (80211) STATE: 2[0m
+[0;32mI (80211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (80411) STATE: 2[0m
+[0;32mI (80411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (80611) STATE: 2[0m
+[0;32mI (80611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (80811) STATE: 2[0m
+[0;32mI (80811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (81011) STATE: 2[0m
+[0;32mI (81011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (81211) STATE: 2[0m
+[0;32mI (81211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (81411) STATE: 2[0m
+[0;32mI (81411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (81611) STATE: 2[0m
+[0;32mI (81611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (81811) STATE: 2[0m
+[0;32mI (81811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (82011) STATE: 2[0m
+[0;32mI (82011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (82211) STATE: 2[0m
+[0;32mI (82211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (82411) STATE: 2[0m
+[0;32mI (82411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (82611) STATE: 2[0m
+[0;32mI (82611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (82811) STATE: 2[0m
+[0;32mI (82811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (83011) STATE: 2[0m
+[0;32mI (83011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (83211) STATE: 2[0m
+[0;32mI (83211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (83411) STATE: 2[0m
+[0;32mI (83411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (83611) STATE: 2[0m
+[0;32mI (83611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (83811) STATE: 2[0m
+[0;32mI (83811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (84011) STATE: 2[0m
+[0;32mI (84011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (84211) STATE: 2[0m
+[0;32mI (84211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (84411) STATE: 2[0m
+[0;32mI (84411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (84611) STATE: 2[0m
+[0;32mI (84611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (84811) STATE: 2[0m
+[0;32mI (84811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (85011) STATE: 2[0m
+[0;32mI (85011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (85211) STATE: 2[0m
+[0;32mI (85211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (85411) STATE: 2[0m
+[0;32mI (85411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (85611) STATE: 2[0m
+[0;32mI (85611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (85811) STATE: 2[0m
+[0;32mI (85811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (86011) STATE: 2[0m
+[0;32mI (86011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (86211) STATE: 2[0m
+[0;32mI (86211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (86411) STATE: 2[0m
+[0;32mI (86411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (86611) STATE: 2[0m
+[0;32mI (86611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (86811) STATE: 2[0m
+[0;32mI (86811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (87011) STATE: 2[0m
+[0;32mI (87011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (87211) STATE: 2[0m
+[0;32mI (87211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (87411) STATE: 2[0m
+[0;32mI (87411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (87611) STATE: 2[0m
+[0;32mI (87611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (87811) STATE: 2[0m
+[0;32mI (87811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (88011) STATE: 2[0m
+[0;32mI (88011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (88211) STATE: 2[0m
+[0;32mI (88211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (88411) STATE: 2[0m
+[0;32mI (88411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (88611) STATE: 2[0m
+[0;32mI (88611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (88811) STATE: 2[0m
+[0;32mI (88811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (89011) STATE: 2[0m
+[0;32mI (89011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (89211) STATE: 2[0m
+[0;32mI (89211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (89411) STATE: 2[0m
+[0;32mI (89411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (89611) STATE: 2[0m
+[0;32mI (89611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (89811) STATE: 2[0m
+[0;32mI (89811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (90011) STATE: 2[0m
+[0;32mI (90011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (90211) STATE: 2[0m
+[0;32mI (90211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (90411) STATE: 2[0m
+[0;32mI (90411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (90611) STATE: 2[0m
+[0;32mI (90611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (90811) STATE: 2[0m
+[0;32mI (90811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (91011) STATE: 2[0m
+[0;32mI (91011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (91211) STATE: 2[0m
+[0;32mI (91211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (91411) STATE: 2[0m
+[0;32mI (91411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (91611) STATE: 2[0m
+[0;32mI (91611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (91811) STATE: 2[0m
+[0;32mI (91811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (92011) STATE: 2[0m
+[0;32mI (92011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (92211) STATE: 2[0m
+[0;32mI (92211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (92411) STATE: 2[0m
+[0;32mI (92411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (92611) STATE: 2[0m
+[0;32mI (92611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (92811) STATE: 2[0m
+[0;32mI (92811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (93011) STATE: 2[0m
+[0;32mI (93011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (93211) STATE: 2[0m
+[0;32mI (93211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (93411) STATE: 2[0m
+[0;32mI (93411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (93611) STATE: 2[0m
+[0;32mI (93611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (93811) STATE: 2[0m
+[0;32mI (93811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (94011) STATE: 2[0m
+[0;32mI (94011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (94211) STATE: 2[0m
+[0;32mI (94211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (94411) STATE: 2[0m
+[0;32mI (94411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (94611) STATE: 2[0m
+[0;32mI (94611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (94811) STATE: 2[0m
+[0;32mI (94811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (95011) STATE: 2[0m
+[0;32mI (95011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (95211) STATE: 2[0m
+[0;32mI (95211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (95411) STATE: 2[0m
+[0;32mI (95411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (95611) STATE: 2[0m
+[0;32mI (95611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (95811) STATE: 2[0m
+[0;32mI (95811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (96011) STATE: 2[0m
+[0;32mI (96011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (96211) STATE: 2[0m
+[0;32mI (96211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (96411) STATE: 2[0m
+[0;32mI (96411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (96611) STATE: 2[0m
+[0;32mI (96611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (96811) STATE: 2[0m
+[0;32mI (96811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (97011) STATE: 2[0m
+[0;32mI (97011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (97211) STATE: 2[0m
+[0;32mI (97211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (97411) STATE: 2[0m
+[0;32mI (97411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (97611) STATE: 2[0m
+[0;32mI (97611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (97811) STATE: 2[0m
+[0;32mI (97811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (98011) STATE: 2[0m
+[0;32mI (98011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (98211) STATE: 2[0m
+[0;32mI (98211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (98411) STATE: 2[0m
+[0;32mI (98411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (98611) STATE: 2[0m
+[0;32mI (98611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (98811) STATE: 2[0m
+[0;32mI (98811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (99011) STATE: 2[0m
+[0;32mI (99011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (99211) STATE: 2[0m
+[0;32mI (99211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (99411) STATE: 2[0m
+[0;32mI (99411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (99611) STATE: 2[0m
+[0;32mI (99611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (99811) STATE: 2[0m
+[0;32mI (99811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (100011) STATE: 2[0m
+[0;32mI (100011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (100211) STATE: 2[0m
+[0;32mI (100211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (100411) STATE: 2[0m
+[0;32mI (100411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (100611) STATE: 2[0m
+[0;32mI (100611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (100811) STATE: 2[0m
+[0;32mI (100811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (101011) STATE: 2[0m
+[0;32mI (101011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (101211) STATE: 2[0m
+[0;32mI (101211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (101411) STATE: 2[0m
+[0;32mI (101411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (101611) STATE: 2[0m
+[0;32mI (101611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (101811) STATE: 2[0m
+[0;32mI (101811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (102011) STATE: 2[0m
+[0;32mI (102011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (102211) STATE: 2[0m
+[0;32mI (102211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (102411) STATE: 2[0m
+[0;32mI (102411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (102611) STATE: 2[0m
+[0;32mI (102611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (102811) STATE: 2[0m
+[0;32mI (102811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (103011) STATE: 2[0m
+[0;32mI (103011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (103211) STATE: 2[0m
+[0;32mI (103211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (103411) STATE: 2[0m
+[0;32mI (103411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (103611) STATE: 2[0m
+[0;32mI (103611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (103811) STATE: 2[0m
+[0;32mI (103811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (104011) STATE: 2[0m
+[0;32mI (104011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (104211) STATE: 2[0m
+[0;32mI (104211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (104411) STATE: 2[0m
+[0;32mI (104411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (104611) STATE: 2[0m
+[0;32mI (104611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (104811) STATE: 2[0m
+[0;32mI (104811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (105011) STATE: 2[0m
+[0;32mI (105011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (105211) STATE: 2[0m
+[0;32mI (105211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (105411) STATE: 2[0m
+[0;32mI (105411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (105611) STATE: 2[0m
+[0;32mI (105611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (105811) STATE: 2[0m
+[0;32mI (105811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (106011) STATE: 2[0m
+[0;32mI (106011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (106211) STATE: 2[0m
+[0;32mI (106211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (106411) STATE: 2[0m
+[0;32mI (106411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (106611) STATE: 2[0m
+[0;32mI (106611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (106811) STATE: 2[0m
+[0;32mI (106811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (107011) STATE: 2[0m
+[0;32mI (107011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (107211) STATE: 2[0m
+[0;32mI (107211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (107411) STATE: 2[0m
+[0;32mI (107411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (107611) STATE: 2[0m
+[0;32mI (107611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (107811) STATE: 2[0m
+[0;32mI (107811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (108011) STATE: 2[0m
+[0;32mI (108011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (108211) STATE: 2[0m
+[0;32mI (108211) RESPONSE: Sending response: 150929408[0m
+[0;32mI (108411) STATE: 2[0m
+[0;32mI (108411) RESPONSE: Sending response: 150929408[0m
+[0;32mI (108611) STATE: 2[0m
+[0;32mI (108611) RESPONSE: Sending response: 150929408[0m
+[0;32mI (108811) STATE: 2[0m
+[0;32mI (108811) RESPONSE: Sending response: 150929408[0m
+[0;32mI (109011) STATE: 2[0m
+[0;32mI (109011) RESPONSE: Sending response: 150929408[0m
+[0;32mI (109211) STATE: 2[0m
+[0;32mI (109211) RESPONSE: Sending response: 150929408[0m

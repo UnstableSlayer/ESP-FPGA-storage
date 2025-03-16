@@ -1,0 +1,1904 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x17ec
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xf28
+load:0x403cb700,len:0x35c8
+entry 0x403c89c8
+[0;32mI (27) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Mar  6 2025 23:38:28[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v0.1[0m
+[0;32mI (32) boot: efuse block revision: v1.2[0m
+[0;32mI (36) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (44) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (84) boot: End of partition table[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0d408h ( 54280) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001d430 vaddr=3fc93400 size=02948h ( 10568) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001fd80 vaddr=40374000 size=00298h (   664) load[0m
+[0;32mI (110) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=2e674h (190068) map[0m
+[0;32mI (144) esp_image: segment 4: paddr=0004e69c vaddr=40374298 size=0f14ch ( 61772) load[0m
+[0;32mI (155) esp_image: segment 5: paddr=0005d7f0 vaddr=600fe100 size=00018h (    24) load[0m
+[0;32mI (161) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (161) boot: Disabling RNG early entropy source...[0m
+[0;32mI (172) cpu_start: Multicore app[0m
+[0;32mI (181) cpu_start: Pro cpu start user code[0m
+[0;32mI (181) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (181) app_init: Application information:[0m
+[0;32mI (181) app_init: Project name:     sd_card[0m
+[0;32mI (185) app_init: App version:      v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (191) app_init: Compile time:     Mar  6 2025 23:38:39[0m
+[0;32mI (196) app_init: ELF file SHA256:  9765697b1...[0m
+[0;32mI (200) app_init: ESP-IDF:          v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (206) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (210) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (214) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (218) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (224) heap_init: At 3FC96688 len 00053088 (332 KiB): RAM[0m
+[0;32mI (230) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (235) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 600FE118 len 00001ED0 (7 KiB): RTCRAM[0m
+[0;32mI (246) spi_flash: detected chip: gd[0m
+[0;32mI (248) spi_flash: flash io: qio[0m
+[0;32mI (251) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (258) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (265) main_task: Started on CPU0[0m
+[0;32mI (305) main_task: Calling app_main()[0m
+[0;32mI (305) SDCARD: Initializing SD card[0m
+[0;32mI (305) SDCARD: Mounting filesystem[0m
+[0;32mI (345) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+[0;32mI (565) SDCARD: Filesystem mounted[0m
+Name: SE32G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 30436MB
+CSD: ver=2, sector_size=512, capacity=62333952 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (575) GEN_FILES: Count: 15[0m
+[1;31mE (655) GEN_FILES: Couldn't create or read file /sdcard/DATA9.BIN[0m
+[1;31mE (655) GEN_FILES: Couldn't create or read file /sdcard/DATAA.BIN[0m
+[1;31mE (665) GEN_FILES: Couldn't create or read file /sdcard/DATAB.BIN[0m
+[1;31mE (665) GEN_FILES: Couldn't create or read file /sdcard/DATAC.BIN[0m
+[1;31mE (665) GEN_FILES: Couldn't create or read file /sdcard/DATAD.BIN[0m
+[1;31mE (675) GEN_FILES: Couldn't create or read file /sdcard/DATAE.BIN[0m
+[0;32mI (685) CURRENT_FILE: size: 4194304[0m
+[0;33mW (3445) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;32mI (3485) FILESYS_WRITE_INC: Writing data and incrementing: 0 to addr: 0[0m
+[0;33mW (3525) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (3605) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (3685) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (3765) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (3845) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (3925) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (4005) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (4085) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (4165) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (4245) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (4325) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (4405) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (4485) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (4565) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (4645) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (4725) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (4805) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (4885) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (4965) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (5045) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (5125) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (5205) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (5285) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (5365) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (5445) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (5525) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (5605) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (5685) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (5765) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (5845) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (5925) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (6005) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (6085) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (6165) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (6245) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (6325) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (6405) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (6485) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (6565) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (6645) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (6725) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (6805) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (6885) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (6965) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (7045) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (7125) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (7205) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (7285) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (7365) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (7445) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (7525) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (7605) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (7685) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (7765) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (7845) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (7925) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (8005) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (8085) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (8165) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (8245) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (8325) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (8405) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (8485) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (8565) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (8645) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (8725) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (8805) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (8885) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (8965) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (9045) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (9125) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (9205) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (9285) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (9365) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (9445) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (9525) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (9605) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (9685) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (9765) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (9845) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x17ec
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xf28
+load:0x403cb700,len:0x35c8
+entry 0x403c89c8
+[0;32mI (27) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Mar  6 2025 23:38:28[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v0.1[0m
+[0;32mI (32) boot: efuse block revision: v1.2[0m
+[0;32mI (36) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (44) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (84) boot: End of partition table[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0d408h ( 54280) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001d430 vaddr=3fc93400 size=02948h ( 10568) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001fd80 vaddr=40374000 size=00298h (   664) load[0m
+[0;32mI (110) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=2e674h (190068) map[0m
+[0;32mI (144) esp_image: segment 4: paddr=0004e69c vaddr=40374298 size=0f14ch ( 61772) load[0m
+[0;32mI (155) esp_image: segment 5: paddr=0005d7f0 vaddr=600fe100 size=00018h (    24) load[0m
+[0;32mI (161) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (161) boot: Disabling RNG early entropy source...[0m
+[0;32mI (172) cpu_start: Multicore app[0m
+[0;32mI (181) cpu_start: Pro cpu start user code[0m
+[0;32mI (181) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (181) app_init: Application information:[0m
+[0;32mI (181) app_init: Project name:     sd_card[0m
+[0;32mI (185) app_init: App version:      v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (191) app_init: Compile time:     Mar  6 2025 23:38:39[0m
+[0;32mI (196) app_init: ELF file SHA256:  9765697b1...[0m
+[0;32mI (200) app_init: ESP-IDF:          v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (206) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (210) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (214) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (218) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (224) heap_init: At 3FC96688 len 00053088 (332 KiB): RAM[0m
+[0;32mI (230) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (235) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 600FE118 len 00001ED0 (7 KiB): RTCRAM[0m
+[0;32mI (246) spi_flash: detected chip: gd[0m
+[0;32mI (248) spi_flash: flash io: qio[0m
+[0;32mI (251) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (258) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (265) main_task: Started on CPU0[0m
+[0;32mI (305) main_task: Calling app_main()[0m
+[0;32mI (305) SDCARD: Initializing SD card[0m
+[0;32mI (305) SDCARD: Mounting filesystem[0m
+[0;32mI (305) sdspi_transaction: cmd=52, R1 response: command not supported[0m
+[0;32mI (355) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+[0;32mI (395) SDCARD: Filesystem mounted[0m
+Name: SE32G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 30436MB
+CSD: ver=2, sector_size=512, capacity=62333952 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (395) GEN_FILES: Count: 15[0m
+[1;31mE (485) GEN_FILES: Couldn't create or read file /sdcard/DATA9.BIN[0m
+[1;31mE (485) GEN_FILES: Couldn't create or read file /sdcard/DATAA.BIN[0m
+[1;31mE (485) GEN_FILES: Couldn't create or read file /sdcard/DATAB.BIN[0m
+[1;31mE (485) GEN_FILES: Couldn't create or read file /sdcard/DATAC.BIN[0m
+[1;31mE (495) GEN_FILES: Couldn't create or read file /sdcard/DATAD.BIN[0m
+[1;31mE (505) GEN_FILES: Couldn't create or read file /sdcard/DATAE.BIN[0m
+[0;32mI (505) CURRENT_FILE: size: 4194304[0m
+[0;32mI (155135) FILESYS_WRITE_INC: Writing data and incrementing: 0 to addr: 0[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0xa (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x17ec
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xf28
+load:0x403cb700,len:0x35c8
+entry 0x403c89c8
+[0;32mI (27) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Mar  6 2025 23:38:28[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v0.1[0m
+[0;32mI (32) boot: efuse block revision: v1.2[0m
+[0;32mI (36) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (44) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (84) boot: End of partition table[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0d408h ( 54280) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001d430 vaddr=3fc93400 size=02948h ( 10568) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001fd80 vaddr=40374000 size=00298h (   664) load[0m
+[0;32mI (110) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=2e674h (190068) map[0m
+[0;32mI (144) esp_image: segment 4: paddr=0004e69c vaddr=40374298 size=0f14ch ( 61772) load[0m
+[0;32mI (155) esp_image: segment 5: paddr=0005d7f0 vaddr=600fe100 size=00018h (    24) load[0m
+[0;32mI (161) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (161) boot: Disabling RNG early entropy source...[0m
+[0;32mI (172) cpu_start: Multicore app[0m
+[0;32mI (181) cpu_start: Pro cpu start user code[0m
+[0;32mI (181) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (181) app_init: Application information:[0m
+[0;32mI (181) app_init: Project name:     sd_card[0m
+[0;32mI (185) app_init: App version:      v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (191) app_init: Compile time:     Mar  6 2025 23:38:39[0m
+[0;32mI (196) app_init: ELF file SHA256:  9765697b1...[0m
+[0;32mI (200) app_init: ESP-IDF:          v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (206) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (210) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (214) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (218) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (224) heap_init: At 3FC96688 len 00053088 (332 KiB): RAM[0m
+[0;32mI (230) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (235) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 600FE118 len 00001ED0 (7 KiB): RTCRAM[0m
+[0;32mI (246) spi_flash: detected chip: gd[0m
+[0;32mI (248) spi_flash: flash io: qio[0m
+[0;32mI (251) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (258) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (265) main_task: Started on CPU0[0m
+[0;32mI (305) main_task: Calling app_main()[0m
+[0;32mI (305) SDCARD: Initializing SD card[0m
+[0;32mI (305) SDCARD: Mounting filesystem[0m
+[0;32mI (345) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+[0;32mI (385) SDCARD: Filesystem mounted[0m
+Name: SE32G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 30436MB
+CSD: ver=2, sector_size=512, capacity=62333952 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (385) GEN_FILES: Count: 15[0m
+[1;31mE (465) GEN_FILES: Couldn't create or read file /sdcard/DATA9.BIN[0m
+[1;31mE (465) GEN_FILES: Couldn't create or read file /sdcard/DATAA.BIN[0m
+[1;31mE (475) GEN_FILES: Couldn't create or read file /sdcard/DATAB.BIN[0m
+[1;31mE (475) GEN_FILES: Couldn't create or read file /sdcard/DATAC.BIN[0m
+[1;31mE (485) GEN_FILES: Couldn't create or read file /sdcard/DATAD.BIN[0m
+[1;31mE (485) GEN_FILES: Couldn't create or read file /sdcard/DATAE.BIN[0m
+[0;32mI (495) CURRENT_FILE: size: 4194304[0m
+[0;32mI (3225) FILESYS_WRITE_INC: Writing data and incrementing: 0 to addr: 0[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x2b (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x17ec
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xf28
+load:0x403cb700,len:0x35c8
+entry 0x403c89c8
+[0;32mI (27) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Mar  6 2025 23:38:28[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v0.1[0m
+[0;32mI (32) boot: efuse block revision: v1.2[0m
+[0;32mI (36) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (44) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (59) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (84) boot: End of partition table[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0d408h ( 54280) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001d430 vaddr=3fc93400 size=02948h ( 10568) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001fd80 vaddr=40374000 size=00298h (   664) load[0m
+[0;32mI (110) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=2e674h (190068) map[0m
+[0;32mI (144) esp_image: segment 4: paddr=0004e69c vaddr=40374298 size=0f14ch ( 61772) load[0m
+[0;32mI (155) esp_image: segment 5: paddr=0005d7f0 vaddr=600fe100 size=00018h (    24) load[0m
+[0;32mI (161) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (161) boot: Disabling RNG early entropy source...[0m
+[0;32mI (172) cpu_start: Multicore app[0m
+[0;32mI (181) cpu_start: Pro cpu start user code[0m
+[0;32mI (181) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (181) app_init: Application information:[0m
+[0;32mI (181) app_init: Project name:     sd_card[0m
+[0;32mI (185) app_init: App version:      v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (191) app_init: Compile time:     Mar  6 2025 23:38:39[0m
+[0;32mI (196) app_init: ELF file SHA256:  9765697b1...[0m
+[0;32mI (201) app_init: ESP-IDF:          v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (207) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (210) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (214) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (218) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (224) heap_init: At 3FC96688 len 00053088 (332 KiB): RAM[0m
+[0;32mI (230) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (235) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 600FE118 len 00001ED0 (7 KiB): RTCRAM[0m
+[0;32mI (246) spi_flash: detected chip: gd[0m
+[0;32mI (249) spi_flash: flash io: qio[0m
+[0;32mI (252) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (258) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (265) main_task: Started on CPU0[0m
+[0;32mI (305) main_task: Calling app_main()[0m
+[0;32mI (305) SDCARD: Initializing SD card[0m
+[0;32mI (305) SDCARD: Mounting filesystem[0m
+[0;32mI (305) sdspi_transaction: cmd=52, R1 response: command CRC error[0m
+[1;31mE (305) sdmmc_io: sdmmc_io_reset: unexpected return: 0x109[0m
+[1;31mE (315) vfs_fat_sdmmc: sdmmc_card_init failed (0x109).[0m
+[1;31mE (315) SDCARD: Failed to initialize the card (ESP_ERR_INVALID_CRC). Make sure SD card lines have pull-up resistors in place.[0m
+[1;31mE (335) FILESYS_INIT: Failed to initialize sdcard[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x17ec
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xf28
+load:0x403cb700,len:0x35c8
+entry 0x403c89c8
+[0;32mI (27) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Mar  6 2025 23:38:28[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v0.1[0m
+[0;32mI (32) boot: efuse block revision: v1.2[0m
+[0;32mI (36) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (44) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (84) boot: End of partition table[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0d408h ( 54280) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001d430 vaddr=3fc93400 size=02948h ( 10568) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001fd80 vaddr=40374000 size=00298h (   664) load[0m
+[0;32mI (110) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=2e674h (190068) map[0m
+[0;32mI (144) esp_image: segment 4: paddr=0004e69c vaddr=40374298 size=0f14ch ( 61772) load[0m
+[0;32mI (155) esp_image: segment 5: paddr=0005d7f0 vaddr=600fe100 size=00018h (    24) load[0m
+[0;32mI (161) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (161) boot: Disabling RNG early entropy source...[0m
+[0;32mI (172) cpu_start: Multicore app[0m
+[0;32mI (181) cpu_start: Pro cpu start user code[0m
+[0;32mI (181) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (181) app_init: Application information:[0m
+[0;32mI (181) app_init: Project name:     sd_card[0m
+[0;32mI (185) app_init: App version:      v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (191) app_init: Compile time:     Mar  6 2025 23:38:39[0m
+[0;32mI (196) app_init: ELF file SHA256:  9765697b1...[0m
+[0;32mI (200) app_init: ESP-IDF:          v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (206) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (210) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (214) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (218) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (224) heap_init: At 3FC96688 len 00053088 (332 KiB): RAM[0m
+[0;32mI (230) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (235) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 600FE118 len 00001ED0 (7 KiB): RTCRAM[0m
+[0;32mI (246) spi_flash: detected chip: gd[0m
+[0;32mI (248) spi_flash: flash io: qio[0m
+[0;32mI (251) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (258) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (265) main_task: Started on CPU0[0m
+[0;32mI (305) main_task: Calling app_main()[0m
+[0;32mI (305) SDCARD: Initializing SD card[0m
+[0;32mI (305) SDCARD: Mounting filesystem[0m
+[0;32mI (345) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+[0;32mI (385) SDCARD: Filesystem mounted[0m
+Name: SE32G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 30436MB
+CSD: ver=2, sector_size=512, capacity=62333952 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (385) GEN_FILES: Count: 15[0m
+[1;31mE (475) GEN_FILES: Couldn't create or read file /sdcard/DATA9.BIN[0m
+[1;31mE (475) GEN_FILES: Couldn't create or read file /sdcard/DATAA.BIN[0m
+[1;31mE (475) GEN_FILES: Couldn't create or read file /sdcard/DATAB.BIN[0m
+[1;31mE (475) GEN_FILES: Couldn't create or read file /sdcard/DATAC.BIN[0m
+[1;31mE (485) GEN_FILES: Couldn't create or read file /sdcard/DATAD.BIN[0m
+[1;31mE (495) GEN_FILES: Couldn't create or read file /sdcard/DATAE.BIN[0m
+[0;32mI (495) CURRENT_FILE: size: 4194304[0m
+[0;32mI (4045) FILESYS_WRITE_INC: Writing data and incrementing: 0 to addr: 0[0m
+[0;32mI (4445) FILESYS_WRITE_INC: Writing data and incrementing: 0 to addr: 10000[0m
+[0;32mI (4845) FILESYS_WRITE_INC: Writing data and incrementing: 0 to addr: 20000[0m
+[0;32mI (5245) FILESYS_WRITE_INC: Writing data and incrementing: 0 to addr: 30000[0m
+[0;32mI (5645) FILESYS_WRITE_INC: Writing data and incrementing: 0 to addr: 40000[0m
+[0;32mI (6045) FILESYS_WRITE_INC: Writing data and incrementing: 0 to addr: 50000[0m
+[0;32mI (6445) FILESYS_WRITE_INC: Writing data and incrementing: 0 to addr: 60000[0m
+[1;31mE (6725) READ_DATA: failed to load page from the file: page_id: 1, ret: 0[0m
+[0;32mI (6725) FILESYS_WRITE_INC: Writing data and incrementing: 0 to addr: 0[0m
+[0;32mI (7125) FILESYS_WRITE_INC: Writing data and incrementing: 0 to addr: 10000[0m
+[0;32mI (7525) FILESYS_WRITE_INC: Writing data and incrementing: 0 to addr: 20000[0m
+[0;32mI (7925) FILESYS_WRITE_INC: Writing data and incrementing: 0 to addr: 30000[0m
+[0;32mI (8325) FILESYS_WRITE_INC: Writing data and incrementing: 0 to addr: 40000[0m
+[0;32mI (8725) FILESYS_WRITE_INC: Writing data and incrementing: 0 to addr: 50000[0m
+[0;32mI (9135) FILESYS_WRITE_INC: Writing data and incrementing: 0 to addr: 60000[0m
+[1;31mE (9355) vfs_fat: open: no free file descriptors[0m
+[1;31mE (9355) FILESYS_WRITE_PAGE_TO_SDCARD: Can't open file /sdcard/DATA0.BIN[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x4201c06d  PS      : 0x00060a30  A0      : 0x8201b8e5  A1      : 0x3fc99040  
+A2      : 0x3fc993c8  A3      : 0x00000000  A4      : 0x00010000  A5      : 0x00000000  
+A6      : 0x3fc993c8  A7      : 0x3fc9936c  A8      : 0x420065c8  A9      : 0x3fc990a0  
+A10     : 0x00060a23  A11     : 0x00000000  A12     : 0x00060a20  A13     : 0x3c03408f  
+A14     : 0x00000001  A15     : 0x3fc98f50  SAR     : 0x00000004  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000064  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xfffffffb  
+
+
+Backtrace: 0x4201c06a:0x3fc99040 0x4201b8e2:0x3fc990d0 0x42009a0b:0x3fc990f0 0x42009cc1:0x3fc99110 0x42009ed8:0x3fc99140 0x4200948e:0x3fc99160 0x4202dce3:0x3fc99200
+
+
+
+
+ELF file SHA256: 9765697b1
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375b60
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x17ec
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xf28
+load:0x403cb700,len:0x35c8
+entry 0x403c89c8
+[0;32mI (31) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar  6 2025 23:38:28[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v0.1[0m
+[0;32mI (36) boot: efuse block revision: v1.2[0m
+[0;32mI (40) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (44) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (48) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (52) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (56) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (82) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (89) boot: End of partition table[0m
+[0;32mI (92) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0d408h ( 54280) map[0m
+[0;32mI (107) esp_image: segment 1: paddr=0001d430 vaddr=3fc93400 size=02948h ( 10568) load[0m
+[0;32mI (109) esp_image: segment 2: paddr=0001fd80 vaddr=40374000 size=00298h (   664) load[0m
+[0;32mI (115) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=2e674h (190068) map[0m
+[0;32mI (148) esp_image: segment 4: paddr=0004e69c vaddr=40374298 size=0f14ch ( 61772) load[0m
+[0;32mI (159) esp_image: segment 5: paddr=0005d7f0 vaddr=600fe100 size=00018h (    24) load[0m
+[0;32mI (165) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (165) boot: Disabling RNG early entropy source...[0m
+[0;32mI (177) cpu_start: Multicore app[0m
+[0;32mI (185) cpu_start: Pro cpu start user code[0m
+[0;32mI (185) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (186) app_init: Application information:[0m
+[0;32mI (186) app_init: Project name:     sd_card[0m
+[0;32mI (189) app_init: App version:      v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (195) app_init: Compile time:     Mar  6 2025 23:38:39[0m
+[0;32mI (201) app_init: ELF file SHA256:  9765697b1...[0m
+[0;32mI (205) app_init: ESP-IDF:          v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (211) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (215) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (219) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (223) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (229) heap_init: At 3FC96688 len 00053088 (332 KiB): RAM[0m
+[0;32mI (234) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (239) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (244) heap_init: At 600FE118 len 00001ED0 (7 KiB): RTCRAM[0m
+[0;32mI (250) spi_flash: detected chip: gd[0m
+[0;32mI (253) spi_flash: flash io: qio[0m
+[0;32mI (256) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (262) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (269) main_task: Started on CPU0[0m
+[0;32mI (309) main_task: Calling app_main()[0m
+[0;32mI (309) SDCARD: Initializing SD card[0m
+[0;32mI (309) SDCARD: Mounting filesystem[0m
+[0;32mI (309) sdspi_transaction: cmd=52, R1 response: command not supported[0m
+[0;32mI (359) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+[0;32mI (399) SDCARD: Filesystem mounted[0m
+Name: SE32G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 30436MB
+CSD: ver=2, sector_size=512, capacity=62333952 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (399) GEN_FILES: Count: 15[0m
+[1;31mE (489) GEN_FILES: Couldn't create or read file /sdcard/DATA9.BIN[0m
+[1;31mE (489) GEN_FILES: Couldn't create or read file /sdcard/DATAA.BIN[0m
+[1;31mE (489) GEN_FILES: Couldn't create or read file /sdcard/DATAB.BIN[0m
+[1;31mE (489) GEN_FILES: Couldn't create or read file /sdcard/DATAC.BIN[0m
+[1;31mE (499) GEN_FILES: Couldn't create or read file /sdcard/DATAD.BIN[0m
+[1;31mE (509) GEN_FILES: Couldn't create or read file /sdcard/DATAE.BIN[0m
+[0;32mI (509) CURRENT_FILE: size: 4194304[0m
+[0;32mI (549) FILESYS_WRITE_INC: Writing data and incrementing: 0 to addr: 0[0m
+[0;32mI (959) FILESYS_WRITE_INC: Writing data and incrementing: 0 to addr: 10000[0m
+[0;32mI (1359) FILESYS_WRITE_INC: Writing data and incrementing: 0 to addr: 20000[0m
+[0;32mI (1759) FILESYS_WRITE_INC: Writing data and incrementing: 0 to addr: 30000[0m
+[0;32mI (2159) FILESYS_WRITE_INC: Writing data and incrementing: 0 to addr: 40000[0m
+[0;32mI (2559) FILESYS_WRITE_INC: Writing data and incrementing: 0 to addr: 50000[0m
+[0;32mI (2959) FILESYS_WRITE_INC: Writing data and incrementing: 0 to addr: 60000[0m
+[1;31mE (3229) READ_DATA: failed to load page from the file: page_id: 1, ret: 0[0m
+[0;32mI (3229) FILESYS_WRITE_INC: Writing data and incrementing: 0 to addr: 0[0m
+[0;32mI (3639) FILESYS_WRITE_INC: Writing data and incrementing: 0 to addr: 10000[0m
+[0;32mI (4039) FILESYS_WRITE_INC: Writing data and incrementing: 0 to addr: 20000[0m
+[0;32mI (4439) FILESYS_WRITE_INC: Writing data and incrementing: 0 to addr: 30000[0m
+[0;32mI (4839) FILESYS_WRITE_INC: Writing data and incrementing: 0 to addr: 40000[0m
+[0;33mW (281449) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x2b (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x17ec
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xf28
+load:0x403cb700,len:0x35c8
+entry 0x403c89c8
+[0;32mI (27) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Mar  6 2025 23:38:28[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v0.1[0m
+[0;32mI (32) boot: efuse block revision: v1.2[0m
+[0;32mI (36) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (44) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (59) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (84) boot: End of partition table[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0d408h ( 54280) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001d430 vaddr=3fc93400 size=02948h ( 10568) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001fd80 vaddr=40374000 size=00298h (   664) load[0m
+[0;32mI (110) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=2e674h (190068) map[0m
+[0;32mI (144) esp_image: segment 4: paddr=0004e69c vaddr=40374298 size=0f14ch ( 61772) load[0m
+[0;32mI (155) esp_image: segment 5: paddr=0005d7f0 vaddr=600fe100 size=00018h (    24) load[0m
+[0;32mI (161) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (161) boot: Disabling RNG early entropy source...[0m
+[0;32mI (172) cpu_start: Multicore app[0m
+[0;32mI (181) cpu_start: Pro cpu start user code[0m
+[0;32mI (181) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (181) app_init: Application information:[0m
+[0;32mI (181) app_init: Project name:     sd_card[0m
+[0;32mI (185) app_init: App version:      v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (191) app_init: Compile time:     Mar  6 2025 23:38:39[0m
+[0;32mI (196) app_init: ELF file SHA256:  9765697b1...[0m
+[0;32mI (201) app_init: ESP-IDF:          v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (207) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (210) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (214) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (218) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (224) heap_init: At 3FC96688 len 00053088 (332 KiB): RAM[0m
+[0;32mI (230) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (235) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 600FE118 len 00001ED0 (7 KiB): RTCRAM[0m
+[0;32mI (246) spi_flash: detected chip: gd[0m
+[0;32mI (249) spi_flash: flash io: qio[0m
+[0;32mI (252) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (258) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (265) main_task: Started on CPU0[0m
+[0;32mI (305) main_task: Calling app_main()[0m
+[0;32mI (305) SDCARD: Initializing SD card[0m
+[0;32mI (305) SDCARD: Mounting filesystem[0m
+[0;32mI (305) sdspi_transaction: cmd=52, R1 response: command CRC error[0m
+[1;31mE (305) sdmmc_io: sdmmc_io_reset: unexpected return: 0x109[0m
+[1;31mE (315) vfs_fat_sdmmc: sdmmc_card_init failed (0x109).[0m
+[1;31mE (315) SDCARD: Failed to initialize the card (ESP_ERR_INVALID_CRC). Make sure SD card lines have pull-up resistors in place.[0m
+[1;31mE (335) FILESYS_INIT: Failed to initialize sdcard[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0xb (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x17ec
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xf28
+load:0x403cb700,len:0x35c8
+entry 0x403c89c8
+[0;32mI (27) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Mar  6 2025 23:38:28[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v0.1[0m
+[0;32mI (32) boot: efuse block revision: v1.2[0m
+[0;32mI (36) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (44) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (84) boot: End of partition table[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0d408h ( 54280) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001d430 vaddr=3fc93400 size=02948h ( 10568) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001fd80 vaddr=40374000 size=00298h (   664) load[0m
+[0;32mI (110) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=2e674h (190068) map[0m
+[0;32mI (144) esp_image: segment 4: paddr=0004e69c vaddr=40374298 size=0f14ch ( 61772) load[0m
+[0;32mI (155) esp_image: segment 5: paddr=0005d7f0 vaddr=600fe100 size=00018h (    24) load[0m
+[0;32mI (161) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (161) boot: Disabling RNG early entropy source...[0m
+[0;32mI (172) cpu_start: Multicore app[0m
+[0;32mI (181) cpu_start: Pro cpu start user code[0m
+[0;32mI (181) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (181) app_init: Application information:[0m
+[0;32mI (181) app_init: Project name:     sd_card[0m
+[0;32mI (185) app_init: App version:      v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (191) app_init: Compile time:     Mar  6 2025 23:38:39[0m
+[0;32mI (196) app_init: ELF file SHA256:  9765697b1...[0m
+[0;32mI (200) app_init: ESP-IDF:          v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (206) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (210) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (214) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (218) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (224) heap_init: At 3FC96688 len 00053088 (332 KiB): RAM[0m
+[0;32mI (230) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (235) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 600FE118 len 00001ED0 (7 KiB): RTCRAM[0m
+[0;32mI (246) spi_flash: detected chip: gd[0m
+[0;32mI (248) spi_flash: flash io: qio[0m
+[0;32mI (251) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (258) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (265) main_task: Started on CPU0[0m
+[0;32mI (305) main_task: Calling app_main()[0m
+[0;32mI (305) SDCARD: Initializing SD card[0m
+[0;32mI (305) SDCARD: Mounting filesystem[0m
+[0;32mI (305) sdspi_transaction: cmd=52, R1 response: command CRC error[0m
+[1;31mE (305) sdmmc_io: sdmmc_io_reset: unexpected return: 0x109[0m
+[1;31mE (315) vfs_fat_sdmmc: sdmmc_card_init failed (0x109).[0m
+[1;31mE (315) SDCARD: Failed to initialize the card (ESP_ERR_INVALID_CRC). Make sure SD card lines have pull-up resistors in place.[0m
+[1;31mE (335) FILESYS_INIT: Failed to initialize sdcard[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0xb (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x17ec
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xf28
+load:0x403cb700,len:0x35c8
+entry 0x403c89c8
+[0;32mI (27) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Mar  6 2025 23:38:28[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v0.1[0m
+[0;32mI (32) boot: efuse block revision: v1.2[0m
+[0;32mI (36) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (44) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (84) boot: End of partition table[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0d408h ( 54280) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001d430 vaddr=3fc93400 size=02948h ( 10568) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001fd80 vaddr=40374000 size=00298h (   664) load[0m
+[0;32mI (110) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=2e674h (190068) map[0m
+[0;32mI (144) esp_image: segment 4: paddr=0004e69c vaddr=40374298 size=0f14ch ( 61772) load[0m
+[0;32mI (155) esp_image: segment 5: paddr=0005d7f0 vaddr=600fe100 size=00018h (    24) load[0m
+[0;32mI (161) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (161) boot: Disabling RNG early entropy source...[0m
+[0;32mI (172) cpu_start: Multicore app[0m
+[0;32mI (181) cpu_start: Pro cpu start user code[0m
+[0;32mI (181) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (181) app_init: Application information:[0m
+[0;32mI (181) app_init: Project name:     sd_card[0m
+[0;32mI (185) app_init: App version:      v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (191) app_init: Compile time:     Mar  6 2025 23:38:39[0m
+[0;32mI (196) app_init: ELF file SHA256:  9765697b1...[0m
+[0;32mI (200) app_init: ESP-IDF:          v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (206) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (210) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (214) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (218) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (224) heap_init: At 3FC96688 len 00053088 (332 KiB): RAM[0m
+[0;32mI (230) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (235) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 600FE118 len 00001ED0 (7 KiB): RTCRAM[0m
+[0;32mI (246) spi_flash: detected chip: gd[0m
+[0;32mI (248) spi_flash: flash io: qio[0m
+[0;32mI (251) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (258) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (265) main_task: Started on CPU0[0m
+[0;32mI (305) main_task: Calling app_main()[0m
+[0;32mI (305) SDCARD: Initializing SD card[0m
+[0;32mI (305) SDCARD: Mounting filesystem[0m
+[0;32mI (305) sdspi_transaction: cmd=52, R1 response: command CRC error[0m
+[1;31mE (305) sdmmc_io: sdmmc_io_reset: unexpected return: 0x109[0m
+[1;31mE (315) vfs_fat_sdmmc: sdmmc_card_init failed (0x109).[0m
+[1;31mE (315) SDCARD: Failed to initialize the card (ESP_ERR_INVALID_CRC). Make sure SD card lines have pull-up resistors in place.[0m
+[1;31mE (335) FILESYS_INIT: Failed to initialize sdcard[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x17ec
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xf28
+load:0x403cb700,len:0x35c8
+entry 0x403c89c8
+[0;32mI (27) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Mar  6 2025 23:38:28[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v0.1[0m
+[0;32mI (32) boot: efuse block revision: v1.2[0m
+[0;32mI (36) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (44) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (84) boot: End of partition table[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0d408h ( 54280) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001d430 vaddr=3fc93400 size=02948h ( 10568) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001fd80 vaddr=40374000 size=00298h (   664) load[0m
+[0;32mI (110) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=2e674h (190068) map[0m
+[0;32mI (144) esp_image: segment 4: paddr=0004e69c vaddr=40374298 size=0f14ch ( 61772) load[0m
+[0;32mI (155) esp_image: segment 5: paddr=0005d7f0 vaddr=600fe100 size=00018h (    24) load[0m
+[0;32mI (161) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (161) boot: Disabling RNG early entropy source...[0m
+[0;32mI (172) cpu_start: Multicore app[0m
+[0;32mI (181) cpu_start: Pro cpu start user code[0m
+[0;32mI (181) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (181) app_init: Application information:[0m
+[0;32mI (181) app_init: Project name:     sd_card[0m
+[0;32mI (185) app_init: App version:      v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (191) app_init: Compile time:     Mar  6 2025 23:38:39[0m
+[0;32mI (196) app_init: ELF file SHA256:  9765697b1...[0m
+[0;32mI (200) app_init: ESP-IDF:          v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (206) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (210) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (214) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (218) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (224) heap_init: At 3FC96688 len 00053088 (332 KiB): RAM[0m
+[0;32mI (230) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (235) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 600FE118 len 00001ED0 (7 KiB): RTCRAM[0m
+[0;32mI (246) spi_flash: detected chip: gd[0m
+[0;32mI (248) spi_flash: flash io: qio[0m
+[0;32mI (251) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (258) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (265) main_task: Started on CPU0[0m
+[0;32mI (305) main_task: Calling app_main()[0m
+[0;32mI (305) SDCARD: Initializing SD card[0m
+[0;32mI (305) SDCARD: Mounting filesystem[0m
+[0;32mI (345) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+[0;32mI (385) SDCARD: Filesystem mounted[0m
+Name: SE32G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 30436MB
+CSD: ver=2, sector_size=512, capacity=62333952 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (385) GEN_FILES: Count: 15[0m
+[1;31mE (475) GEN_FILES: Couldn't create or read file /sdcard/DATA9.BIN[0m
+[1;31mE (475) GEN_FILES: Couldn't create or read file /sdcard/DATAA.BIN[0m
+[1;31mE (475) GEN_FILES: Couldn't create or read file /sdcard/DATAB.BIN[0m
+[1;31mE (475) GEN_FILES: Couldn't create or read file /sdcard/DATAC.BIN[0m
+[1;31mE (485) GEN_FILES: Couldn't create or read file /sdcard/DATAD.BIN[0m
+[1;31mE (495) GEN_FILES: Couldn't create or read file /sdcard/DATAE.BIN[0m
+[0;32mI (495) CURRENT_FILE: size: 4194304[0m
+[0;32mI (11955) FILESYS_WRITE_INC: Writing data and incrementing: 0 to addr: 0[0m
+[0;32mI (12355) FILESYS_WRITE_INC: Writing data and incrementing: 0 to addr: 10000[0m
+[0;32mI (12755) FILESYS_WRITE_INC: Writing data and incrementing: 0 to addr: 20000[0m
+[0;32mI (13155) FILESYS_WRITE_INC: Writing data and incrementing: 0 to addr: 30000[0m
+[0;32mI (13555) FILESYS_WRITE_INC: Writing data and incrementing: 0 to addr: 40000[0m
+[0;32mI (13965) FILESYS_WRITE_INC: Writing data and incrementing: 0 to addr: 50000[0m
+[0;32mI (14365) FILESYS_WRITE_INC: Writing data and incrementing: 0 to addr: 60000[0m
+[1;31mE (14635) READ_DATA: failed to load page from the file: page_id: 1, ret: 0[0m
+[0;32mI (14635) FILESYS_WRITE_INC: Writing data and incrementing: 0 to addr: 0[0m
+[0;32mI (15035) FILESYS_WRITE_INC: Writing data and incrementing: 0 to addr: 10000[0m
+[0;32mI (15435) FILESYS_WRITE_INC: Writing data and incrementing: 0 to addr: 20000[0m
+[0;32mI (15835) FILESYS_WRITE_INC: Writing data and incrementing: 0 to addr: 30000[0m
+[0;32mI (16245) FILESYS_WRITE_INC: Writing data and incrementing: 0 to addr: 40000[0m
+[0;32mI (16645) FILESYS_WRITE_INC: Writing data and incrementing: 0 to addr: 50000[0m
+[0;32mI (17045) FILESYS_WRITE_INC: Writing data and incrementing: 0 to addr: 60000[0m
+[1;31mE (17265) vfs_fat: open: no free file descriptors[0m
+[1;31mE (17265) FILESYS_WRITE_PAGE_TO_SDCARD: Can't open file /sdcard/DATA0.BIN[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x4201c06d  PS      : 0x00060a30  A0      : 0x8201b8e5  A1      : 0x3fc99040  
+A2      : 0x3fc993c8  A3      : 0x00000000  A4      : 0x00010000  A5      : 0x00000000  
+A6      : 0x3fc993c8  A7      : 0x3fc9936c  A8      : 0x420065c8  A9      : 0x3fc990a0  
+A10     : 0x00060a23  A11     : 0x00000000  A12     : 0x00060a20  A13     : 0x3c03408f  
+A14     : 0x00000001  A15     : 0x3fc98f50  SAR     : 0x00000004  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000064  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xfffffffb  
+
+
+Backtrace: 0x4201c06a:0x3fc99040 0x4201b8e2:0x3fc990d0 0x42009a0b:0x3fc990f0 0x42009cc1:0x3fc99110 0x42009ed8:0x3fc99140 0x4200948e:0x3fc99160 0x4202dce3:0x3fc99200
+
+
+
+
+ELF file SHA256: 9765697b1
+
+Rebooting...
+���ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375b60
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x17ec
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xf28
+load:0x403cb700,len:0x35c8
+entry 0x403c89c8
+[0;32mI (31) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar  6 2025 23:38:28[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v0.1[0m
+[0;32mI (36) boot: efuse block revision: v1.2[0m
+[0;32mI (40) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (44) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (48) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (52) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (56) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (82) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (89) boot: End of partition table[0m
+[0;32mI (92) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0d408h ( 54280) map[0m
+[0;32mI (107) esp_image: segment 1: paddr=0001d430 vaddr=3fc93400 size=02948h ( 10568) load[0m
+[0;32mI (109) esp_image: segment 2: paddr=0001fd80 vaddr=40374000 size=00298h (   664) load[0m
+[0;32mI (115) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=2e674h (190068) map[0m
+[0;32mI (148) esp_image: segment 4: paddr=0004e69c vaddr=40374298 size=0f14ch ( 61772) load[0m
+[0;32mI (159) esp_image: segment 5: paddr=0005d7f0 vaddr=600fe100 size=00018h (    24) load[0m
+[0;32mI (165) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (165) boot: Disabling RNG early entropy source...[0m
+[0;32mI (177) cpu_start: Multicore app[0m
+[0;32mI (185) cpu_start: Pro cpu start user code[0m
+[0;32mI (185) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (186) app_init: Application information:[0m
+[0;32mI (186) app_init: Project name:     sd_card[0m
+[0;32mI (189) app_init: App version:      v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (195) app_init: Compile time:     Mar  6 2025 23:38:39[0m
+[0;32mI (201) app_init: ELF file SHA256:  9765697b1...[0m
+[0;32mI (205) app_init: ESP-IDF:          v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (211) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (215) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (219) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (223) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (229) heap_init: At 3FC96688 len 00053088 (332 KiB): RAM[0m
+[0;32mI (234) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (239) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (244) heap_init: At 600FE118 len 00001ED0 (7 KiB): RTCRAM[0m
+[0;32mI (250) spi_flash: detected chip: gd[0m
+[0;32mI (253) spi_flash: flash io: qio[0m
+[0;32mI (256) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (262) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (269) main_task: Started on CPU0[0m
+[0;32mI (309) main_task: Calling app_main()[0m
+[0;32mI (309) SDCARD: Initializing SD card[0m
+[0;32mI (309) SDCARD: Mounting filesystem[0m
+[0;32mI (309) sdspi_transaction: cmd=52, R1 response: command not supported[0m
+[0;32mI (359) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+[0;32mI (399) SDCARD: Filesystem mounted[0m
+Name: SE32G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 30436MB
+CSD: ver=2, sector_size=512, capacity=62333952 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (399) GEN_FILES: Count: 15[0m
+[1;31mE (479) GEN_FILES: Couldn't create or read file /sdcard/DATA9.BIN[0m
+[1;31mE (479) GEN_FILES: Couldn't create or read file /sdcard/DATAA.BIN[0m
+[1;31mE (489) GEN_FILES: Couldn't create or read file /sdcard/DATAB.BIN[0m
+[1;31mE (489) GEN_FILES: Couldn't create or read file /sdcard/DATAC.BIN[0m
+[1;31mE (499) GEN_FILES: Couldn't create or read file /sdcard/DATAD.BIN[0m
+[1;31mE (499) GEN_FILES: Couldn't create or read file /sdcard/DATAE.BIN[0m
+[0;32mI (509) CURRENT_FILE: size: 4194304[0m
+[0;32mI (549) FILESYS_WRITE_INC: Writing data and incrementing: 0 to addr: 0[0m
+[0;32mI (949) FILESYS_WRITE_INC: Writing data and incrementing: 0 to addr: 10000[0m
+[0;32mI (1349) FILESYS_WRITE_INC: Writing data and incrementing: 0 to addr: 20000[0m
+[0;32mI (1749) FILESYS_WRITE_INC: Writing data and incrementing: 0 to addr: 30000[0m
+[0;32mI (2149) FILESYS_WRITE_INC: Writing data and incrementing: 0 to addr: 40000[0m
+[0;32mI (2559) FILESYS_WRITE_INC: Writing data and incrementing: 0 to addr: 50000[0m
+[0;32mI (2959) FILESYS_WRITE_INC: Writing data and incrementing: 0 to addr: 60000[0m
+[1;31mE (3229) READ_DATA: failed to load page from the file: page_id: 1, ret: 0[0m
+[0;32mI (3229) FILESYS_WRITE_INC: Writing data and incrementing: 0 to addr: 0[0m
+[0;32mI (3629) FILESYS_WRITE_INC: Writing data and incrementing: 0 to addr: 10000[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0xa (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x17ec
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xf28
+load:0x403cb700,len:0x35c8
+entry 0x403c89c8
+[0;32mI (27) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Mar  6 2025 23:38:28[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v0.1[0m
+[0;32mI (32) boot: efuse block revision: v1.2[0m
+[0;32mI (36) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (44) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (84) boot: End of partition table[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0d408h ( 54280) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001d430 vaddr=3fc93400 size=02948h ( 10568) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001fd80 vaddr=40374000 size=00298h (   664) load[0m
+[0;32mI (110) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=2e674h (190068) map[0m
+[0;32mI (144) esp_image: segment 4: paddr=0004e69c vaddr=40374298 size=0f14ch ( 61772) load[0m
+[0;32mI (155) esp_image: segment 5: paddr=0005d7f0 vaddr=600fe100 size=00018h (    24) load[0m
+[0;32mI (161) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (161) boot: Disabling RNG early entropy source...[0m
+[0;32mI (172) cpu_start: Multicore app[0m
+[0;32mI (181) cpu_start: Pro cpu start user code[0m
+[0;32mI (181) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (181) app_init: Application information:[0m
+[0;32mI (181) app_init: Project name:     sd_card[0m
+[0;32mI (185) app_init: App version:      v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (191) app_init: Compile time:     Mar  6 2025 23:38:39[0m
+[0;32mI (196) app_init: ELF file SHA256:  9765697b1...[0m
+[0;32mI (200) app_init: ESP-IDF:          v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (206) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (210) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (214) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (218) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (224) heap_init: At 3FC96688 len 00053088 (332 KiB): RAM[0m
+[0;32mI (230) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (235) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 600FE118 len 00001ED0 (7 KiB): RTCRAM[0m
+[0;32mI (246) spi_flash: detected chip: gd[0m
+[0;32mI (248) spi_flash: flash io: qio[0m
+[0;32mI (251) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (258) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (265) main_task: Started on CPU0[0m
+[0;32mI (305) main_task: Calling app_main()[0m
+[0;32mI (305) SDCARD: Initializing SD card[0m
+[0;32mI (305) SDCARD: Mounting filesystem[0m
+[0;32mI (305) sdspi_transaction: cmd=52, R1 response: command CRC error[0m
+[1;31mE (305) sdmmc_io: sdmmc_io_reset: unexpected return: 0x109[0m
+[1;31mE (315) vfs_fat_sdmmc: sdmmc_card_init failed (0x109).[0m
+[1;31mE (315) SDCARD: Failed to initialize the card (ESP_ERR_INVALID_CRC). Make sure SD card lines have pull-up resistors in place.[0m
+[1;31mE (335) FILESYS_INIT: Failed to initialize sdcard[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0xb (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x17ec
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xf28
+load:0x403cb700,len:0x35c8
+entry 0x403c89c8
+[0;32mI (27) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Mar  6 2025 23:38:28[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v0.1[0m
+[0;32mI (32) boot: efuse block revision: v1.2[0m
+[0;32mI (36) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (44) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (84) boot: End of partition table[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0d408h ( 54280) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001d430 vaddr=3fc93400 size=02948h ( 10568) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001fd80 vaddr=40374000 size=00298h (   664) load[0m
+[0;32mI (110) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=2e674h (190068) map[0m
+[0;32mI (144) esp_image: segment 4: paddr=0004e69c vaddr=40374298 size=0f14ch ( 61772) load[0m
+[0;32mI (155) esp_image: segment 5: paddr=0005d7f0 vaddr=600fe100 size=00018h (    24) load[0m
+[0;32mI (161) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (161) boot: Disabling RNG early entropy source...[0m
+[0;32mI (172) cpu_start: Multicore app[0m
+[0;32mI (181) cpu_start: Pro cpu start user code[0m
+[0;32mI (181) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (181) app_init: Application information:[0m
+[0;32mI (181) app_init: Project name:     sd_card[0m
+[0;32mI (185) app_init: App version:      v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (191) app_init: Compile time:     Mar  6 2025 23:38:39[0m
+[0;32mI (196) app_init: ELF file SHA256:  9765697b1...[0m
+[0;32mI (200) app_init: ESP-IDF:          v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (206) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (210) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (214) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (218) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (224) heap_init: At 3FC96688 len 00053088 (332 KiB): RAM[0m
+[0;32mI (230) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (235) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 600FE118 len 00001ED0 (7 KiB): RTCRAM[0m
+[0;32mI (246) spi_flash: detected chip: gd[0m
+[0;32mI (248) spi_flash: flash io: qio[0m
+[0;32mI (251) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (258) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (265) main_task: Started on CPU0[0m
+[0;32mI (305) main_task: Calling app_main()[0m
+[0;32mI (305) SDCARD: Initializing SD card[0m
+[0;32mI (305) SDCARD: Mounting filesystem[0m
+[0;32mI (345) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+[0;32mI (385) SDCARD: Filesystem mounted[0m
+Name: SE32G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 30436MB
+CSD: ver=2, sector_size=512, capacity=62333952 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (385) GEN_FILES: Count: 15[0m
+[1;31mE (475) GEN_FILES: Couldn't create or read file /sdcard/DATA9.BIN[0m
+[1;31mE (475) GEN_FILES: Couldn't create or read file /sdcard/DATAA.BIN[0m
+[1;31mE (475) GEN_FILES: Couldn't create or read file /sdcard/DATAB.BIN[0m
+[1;31mE (475) GEN_FILES: Couldn't create or read file /sdcard/DATAC.BIN[0m
+[1;31mE (485) GEN_FILES: Couldn't create or read file /sdcard/DATAD.BIN[0m
+[1;31mE (495) GEN_FILES: Couldn't create or read file /sdcard/DATAE.BIN[0m
+[0;32mI (495) CURRENT_FILE: size: 4194304[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x17ec
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xf28
+load:0x403cb700,len:0x35c8
+entry 0x403c89c8
+[0;32mI (27) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Mar  6 2025 23:38:28[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v0.1[0m
+[0;32mI (32) boot: efuse block revision: v1.2[0m
+[0;32mI (36) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (44) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (84) boot: End of partition table[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0d408h ( 54280) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001d430 vaddr=3fc93400 size=02948h ( 10568) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001fd80 vaddr=40374000 size=00298h (   664) load[0m
+[0;32mI (110) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=2e674h (190068) map[0m
+[0;32mI (144) esp_image: segment 4: paddr=0004e69c vaddr=40374298 size=0f14ch ( 61772) load[0m
+[0;32mI (155) esp_image: segment 5: paddr=0005d7f0 vaddr=600fe100 size=00018h (    24) load[0m
+[0;32mI (161) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (161) boot: Disabling RNG early entropy source...[0m
+[0;32mI (172) cpu_start: Multicore app[0m
+[0;32mI (181) cpu_start: Pro cpu start user code[0m
+[0;32mI (181) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (181) app_init: Application information:[0m
+[0;32mI (181) app_init: Project name:     sd_card[0m
+[0;32mI (185) app_init: App version:      v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (191) app_init: Compile time:     Mar  6 2025 23:38:39[0m
+[0;32mI (196) app_init: ELF file SHA256:  9765697b1...[0m
+[0;32mI (200) app_init: ESP-IDF:          v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (206) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (210) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (214) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (218) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (224) heap_init: At 3FC96688 len 00053088 (332 KiB): RAM[0m
+[0;32mI (230) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (235) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 600FE118 len 00001ED0 (7 KiB): RTCRAM[0m
+[0;32mI (246) spi_flash: detected chip: gd[0m
+[0;32mI (248) spi_flash: flash io: qio[0m
+[0;32mI (251) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (258) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (265) main_task: Started on CPU0[0m
+[0;32mI (305) main_task: Calling app_main()[0m
+[0;32mI (305) SDCARD: Initializing SD card[0m
+[0;32mI (305) SDCARD: Mounting filesystem[0m
+[0;32mI (345) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+[0;32mI (385) SDCARD: Filesystem mounted[0m
+Name: SE32G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 30436MB
+CSD: ver=2, sector_size=512, capacity=62333952 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (385) GEN_FILES: Count: 15[0m
+[1;31mE (475) GEN_FILES: Couldn't create or read file /sdcard/DATA9.BIN[0m
+[1;31mE (475) GEN_FILES: Couldn't create or read file /sdcard/DATAA.BIN[0m
+[1;31mE (475) GEN_FILES: Couldn't create or read file /sdcard/DATAB.BIN[0m
+[1;31mE (475) GEN_FILES: Couldn't create or read file /sdcard/DATAC.BIN[0m
+[1;31mE (485) GEN_FILES: Couldn't create or read file /sdcard/DATAD.BIN[0m
+[1;31mE (495) GEN_FILES: Couldn't create or read file /sdcard/DATAE.BIN[0m
+[0;32mI (495) CURRENT_FILE: size: 4194304[0m
+[0;32mI (133605) FILESYS_WRITE_INC: Writing data and incrementing: 0 to addr: 0[0m
+[1;31mE (133605) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (133615) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (133625) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (133635) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (133635) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (133645) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (133655) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (133665) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (133675) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (133685) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (133695) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (133695) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (133705) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (133715) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (133725) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (133735) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (133745) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (133755) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (133755) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (133765) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (133775) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (133785) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (133795) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (133805) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (133815) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (133815) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (133825) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (133835) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (133845) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (133855) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (133865) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (133875) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (133875) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (133885) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (133895) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (133905) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (133915) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (133925) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (133935) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (133935) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (133945) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (133955) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (133965) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (133975) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (133985) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (133995) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134005) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134005) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134015) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134025) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134035) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134045) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134055) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134065) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134065) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134075) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134085) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134095) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134105) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134115) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134125) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134125) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134135) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134145) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134155) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134165) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134175) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134185) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134185) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134195) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134205) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134215) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134225) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134235) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134245) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134245) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134255) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134265) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134275) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134285) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134295) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134305) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134305) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134315) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134325) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134335) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134345) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134355) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134365) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134365) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134375) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134385) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134395) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134405) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134415) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134425) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134425) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134435) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134445) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134455) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134465) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134475) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134485) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134485) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134495) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134505) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134515) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134525) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134535) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134545) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134555) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134555) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134565) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134575) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134585) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134595) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134605) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134615) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134615) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134625) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134635) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134645) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134655) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134665) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134675) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134675) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134685) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134695) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134705) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134715) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134725) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134735) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134735) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134745) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134755) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134765) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134775) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134785) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134795) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134795) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134805) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134815) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134825) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134835) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134845) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134855) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134855) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134865) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134875) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134885) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134895) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134905) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134915) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134915) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134925) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134935) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134945) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134955) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134965) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134975) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134975) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134985) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (134995) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (135005) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (135015) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (135025) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (135035) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (135035) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (135045) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (135055) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (135065) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (135075) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (135085) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (135095) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (135095) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (135105) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (135115) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (135125) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (135135) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (135145) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (135155) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (135165) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (135165) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (135175) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (135185) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (135195) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (135205) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (135215) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (135225) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (135225) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (135235) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (135245) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (135255) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (135265) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (135275) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (135285) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (135285) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (135295) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (135305) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (135315) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (135325) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (135335) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (135345) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (135345) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (135355) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (135365) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (135375) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (135385) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (135395) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (135405) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (135405) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (135415) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (135425) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (135435) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (135445) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (135455) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (135465) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (135465) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (135475) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (135485) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (135495) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (135505) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (135515) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (135525) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (136905) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (136905) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (136915) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (136925) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[0;33mW (136925) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[1;31mE (136935) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (136945) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (136955) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (136965) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (136975) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (136985) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (136985) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (136995) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137005) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137015) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137025) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137035) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137045) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137045) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137055) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137065) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137075) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137085) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137095) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137105) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137105) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137115) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137125) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137135) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137145) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137155) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137165) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137165) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137175) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137185) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137195) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137205) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137215) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137225) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137225) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137235) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137245) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137255) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137265) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137275) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137285) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137285) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137295) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137305) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137315) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137325) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137335) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137345) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137345) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137355) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137365) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137375) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137385) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137395) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137405) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137415) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137415) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137425) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137435) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137445) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137455) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137465) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137475) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137475) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137485) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137495) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137505) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137515) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137525) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137535) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137535) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137545) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137555) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137565) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137575) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137585) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137595) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137595) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137605) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137615) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137625) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137635) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137645) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137655) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137655) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137665) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137675) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137685) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137695) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137705) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137715) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137715) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137725) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137735) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137745) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137755) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137765) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137775) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137775) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137785) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137795) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137805) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137815) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137825) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137835) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137835) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137845) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137855) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137865) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137875) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137885) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137895) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137895) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137905) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137915) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137925) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137935) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137945) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137955) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137965) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137965) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137975) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137985) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (137995) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138005) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138015) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138025) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138025) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138035) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138045) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138055) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138065) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138075) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138085) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138085) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138095) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138105) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138115) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138125) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138135) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138145) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138145) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138155) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138165) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138175) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138185) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138195) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138205) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138205) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138215) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138225) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138235) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138245) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138255) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138265) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138265) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138275) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138285) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138295) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138305) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138315) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138325) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138325) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138335) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138345) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138355) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138365) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138375) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138385) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138385) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138395) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138405) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138415) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138425) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138435) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138445) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138445) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138455) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138465) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138475) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138485) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138495) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138505) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138515) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138515) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138525) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138535) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138545) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138555) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138565) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138575) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138575) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138585) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138595) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138605) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138615) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138625) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138635) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138635) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138645) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138655) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138665) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138675) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138685) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138695) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138695) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138705) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138715) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138725) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138735) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138745) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138755) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138755) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138765) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138775) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138785) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138795) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138805) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138815) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138815) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138825) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138835) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138845) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138855) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138865) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138875) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138875) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138885) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138895) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138905) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138915) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138925) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138935) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138935) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138945) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138955) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138965) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138975) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138985) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138995) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (138995) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (139005) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (139015) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (139025) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (139035) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (139045) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (139055) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (139055) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (139065) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (139075) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (139085) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (139095) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (139105) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (139115) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (139125) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (139125) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (139135) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (139145) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (139155) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (139165) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (139175) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (139185) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (139185) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (139195) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (139205) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (139215) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (139225) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (139235) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (139245) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (139245) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (139255) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (139265) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (139275) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (139285) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (139295) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (139305) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (139305) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (139315) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (139325) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (139335) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (139345) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (139355) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (139365) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (139365) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (139375) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (139385) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (139395) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (139405) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (139415) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (139425) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (139425) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (139435) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (139445) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (139455) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (139465) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (139475) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (139485) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (139485) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[0;33mW (140475) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[1;31mE (140475) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (140485) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (140485) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (140495) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (140505) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (140515) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (140525) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (140535) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (140545) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (140545) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (140555) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (140565) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (140575) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (140585) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (140595) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (140605) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (140605) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (140615) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (140625) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (140635) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (140645) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (140655) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (140665) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (140665) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (140675) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (140685) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (140695) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (140705) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (140715) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (140725) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (140725) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (140735) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (140745) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (140755) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (140765) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (140775) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (140785) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (140785) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (140795) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (140805) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (140815) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (140825) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (140835) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (140845) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (140845) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (140855) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (140865) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (140875) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (140885) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (140895) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (140905) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (140905) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (140915) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (140925) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (140935) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (140945) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (140955) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (140965) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (140965) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (140975) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (140985) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (140995) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (141005) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (141015) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (141025) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (141025) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (141035) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (141045) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (141055) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (141065) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (141075) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (141085) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (141095) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (141095) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (141105) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (141115) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (141125) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (141135) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (141145) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (141155) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (141155) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (141165) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (141175) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (141185) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (141195) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (141205) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (141215) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (141215) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (141225) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (141235) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (141245) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (141255) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (141265) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (141275) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (141275) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (141285) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (141295) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (141305) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (141315) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (141325) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (141335) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (141335) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (141345) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (141355) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[0;33mW (142065) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[1;31mE (142065) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142075) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142085) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142095) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142095) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142105) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142115) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142125) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142135) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142145) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142155) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142155) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142165) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142175) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142185) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142195) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142205) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142215) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142215) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142225) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142235) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142245) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142255) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142265) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142275) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142275) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142285) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142295) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142305) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142315) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142325) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142335) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142335) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142345) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142355) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142365) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142375) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142385) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142395) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142395) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142405) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142415) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142425) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142435) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142445) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142455) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142465) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142465) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142475) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142485) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142495) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142505) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142515) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142525) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142525) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142535) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142545) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142555) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142565) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142575) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142585) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142585) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142595) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142605) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142615) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142625) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142635) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142645) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142645) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142655) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142665) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142675) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142685) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142695) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142705) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142705) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142715) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142725) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142735) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142745) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142755) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142765) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142765) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142775) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142785) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142795) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142805) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142815) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142825) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[1;31mE (142825) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m

@@ -1,0 +1,84 @@
+[  0%] Built target sections.ld.in
+[  0%] Built target partition_table_bin
+[  0%] Built target custom_bundle
+[  0%] Built target memory.ld
+[  1%] Built target _project_elf_src
+[  1%] Performing build step for 'bootloader'
+[  2%] Built target __idf_vfs
+[  3%] Built target __idf_esp_vfs_console
+[  2%] Built target _project_elf_src
+[  5%] Built target __idf_log
+[  4%] Built target __idf_esp_driver_usb_serial_jtag
+[ 16%] Built target __idf_esp_rom
+[  4%] Built target __idf_esp_driver_uart
+[ 18%] Built target __idf_esp_common
+[  5%] Built target __idf_esp_ringbuf
+[  6%] Built target __idf_esp_partition
+[ 27%] Built target __idf_esp_hw_support
+[  6%] Built target __idf_cxx
+[ 28%] Built target __idf_esp_system
+[  6%] Built target __idf_pthread
+[ 36%] Built target __idf_efuse
+[ 10%] Built target __idf_newlib
+[ 56%] Built target __idf_bootloader_support
+[ 58%] Built target __idf_esp_bootloader_format
+[ 13%] Built target __idf_freertos
+[ 59%] Built target __idf_spi_flash
+[ 20%] Built target __idf_esp_hw_support
+[ 65%] Built target __idf_hal
+[ 20%] Built target __idf_esp_security
+[ 68%] Built target __idf_micro-ecc
+[ 24%] Built target __idf_soc
+[ 92%] Built target __idf_soc
+[ 25%] Built target __idf_heap
+[ 95%] Built target __idf_xtensa
+[ 27%] Built target __idf_log
+[ 96%] Built target __idf_main
+[ 98%] Built target bootloader.elf
+[ 36%] Built target __idf_hal
+[ 38%] Built target __idf_esp_rom
+[100%] Built target gen_project_binary
+[ 38%] Built target __idf_esp_common
+Bootloader binary size 0x5d40 bytes. 0x22c0 bytes (27%) free.
+[ 44%] Built target __idf_esp_system
+[100%] Built target bootloader_check_size
+[100%] Built target app
+[ 48%] Built target __idf_spi_flash
+[ 48%] No install step for 'bootloader'
+[ 50%] Built target __idf_esp_mm
+[ 50%] Completed 'bootloader'
+[ 50%] Built target __idf_app_update
+[ 51%] Built target bootloader
+[ 54%] Built target __idf_bootloader_support
+[ 55%] Built target __idf_esp_bootloader_format
+[ 56%] Built target __idf_efuse
+[ 56%] Built target __idf_esp_app_format
+[ 59%] Built target mbedtls
+[ 61%] Built target mbedx509
+[ 77%] Built target mbedcrypto
+[ 77%] Built target p256m
+[ 78%] Built target everest
+[ 78%] Built target __idf_mbedtls
+[ 78%] Built target __idf_esp_pm
+[ 79%] Built target __idf_esp_timer
+[ 80%] Built target __idf_esp_driver_gpio
+[ 81%] Built target __idf_xtensa
+[ 81%] Built target __idf_esp_driver_pcnt
+[ 81%] Built target __idf_esp_driver_gptimer
+[ 83%] Built target __idf_esp_driver_i2s
+[ 83%] Built target __idf_esp_driver_spi
+[ 84%] Built target __idf_sdmmc
+[ 84%] Built target __idf_esp_driver_ledc
+[ 85%] Built target __idf_esp_driver_rmt
+[ 87%] Built target __idf_esp_driver_mcpwm
+[ 87%] Built target __idf_esp_driver_sdm
+[ 88%] Built target __idf_esp_driver_tsens
+[ 89%] Built target __idf_esp_driver_i2c
+[ 90%] Built target __idf_wear_levelling
+[ 90%] Built target __idf_esp_driver_sdspi
+[ 91%] Built target __idf_esp_driver_sdmmc
+[ 93%] Built target __idf_fatfs
+[ 95%] Built target __idf_driver
+[ 97%] Built target __idf_esp_adc
+[ 98%] Built target __idf_sd_card
+[ 98%] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/fpga_filesys.c.obj

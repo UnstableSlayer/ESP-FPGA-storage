@@ -1,0 +1,1399 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0xa (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x17ec
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xf28
+load:0x403cb700,len:0x35c8
+entry 0x403c89c8
+[0;32mI (27) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Mar  6 2025 23:38:28[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v0.1[0m
+[0;32mI (32) boot: efuse block revision: v1.2[0m
+[0;32mI (36) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (44) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (84) boot: End of partition table[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0d408h ( 54280) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001d430 vaddr=3fc93400 size=02948h ( 10568) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001fd80 vaddr=40374000 size=00298h (   664) load[0m
+[0;32mI (110) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=2e674h (190068) map[0m
+[0;32mI (144) esp_image: segment 4: paddr=0004e69c vaddr=40374298 size=0f14ch ( 61772) load[0m
+[0;32mI (155) esp_image: segment 5: paddr=0005d7f0 vaddr=600fe100 size=00018h (    24) load[0m
+[0;32mI (161) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (161) boot: Disabling RNG early entropy source...[0m
+[0;32mI (172) cpu_start: Multicore app[0m
+[0;32mI (181) cpu_start: Pro cpu start user code[0m
+[0;32mI (181) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (181) app_init: Application information:[0m
+[0;32mI (181) app_init: Project name:     sd_card[0m
+[0;32mI (185) app_init: App version:      v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (191) app_init: Compile time:     Mar  6 2025 23:38:39[0m
+[0;32mI (196) app_init: ELF file SHA256:  9765697b1...[0m
+[0;32mI (200) app_init: ESP-IDF:          v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (206) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (210) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (214) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (218) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (224) heap_init: At 3FC96688 len 00053088 (332 KiB): RAM[0m
+[0;32mI (230) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (235) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 600FE118 len 00001ED0 (7 KiB): RTCRAM[0m
+[0;32mI (246) spi_flash: detected chip: gd[0m
+[0;32mI (248) spi_flash: flash io: qio[0m
+[0;32mI (251) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (258) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (265) main_task: Started on CPU0[0m
+[0;32mI (305) main_task: Calling app_main()[0m
+[0;32mI (305) SDCARD: Initializing SD card[0m
+[0;32mI (305) SDCARD: Mounting filesystem[0m
+[0;32mI (345) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+[0;32mI (385) SDCARD: Filesystem mounted[0m
+Name: SE32G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 30436MB
+CSD: ver=2, sector_size=512, capacity=62333952 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (385) GEN_FILES: Count: 15[0m
+[0;32mI (535) CURRENT_FILE: size: 4194304[0m
+[0;32mI (10925) FILESYS_WRITE_INC: Writing data and incrementing: 0 to addr: 0[0m
+[1;31mE (10925) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[0;33mW (10925) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (10935) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (10945) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (10955) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (10955) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (10965) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (10975) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (10985) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (10995) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (10995) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11005) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11015) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11025) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11025) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11035) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11045) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11055) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11065) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11065) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11075) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11085) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11095) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11095) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11105) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11115) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11125) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11135) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11135) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11145) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11155) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11165) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11175) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11175) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11185) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11195) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11205) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11205) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11215) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11225) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11235) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11245) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11245) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11255) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11265) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11275) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11275) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11285) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11295) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11305) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11315) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11315) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11325) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11335) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11345) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11345) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11355) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11365) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11375) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11385) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11385) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11395) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11405) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11415) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11425) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11425) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11435) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11445) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11455) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11455) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11465) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11475) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11485) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11495) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11495) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11505) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11515) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11525) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11525) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11535) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11545) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11555) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11565) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11565) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11575) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11585) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11595) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11595) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11605) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11615) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11625) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11635) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11635) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11645) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11655) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11665) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11675) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11675) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11685) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11695) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11705) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11705) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11715) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11725) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11735) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11745) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11745) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11755) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11765) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11775) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11775) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11785) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11795) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11805) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11815) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11815) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11825) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11835) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11845) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11845) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11855) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11865) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11875) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11885) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11885) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11895) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11905) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11915) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11925) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11925) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11935) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11945) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11955) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11955) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11965) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11975) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11985) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11995) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11995) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12005) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12015) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12025) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12025) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12035) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12045) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12055) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12065) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12065) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12075) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12085) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12095) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12095) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12105) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12115) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12125) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12135) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12425) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12425) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12425) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12435) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12445) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12455) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12455) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12465) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12475) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12485) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12485) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12495) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12505) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12515) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12525) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12525) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12535) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12545) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12555) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12555) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12565) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12575) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12585) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12595) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12595) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12605) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12615) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12625) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12635) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12635) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12645) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12655) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12665) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12665) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12675) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12685) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12695) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12705) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12705) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12715) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12725) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12735) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12735) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12745) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12755) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12765) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12775) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12775) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12785) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12795) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12805) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12805) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12815) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12825) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12835) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12845) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12845) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12855) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12865) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12875) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12885) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12885) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12895) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12905) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12915) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12915) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12925) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13215) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13215) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13215) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13225) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13235) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13235) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13245) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13255) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13265) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13265) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13275) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13285) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13295) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13305) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13305) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13315) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13325) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13335) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13335) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13345) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13355) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13365) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13375) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13375) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13385) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13395) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13405) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13415) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13415) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13425) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13435) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13445) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13445) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13455) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13465) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13475) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13485) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13485) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13495) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13505) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13515) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13515) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13525) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13535) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13545) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13555) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13555) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13565) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13575) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13585) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13585) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13595) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13605) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13615) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13625) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13625) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13635) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13645) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13655) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13665) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13665) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13675) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13685) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13695) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13695) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13705) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13715) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13725) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13735) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13735) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13745) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13955) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13955) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13965) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13965) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13975) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13985) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13995) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14005) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14005) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14015) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14025) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14035) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14035) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14045) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14055) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14065) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14075) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14075) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14085) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14095) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14105) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14105) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14115) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14125) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14135) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14145) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14145) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14155) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14165) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14175) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14185) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14185) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14195) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14205) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14345) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14345) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14355) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14365) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14365) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14375) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14385) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14395) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14405) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14405) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14415) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14425) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14435) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14445) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14445) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14455) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14465) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14475) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14475) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14485) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14495) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14505) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14515) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14515) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14525) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14535) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14545) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14545) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14555) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14565) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14575) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14585) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14585) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14595) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14605) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14615) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14615) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14625) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14635) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14645) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14655) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14655) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14665) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14675) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14685) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14695) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14695) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14705) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14715) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14725) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14725) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14735) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14745) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14755) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14765) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14765) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14775) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14785) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14795) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14795) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14805) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14815) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14825) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14835) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14835) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14845) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14855) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14865) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14865) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14875) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14885) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14895) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14905) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14905) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14915) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14925) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14935) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14945) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14945) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14955) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14965) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14975) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14975) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14985) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (14995) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15005) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15015) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15015) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15025) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15035) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15045) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15045) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15055) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15065) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15075) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15085) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15085) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15095) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15105) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15115) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15115) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15125) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15135) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15145) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15155) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15155) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15165) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15175) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15185) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15195) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15195) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15205) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15215) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15225) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15225) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15235) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15245) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15255) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15265) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15265) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15275) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15285) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15295) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15295) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15305) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15315) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15325) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15335) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15335) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15345) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15355) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15365) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15365) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15375) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15385) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15395) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15405) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15405) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15415) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15425) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15435) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15445) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15445) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15455) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15465) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15475) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15475) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15485) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15495) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15505) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15515) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15515) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15525) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15535) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15545) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15545) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15555) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15565) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15575) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15585) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15585) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15595) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15605) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15615) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15615) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15625) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15635) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15645) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15655) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15655) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15665) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15675) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15685) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15695) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15695) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15705) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15715) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15725) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15725) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15735) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15745) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15755) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (15765) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16135) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16135) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16145) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16155) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16155) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16165) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16175) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16185) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16195) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16195) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16205) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16215) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16225) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16235) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16235) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16245) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16255) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16265) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16265) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16275) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16285) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16295) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16305) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16305) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16315) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16325) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16335) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16335) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16345) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16355) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16365) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16375) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16375) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16385) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16395) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16405) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16405) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16415) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16425) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16435) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16445) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16445) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16455) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16465) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16475) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16485) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16485) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16495) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16505) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16515) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16515) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16525) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16535) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16545) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16555) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16555) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16565) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16575) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16585) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16585) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16595) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16605) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16615) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16625) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16625) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16635) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16645) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16655) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16655) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16665) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16675) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16685) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16695) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16695) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16705) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16715) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16725) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16735) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16735) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16745) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16755) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16765) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16765) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16775) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16785) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16795) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16805) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16805) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16815) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16825) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16835) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16835) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16845) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16855) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16865) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16875) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16875) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16885) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16895) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16905) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16905) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16915) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16925) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16935) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16945) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16945) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16955) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16965) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16975) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16975) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16985) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (16995) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17005) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17015) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17015) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17025) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17035) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17045) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17055) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17055) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17065) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17075) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17085) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17085) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17095) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17105) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17115) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17125) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17125) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17135) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17145) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17155) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17155) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17165) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17175) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17185) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17195) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17195) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17205) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17215) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17225) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17225) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17235) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17245) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17255) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17265) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17265) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17275) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17285) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17295) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17305) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17305) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17315) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17325) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17335) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17335) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17345) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17355) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17365) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17375) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17375) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17385) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17395) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17405) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17405) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17415) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17425) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17435) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17445) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17445) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17455) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17465) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17475) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17475) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17485) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17495) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17505) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17515) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17515) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17525) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17535) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17545) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17555) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17555) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17565) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17575) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17585) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17585) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17595) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17605) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17615) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17625) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17625) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17635) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17645) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17655) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17655) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17665) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17675) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17685) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17695) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17695) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17705) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17715) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17725) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17725) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17735) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17745) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17755) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17765) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17765) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17775) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17785) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17795) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17805) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17805) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17815) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17825) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17835) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17835) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17845) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17855) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17865) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17875) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17875) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17885) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17895) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17905) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17905) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17915) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17925) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17935) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17945) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17945) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17955) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17965) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17975) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17975) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17985) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (17995) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18005) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18015) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18015) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18025) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18035) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18045) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18055) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18055) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18065) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18075) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18085) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18085) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18095) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18105) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18115) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18125) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18125) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18135) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18145) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18155) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18155) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18165) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18175) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18185) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18195) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18195) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18205) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18215) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18225) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18225) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18235) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18245) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18255) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18265) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18265) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18275) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18515) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18515) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18515) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18525) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18535) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18545) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18555) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18555) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18565) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18575) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18585) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18585) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18595) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18605) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18615) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18625) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18625) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18635) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18645) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18655) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18655) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18665) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18675) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18685) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18695) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18695) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18705) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18715) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18725) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18725) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18735) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18745) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18755) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18765) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18765) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18775) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18785) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18795) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18805) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18805) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18815) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18825) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18835) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18835) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18845) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18855) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18865) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18875) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18875) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18885) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18895) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18905) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18905) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18915) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18925) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18935) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18945) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18945) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18955) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18965) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18975) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18975) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18985) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18995) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19005) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19015) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19015) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19025) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19035) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19045) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19055) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19055) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19065) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19075) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19085) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19085) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19095) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19105) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19115) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19125) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19125) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19135) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19145) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19155) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19155) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19165) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19175) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19185) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19195) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19195) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19205) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19215) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19225) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19225) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19235) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19245) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19255) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19265) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19265) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19275) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19285) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19295) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19305) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19305) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19315) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19325) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19335) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19335) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19345) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19355) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19365) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19375) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19375) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19385) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19395) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19405) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19405) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19415) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19425) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19435) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19445) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19445) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19455) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19465) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19475) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19475) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19485) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19495) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19505) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19515) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19515) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19525) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19535) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19545) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19555) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19555) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19565) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19575) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19585) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19585) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19595) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19605) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19615) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19625) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19625) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19635) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19645) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19655) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19655) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19665) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19675) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19685) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19695) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19695) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19705) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19715) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19725) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19725) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19735) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19745) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19755) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19765) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19765) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19775) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19785) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19795) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19805) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19805) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19815) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19825) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19835) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19835) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19845) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19855) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19865) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19875) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19875) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19885) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19895) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19905) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19905) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19915) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19925) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19935) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0xb (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x17ec
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xf28
+load:0x403cb700,len:0x35c8
+entry 0x403c89c8
+[0;32mI (27) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Mar  6 2025 23:38:28[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v0.1[0m
+[0;32mI (32) boot: efuse block revision: v1.2[0m
+[0;32mI (36) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (44) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (84) boot: End of partition table[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0d408h ( 54280) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001d430 vaddr=3fc93400 size=02948h ( 10568) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001fd80 vaddr=40374000 size=00298h (   664) load[0m
+[0;32mI (110) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=2e674h (190068) map[0m
+[0;32mI (144) esp_image: segment 4: paddr=0004e69c vaddr=40374298 size=0f14ch ( 61772) load[0m
+[0;32mI (155) esp_image: segment 5: paddr=0005d7f0 vaddr=600fe100 size=00018h (    24) load[0m
+[0;32mI (161) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (161) boot: Disabling RNG early entropy source...[0m
+[0;32mI (172) cpu_start: Multicore app[0m
+[0;32mI (181) cpu_start: Pro cpu start user code[0m
+[0;32mI (181) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (181) app_init: Application information:[0m
+[0;32mI (181) app_init: Project name:     sd_card[0m
+[0;32mI (185) app_init: App version:      v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (191) app_init: Compile time:     Mar  6 2025 23:38:39[0m
+[0;32mI (196) app_init: ELF file SHA256:  9765697b1...[0m
+[0;32mI (200) app_init: ESP-IDF:          v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (206) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (210) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (214) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (218) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (224) heap_init: At 3FC96688 len 00053088 (332 KiB): RAM[0m
+[0;32mI (230) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (235) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 600FE118 len 00001ED0 (7 KiB): RTCRAM[0m
+[0;32mI (246) spi_flash: detected chip: gd[0m
+[0;32mI (248) spi_flash: flash io: qio[0m
+[0;32mI (251) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (258) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (265) main_task: Started on CPU0[0m
+[0;32mI (305) main_task: Calling app_main()[0m
+[0;32mI (305) SDCARD: Initializing SD card[0m
+[0;32mI (305) SDCARD: Mounting filesystem[0m
+[0;32mI (345) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+[0;32mI (385) SDCARD: Filesystem mounted[0m
+Name: SE32G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 30436MB
+CSD: ver=2, sector_size=512, capacity=62333952 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (385) GEN_FILES: Count: 15[0m
+[0;32mI (535) CURRENT_FILE: size: 4194304[0m
+[0;32mI (2605) FILESYS_WRITE_INC: Writing data and incrementing: 0 to addr: 0[0m
+[0;33mW (2605) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (2605) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (2615) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (2625) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (2635) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (2635) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (2645) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (2655) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (2665) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (2675) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (2675) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (2685) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (2695) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (2705) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (2705) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (2715) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (2725) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (2735) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (2745) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (2745) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (2755) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (2765) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (2775) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (2775) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (2785) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (2795) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (2805) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (2805) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (2815) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (2825) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (2835) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (2845) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (2845) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (2855) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (2865) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (2875) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (2875) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (2885) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (2895) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (2905) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (2905) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (2915) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (2925) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (2935) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (2945) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (2945) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (2955) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (2965) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (2975) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (2975) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (2985) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (2995) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (3005) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (3015) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (3015) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (3025) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (3035) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (3045) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (3045) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (3055) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (3065) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (3075) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (3075) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (3085) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (3095) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (3105) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (3115) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (3115) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (3125) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (3135) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (3145) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (3145) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (3155) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (3165) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (3175) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (3185) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (3185) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (3195) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (3205) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (3215) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (3215) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (3225) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (3235) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (3245) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (3245) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (3255) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (3265) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (3275) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (3285) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (3285) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (3295) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x2b (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x17ec
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xf28
+load:0x403cb700,len:0x35c8
+entry 0x403c89c8
+[0;32mI (27) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Mar  6 2025 23:38:28[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v0.1[0m
+[0;32mI (32) boot: efuse block revision: v1.2[0m
+[0;32mI (36) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (44) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (59) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (84) boot: End of partition table[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0d408h ( 54280) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001d430 vaddr=3fc93400 size=02948h ( 10568) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001fd80 vaddr=40374000 size=00298h (   664) load[0m
+[0;32mI (110) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=2e674h (190068) map[0m
+[0;32mI (144) esp_image: segment 4: paddr=0004e69c vaddr=40374298 size=0f14ch ( 61772) load[0m
+[0;32mI (155) esp_image: segment 5: paddr=0005d7f0 vaddr=600fe100 size=00018h (    24) load[0m
+[0;32mI (161) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (161) boot: Disabling RNG early entropy source...[0m
+[0;32mI (172) cpu_start: Multicore app[0m
+[0;32mI (181) cpu_start: Pro cpu start user code[0m
+[0;32mI (181) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (181) app_init: Application information:[0m
+[0;32mI (181) app_init: Project name:     sd_card[0m
+[0;32mI (185) app_init: App version:      v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (191) app_init: Compile time:     Mar  6 2025 23:38:39[0m
+[0;32mI (196) app_init: ELF file SHA256:  9765697b1...[0m
+[0;32mI (201) app_init: ESP-IDF:          v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (207) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (210) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (214) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (218) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (224) heap_init: At 3FC96688 len 00053088 (332 KiB): RAM[0m
+[0;32mI (230) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (235) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 600FE118 len 00001ED0 (7 KiB): RTCRAM[0m
+[0;32mI (246) spi_flash: detected chip: gd[0m
+[0;32mI (249) spi_flash: flash io: qio[0m
+[0;32mI (252) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (258) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (265) main_task: Started on CPU0[0m
+[0;32mI (305) main_task: Calling app_main()[0m
+[0;32mI (305) SDCARD: Initializing SD card[0m
+[0;32mI (305) SDCARD: Mounting filesystem[0m
+[0;32mI (305) sdspi_transaction: cmd=52, R1 response: command CRC error[0m
+[1;31mE (305) sdmmc_io: sdmmc_io_reset: unexpected return: 0x109[0m
+[1;31mE (315) vfs_fat_sdmmc: sdmmc_card_init failed (0x109).[0m
+[1;31mE (315) SDCARD: Failed to initialize the card (ESP_ERR_INVALID_CRC). Make sure SD card lines have pull-up resistors in place.[0m
+[1;31mE (335) FILESYS_INIT: Failed to initialize sdcard[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0xa (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x17ec
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xf28
+load:0x403cb700,len:0x35c8
+entry 0x403c89c8
+[0;32mI (27) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Mar  6 2025 23:38:28[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v0.1[0m
+[0;32mI (32) boot: efuse block revision: v1.2[0m
+[0;32mI (36) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (44) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (84) boot: End of partition table[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0d408h ( 54280) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001d430 vaddr=3fc93400 size=02948h ( 10568) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001fd80 vaddr=40374000 size=00298h (   664) load[0m
+[0;32mI (110) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=2e674h (190068) map[0m
+[0;32mI (144) esp_image: segment 4: paddr=0004e69c vaddr=40374298 size=0f14ch ( 61772) load[0m
+[0;32mI (155) esp_image: segment 5: paddr=0005d7f0 vaddr=600fe100 size=00018h (    24) load[0m
+[0;32mI (161) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (161) boot: Disabling RNG early entropy source...[0m
+[0;32mI (172) cpu_start: Multicore app[0m
+[0;32mI (181) cpu_start: Pro cpu start user code[0m
+[0;32mI (181) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (181) app_init: Application information:[0m
+[0;32mI (181) app_init: Project name:     sd_card[0m
+[0;32mI (185) app_init: App version:      v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (191) app_init: Compile time:     Mar  6 2025 23:38:39[0m
+[0;32mI (196) app_init: ELF file SHA256:  9765697b1...[0m
+[0;32mI (200) app_init: ESP-IDF:          v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (206) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (210) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (214) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (218) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (224) heap_init: At 3FC96688 len 00053088 (332 KiB): RAM[0m
+[0;32mI (230) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (235) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 600FE118 len 00001ED0 (7 KiB): RTCRAM[0m
+[0;32mI (246) spi_flash: detected chip: gd[0m
+[0;32mI (248) spi_flash: flash io: qio[0m
+[0;32mI (251) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (258) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (265) main_task: Started on CPU0[0m
+[0;32mI (305) main_task: Calling app_main()[0m
+[0;32mI (305) SDCARD: Initializing SD card[0m
+[0;32mI (305) SDCARD: Mounting filesystem[0m
+[0;32mI (345) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+[0;32mI (385) SDCARD: Filesystem mounted[0m
+Name: SE32G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 30436MB
+CSD: ver=2, sector_size=512, capacity=62333952 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (385) GEN_FILES: Count: 15[0m
+[0;32mI (535) CURRENT_FILE: size: 4194304[0m
+[0;32mI (2485) FILESYS_WRITE_INC: Writing data and incrementing: 0 to addr: 0[0m
+[0;32mI (2655) FILESYS_SET_PAGE_ID: Setting page id to 12582912[0m
+[0;32mI (2775) FILESYS_SET_PAGE_ID: Setting page id to 4194304[0m
+[0;32mI (2915) FILESYS_SET_PAGE_ID: Setting page id to 12582912[0m
+[0;32mI (3145) FILESYS_SET_PAGE_ID: Setting page id to 4194304[0m
+[0;32mI (3285) FILESYS_SET_PAGE_ID: Setting page id to 4194304[0m
+[0;32mI (3435) FILESYS_SET_PAGE_ID: Setting page id to 12582912[0m
+[0;32mI (3565) FILESYS_SET_PAGE_ID: Setting page id to 4194304[0m
+[0;32mI (3695) FILESYS_SET_PAGE_ID: Setting page id to 4194304[0m
+[0;32mI (4245) FILESYS_SET_PAGE_ID: Setting page id to 4194304[0m
+[0;32mI (4395) FILESYS_SET_PAGE_ID: Setting page id to 4194304[0m
+[0;32mI (4995) FILESYS_SET_PAGE_ID: Setting page id to 12582912[0m
+[0;32mI (5085) FILESYS_SET_PAGE_ID: Setting page id to 4194304[0m
+[1;31mE (5115) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[0;32mI (5565) FILESYS_SET_PAGE_ID: Setting page id to 12582912[0m
+[0;32mI (5655) FILESYS_SET_PAGE_ID: Setting page id to 4194304[0m
+[0;32mI (5975) FILESYS_SET_PAGE_ID: Setting page id to 4194304[0m
+[0;32mI (6245) FILESYS_SET_PAGE_ID: Setting page id to 4194304[0m
+[0;32mI (6485) FILESYS_WRITE_INC: Writing data and incrementing: 0 to addr: 10000[0m
+[0;32mI (6665) FILESYS_SET_PAGE_ID: Setting page id to 4194304[0m
+[0;32mI (6835) FILESYS_SET_PAGE_ID: Setting page id to 4194304[0m
+[0;32mI (7005) FILESYS_SET_PAGE_ID: Setting page id to 12582912[0m
+[0;32mI (7425) FILESYS_SET_PAGE_ID: Setting page id to 4194304[0m
+[0;32mI (7615) FILESYS_SET_PAGE_ID: Setting page id to 4194304[0m
+[0;32mI (7895) FILESYS_SET_PAGE_ID: Setting page id to 4194304[0m
+[0;32mI (7895) FILESYS_SET_PAGE_ID: Setting page id to 4194304[0m
+[0;32mI (7925) FILESYS_SET_PAGE_ID: Setting page id to 12582912[0m
+[0;32mI (7955) FILESYS_SET_PAGE_ID: Setting page id to 12582912[0m
+[1;31mE (7955) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[0;32mI (8065) FILESYS_SET_PAGE_ID: Setting page id to 4194304[0m
+[0;32mI (8075) FILESYS_SET_PAGE_ID: Setting page id to 4194304[0m
+[1;31mE (8175) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[0;32mI (8355) FILESYS_SET_PAGE_ID: Setting page id to 4194304[0m
+[0;32mI (8535) FILESYS_SET_PAGE_ID: Setting page id to 4194304[0m
+[0;32mI (8635) FILESYS_SET_PAGE_ID: Setting page id to 4194304[0m
+[1;31mE (8885) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[0;32mI (9005) FILESYS_SET_PAGE_ID: Setting page id to 12582912[0m
+[0;32mI (9295) FILESYS_SET_PAGE_ID: Setting page id to 4194304[0m
+[0;32mI (9295) FILESYS_SET_PAGE_ID: Setting page id to 4194304[0m
+[0;32mI (9305) FILESYS_SET_PAGE_ID: Setting page id to 12582912[0m
+[0;32mI (9385) FILESYS_SET_PAGE_ID: Setting page id to 12582912[0m
+[0;32mI (11175) FILESYS_SET_PAGE_ID: Setting page id to 4194304[0m
+[0;32mI (11255) FILESYS_SET_PAGE_ID: Setting page id to 4194304[0m
+[0;32mI (11315) FILESYS_SET_PAGE_ID: Setting page id to 4194304[0m
+[0;32mI (11385) FILESYS_SET_PAGE_ID: Setting page id to 4194304[0m
+[1;31mE (11395) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[0;32mI (11415) FILESYS_SET_PAGE_ID: Setting page id to 4194304[0m
+[0;32mI (11475) FILESYS_SET_PAGE_ID: Setting page id to 12582912[0m
+[0;32mI (11565) FILESYS_SET_PAGE_ID: Setting page id to 4194304[0m
+[0;32mI (11675) FILESYS_WRITE_INC: Writing data and incrementing: 0 to addr: 20000[0m
+[0;32mI (11705) FILESYS_SET_PAGE_ID: Setting page id to 4194304[0m
+[0;32mI (11765) FILESYS_SET_PAGE_ID: Setting page id to 4194304[0m
+[0;32mI (11775) FILESYS_SET_PAGE_ID: Setting page id to 4194304[0m
+[1;31mE (12055) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[0;32mI (12195) FILESYS_SET_PAGE_ID: Setting page id to 4194304[0m
+[1;31mE (13235) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[0;32mI (13345) FILESYS_SET_PAGE_ID: Setting page id to 4194304[0m
+[0;32mI (13375) FILESYS_SET_PAGE_ID: Setting page id to 4194304[0m
+[0;32mI (13375) FILESYS_SET_PAGE_ID: Setting page id to 4194304[0m
+[1;31mE (13545) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[0;32mI (13625) FILESYS_SET_PAGE_ID: Setting page id to 4194304[0m
+[0;32mI (13795) FILESYS_SET_PAGE_ID: Setting page id to 4194304[0m
+[0;32mI (13845) FILESYS_SET_PAGE_ID: Setting page id to 4194304[0m
+[0;32mI (13985) FILESYS_SET_PAGE_ID: Setting page id to 4194304[0m

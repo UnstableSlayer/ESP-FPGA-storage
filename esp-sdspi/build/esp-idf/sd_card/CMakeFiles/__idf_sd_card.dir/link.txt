@@ -1,0 +1,2 @@
+/home/unstable/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/xtensa-esp32s3-elf-ar qc libsd_card.a CMakeFiles/__idf_sd_card.dir/sd_test_io.c.obj
+/home/unstable/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/xtensa-esp32s3-elf-ranlib libsd_card.a

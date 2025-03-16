@@ -1,0 +1,28 @@
+esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/debug_stubs.c.obj: \
+ /home/unstable/Documents/esp-idf/components/esp_system/port/arch/xtensa/debug_stubs.c \
+ /home/unstable/Documents/esp-idf/components/xtensa/include/eri.h \
+ /home/unstable/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/include/stdint.h \
+ /home/unstable/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/xtensa-esp-elf/include/stdint.h \
+ /home/unstable/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/xtensa-esp-elf/include/machine/_default_types.h \
+ /home/unstable/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/xtensa-esp-elf/include/sys/features.h \
+ /home/unstable/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/xtensa-esp-elf/include/_newlib_version.h \
+ /home/unstable/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/xtensa-esp-elf/include/sys/_intsup.h \
+ /home/unstable/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/xtensa-esp-elf/include/sys/_stdint.h \
+ /home/unstable/Documents/esp-idf/components/xtensa/include/xtensa-debug-module.h \
+ /home/unstable/Documents/esp-idf/components/xtensa/esp32s3/include/xtensa/config/core-isa.h \
+ /home/unstable/Documents/esp-idf/components/log/include/esp_log.h \
+ /home/unstable/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/include/stdarg.h \
+ /home/unstable/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/xtensa-esp-elf/include/inttypes.h \
+ /home/unstable/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/xtensa-esp-elf/include/newlib.h \
+ /home/unstable/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/xtensa-esp-elf/include/sys/config.h \
+ /home/unstable/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/xtensa-esp-elf/include/machine/ieeefp.h \
+ /home/unstable/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/xtensa-esp-elf/include/_ansi.h \
+ /home/unstable/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/include/stddef.h \
+ /home/unstable/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/xtensa-esp-elf/include/sys/_locale.h \
+ /home/unstable/Documents/esp-idf/examples/storage/sd_card/sdspi/build/config/sdkconfig.h \
+ /home/unstable/Documents/esp-idf/components/esp_rom/include/esp_rom_sys.h \
+ /home/unstable/Documents/esp-idf/components/soc/esp32s3/include/soc/reset_reasons.h \
+ /home/unstable/Documents/esp-idf/components/log/include/esp_log_level.h \
+ /home/unstable/Documents/esp-idf/components/log/include/esp_log_color.h \
+ /home/unstable/Documents/esp-idf/components/log/include/esp_log_buffer.h \
+ /home/unstable/Documents/esp-idf/components/log/include/esp_log_timestamp.h

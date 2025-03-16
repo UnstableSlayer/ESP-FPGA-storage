@@ -1,0 +1,636 @@
+t: 15I (18885) STATE: 2
+[0;32mI (18885) RESPONSE: Sending response: 150929408[0m
+[0;32mI (18895) STATE: 2[0m
+[0;32mI (18895) RESPONSE: Sending response: 150929408[0m
+[0;32mI (18905) STATE: 2[0m
+[0;32mI (18905) RESPONSE: Sending response: 150929408[0m
+[0;32mI (18925) STATE: 2[0m
+[0;32mI (18925) RESPONSE: Sending rt: 15[0m
+[0;32mI (535) CURRENT_FILE: size: 4194304[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0xa (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x17ec
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xf28
+load:0x403cb700,len:0x35c8
+entry 0x403c89c8
+[0;32mI (27) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Mar  6 2025 23:38:28[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v0.1[0m
+[0;32mI (32) boot: efuse block revision: v1.2[0m
+[0;32mI (36) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (44) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (84) boot: End of partition table[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0d468h ( 54376) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001d490 vaddr=3fc93400 size=02948h ( 10568) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001fde0 vaddr=40374000 size=00238h (   568) load[0m
+[0;32mI (110) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=2e780h (190336) map[0m
+[0;32mI (144) esp_image: segment 4: paddr=0004e7a8 vaddr=40374238 size=0f1ach ( 61868) load[0m
+[0;32mI (155) esp_image: segment 5: paddr=0005d95c vaddr=600fe100 size=00018h (    24) load[0m
+[0;32mI (161) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (161) boot: Disabling RNG early entropy source...[0m
+[0;32mI (172) cpu_start: Multicore app[0m
+[0;32mI (181) cpu_start: Pro cpu start user code[0m
+[0;32mI (181) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (181) app_init: Application information:[0m
+[0;32mI (181) app_init: Project name:     sd_card[0m
+[0;32mI (185) app_init: App version:      v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (191) app_init: Compile time:     Mar  6 2025 23:38:39[0m
+[0;32mI (196) app_init: ELF file SHA256:  bf9905e3a...[0m
+[0;32mI (201) app_init: ESP-IDF:          v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (206) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (210) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (214) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (218) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (224) heap_init: At 3FC96698 len 00053078 (332 KiB): RAM[0m
+[0;32mI (230) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (235) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 600FE118 len 00001ED0 (7 KiB): RTCRAM[0m
+[0;32mI (246) spi_flash: detected chip: gd[0m
+[0;32mI (249) spi_flash: flash io: qio[0m
+[0;32mI (252) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (258) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (265) main_task: Started on CPU0[0m
+[0;32mI (305) main_task: Calling app_main()[0m
+[0;32mI (305) SDCARD: Initializing SD card[0m
+[0;32mI (305) SDCARD: Mounting filesystem[0m
+[0;32mI (345) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+[0;32mI (385) SDCARD: Filesystem mounted[0m
+Name: SE32G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 30436MB
+CSD: ver=2, sector_size=512, capacity=62333952 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (385) GEN_FILES: Count: 15[0m
+[0;32mI (535) CURRENT_FILE: size: 4194304[0m
+[0;32mI (185695) STATE: 0[0m
+[0;32mI (196035) STATE: 1[0m
+[0;32mI (196035) PINS_READ: READ VALUE: 117440512[0m
+[0;32mI (196035) FPGA_FILESYS_HANDLE_COMMAND: Handling incoming command: 117440512[0m
+[0;32mI (196235) STATE: 2[0m
+[0;32mI (196235) RESPONSE: Sending response: 150929408[0m
+[0;32mI (196435) STATE: 2[0m
+[0;32mI (196435) RESPONSE: Sending response: 150929408[0m
+[0;32mI (196635) STATE: 2[0m
+[0;32mI (196635) RESPONSE: Sending response: 150929408[0m
+[0;32mI (196835) STATE: 2[0m
+[0;32mI (196835) RESPONSE: Sending response: 150929408[0m
+[0;32mI (197035) STATE: 2[0m
+[0;32mI (197035) RESPONSE: Sending response: 150929408[0m
+[0;32mI (197235) STATE: 2[0m
+[0;32mI (197235) RESPONSE: Sending response: 150929408[0m
+[0;32mI (197435) STATE: 2[0m
+[0;32mI (197435) RESPONSE: Sending response: 150929408[0m
+[0;32mI (197635) STATE: 2[0m
+[0;32mI (197635) RESPONSE: Sending response: 150929408[0m
+[0;32mI (197835) STATE: 2[0m
+[0;32mI (197835) RESPONSE: Sending response: 150929408[0m
+[0;32mI (198035) STATE: 2[0m
+[0;32mI (198035) RESPONSE: Sending response: 150929408[0m
+[0;32mI (198235) STATE: 2[0m
+[0;32mI (198235) RESPONSE: Sending response: 150929408[0m
+[0;32mI (198435) STATE: 2[0m
+[0;32mI (198435) RESPONSE: Sending response: 150929408[0m
+[0;32mI (198635) STATE: 2[0m
+[0;32mI (198635) RESPONSE: Sending response: 150929408[0m
+[0;32mI (198835) STATE: 2[0m
+[0;32mI (198835) RESPONSE: Sending response: 150929408[0m
+[0;32mI (199035) STATE: 2[0m
+[0;32mI (199035) RESPONSE: Sending response: 150929408[0m
+[0;32mI (199235) STATE: 2[0m
+[0;32mI (199235) RESPONSE: Sending response: 150929408[0m
+[0;32mI (199435) STATE: 2[0m
+[0;32mI (199435) RESPONSE: Sending response: 150929408[0m
+[0;32mI (199635) STATE: 2[0m
+[0;32mI (199635) RESPONSE: Sending response: 150929408[0m
+[0;32mI (199835) STATE: 2[0m
+[0;32mI (199835) RESPONSE: Sending response: 150929408[0m
+[0;32mI (200035) STATE: 2[0m
+[0;32mI (200035) RESPONSE: Sending response: 150929408[0m
+[0;32mI (200235) STATE: 2[0m
+[0;32mI (200235) RESPONSE: Sending response: 150929408[0m
+[0;32mI (200435) STATE: 2[0m
+[0;32mI (200435) RESPONSE: Sending response: 150929408[0m
+[0;32mI (200635) STATE: 2[0m
+[0;32mI (200635) RESPONSE: Sending response: 150929408[0m
+[0;32mI (200835) STATE: 2[0m
+[0;32mI (200835) RESPONSE: Sending response: 150929408[0m
+[0;32mI (201035) STATE: 2[0m
+[0;32mI (201035) RESPONSE: Sending response: 150929408[0m
+[0;32mI (201235) STATE: 2[0m
+[0;32mI (201235) RESPONSE: Sending response: 150929408[0m
+[0;32mI (201435) STATE: 2[0m
+[0;32mI (201435) RESPONSE: Sending response: 150929408[0m
+[0;32mI (201635) STATE: 2[0m
+[0;32mI (201635) RESPONSE: Sending response: 150929408[0m
+[0;32mI (201835) STATE: 2[0m
+[0;32mI (201835) RESPONSE: Sending response: 150929408[0m
+[0;32mI (202035) STATE: 2[0m
+[0;32mI (202035) RESPONSE: Sending response: 150929408[0m
+[0;32mI (202235) STATE: 2[0m
+[0;32mI (202235) RESPONSE: Sending response: 150929408[0m
+[0;32mI (202435) STATE: 2[0m
+[0;32mI (202435) RESPONSE: Sending response: 150929408[0m
+[0;32mI (202635) STATE: 2[0m
+[0;32mI (202635) RESPONSE: Sending response: 150929408[0m
+[0;32mI (202835) STATE: 2[0m
+[0;32mI (202835) RESPONSE: Sending response: 150929408[0m
+[0;32mI (203035) STATE: 2[0m
+[0;32mI (203035) RESPONSE: Sending response: 150929408[0m
+[0;32mI (203235) STATE: 2[0m
+[0;32mI (203235) RESPONSE: Sending response: 150929408[0m
+[0;32mI (203435) STATE: 2[0m
+[0;32mI (203435) RESPONSE: Sending response: 150929408[0m
+[0;32mI (203635) STATE: 2[0m
+[0;32mI (203635) RESPONSE: Sending response: 150929408[0m
+[0;32mI (203835) STATE: 2[0m
+[0;32mI (203835) RESPONSE: Sending response: 150929408[0m
+[0;32mI (204035) STATE: 2[0m
+[0;32mI (204035) RESPONSE: Sending response: 150929408[0m
+[0;32mI (204235) STATE: 2[0m
+[0;32mI (204235) RESPONSE: Sending response: 150929408[0m
+[0;32mI (204435) STATE: 2[0m
+[0;32mI (204435) RESPONSE: Sending response: 150929408[0m
+[0;32mI (204635) STATE: 2[0m
+[0;32mI (204635) RESPONSE: Sending response: 150929408[0m
+[0;32mI (204835) STATE: 2[0m
+[0;32mI (204835) RESPONSE: Sending response: 150929408[0m
+[0;32mI (205035) STATE: 2[0m
+[0;32mI (205035) RESPONSE: Sending response: 150929408[0m
+[0;32mI (205235) STATE: 2[0m
+[0;32mI (205235) RESPONSE: Sending response: 150929408[0m
+[0;32mI (205435) STATE: 2[0m
+[0;32mI (205435) RESPONSE: Sending response: 150929408[0m
+[0;32mI (205635) STATE: 2[0m
+[0;32mI (205635) RESPONSE: Sending response: 150929408[0m
+[0;32mI (205835) STATE: 2[0m
+[0;32mI (205835) RESPONSE: Sending response: 150929408[0m
+[0;32mI (206035) STATE: 2[0m
+[0;32mI (206035) RESPONSE: Sending response: 150929408[0m
+[0;32mI (206235) STATE: 2[0m
+[0;32mI (206235) RESPONSE: Sending response: 150929408[0m
+[0;32mI (206435) STATE: 2[0m
+[0;32mI (206435) RESPONSE: Sending response: 150929408[0m
+[0;32mI (206635) STATE: 2[0m
+[0;32mI (206635) RESPONSE: Sending response: 150929408[0m
+[0;32mI (206835) STATE: 2[0m
+[0;32mI (206835) RESPONSE: Sending response: 150929408[0m
+[0;32mI (207035) STATE: 2[0m
+[0;32mI (207035) RESPONSE: Sending response: 150929408[0m
+[0;32mI (207235) STATE: 2[0m
+[0;32mI (207235) RESPONSE: Sending response: 150929408[0m
+[0;32mI (207435) STATE: 2[0m
+[0;32mI (207435) RESPONSE: Sending response: 150929408[0m
+[0;32mI (207635) STATE: 2[0m
+[0;32mI (207635) RESPONSE: Sending response: 150929408[0m
+[0;32mI (207835) STATE: 2[0m
+[0;32mI (207835) RESPONSE: Sending response: 150929408[0m
+[0;32mI (208035) STATE: 2[0m
+[0;32mI (208035) RESPONSE: Sending response: 150929408[0m
+[0;32mI (208235) STATE: 2[0m
+[0;32mI (208235) RESPONSE: Sending response: 150929408[0m
+[0;32mI (208435) STATE: 2[0m
+[0;32mI (208435) RESPONSE: Sending response: 150929408[0m
+[0;32mI (208635) STATE: 2[0m
+[0;32mI (208635) RESPONSE: Sending response: 150929408[0m
+[0;32mI (208835) STATE: 2[0m
+[0;32mI (208835) RESPONSE: Sending response: 150929408[0m
+[0;32mI (209035) STATE: 2[0m
+[0;32mI (209035) RESPONSE: Sending response: 150929408[0m
+[0;32mI (209235) STATE: 2[0m
+[0;32mI (209235) RESPONSE: Sending response: 150929408[0m
+[0;32mI (209435) STATE: 2[0m
+[0;32mI (209435) RESPONSE: Sending response: 150929408[0m
+[0;32mI (209635) STATE: 2[0m
+[0;32mI (209635) RESPONSE: Sending response: 150929408[0m
+[0;32mI (209835) STATE: 2[0m
+[0;32mI (209835) RESPONSE: Sending response: 150929408[0m
+[0;32mI (210035) STATE: 2[0m
+[0;32mI (210035) RESPONSE: Sending response: 150929408[0m
+[0;32mI (210235) STATE: 2[0m
+[0;32mI (210235) RESPONSE: Sending response: 150929408[0m
+[0;32mI (210435) STATE: 2[0m
+[0;32mI (210435) RESPONSE: Sending response: 150929408[0m
+[0;32mI (210635) STATE: 2[0m
+[0;32mI (210635) RESPONSE: Sending response: 150929408[0m
+[0;32mI (210835) STATE: 2[0m
+[0;32mI (210835) RESPONSE: Sending response: 150929408[0m
+[0;32mI (211035) STATE: 2[0m
+[0;32mI (211035) RESPONSE: Sending response: 150929408[0m
+[0;32mI (211235) STATE: 2[0m
+[0;32mI (211235) RESPONSE: Sending response: 150929408[0m
+[0;32mI (211435) STATE: 2[0m
+[0;32mI (211435) RESPONSE: Sending response: 150929408[0m
+[0;32mI (211635) STATE: 2[0m
+[0;32mI (211635) RESPONSE: Sending response: 150929408[0m
+[0;32mI (211835) STATE: 2[0m
+[0;32mI (211835) RESPONSE: Sending response: 150929408[0m
+[0;32mI (212035) STATE: 2[0m
+[0;32mI (212035) RESPONSE: Sending response: 150929408[0m
+[0;32mI (212235) STATE: 2[0m
+[0;32mI (212235) RESPONSE: Sending response: 150929408[0m
+[0;32mI (212435) STATE: 2[0m
+[0;32mI (212435) RESPONSE: Sending response: 150929408[0m
+[0;32mI (212635) STATE: 2[0m
+[0;32mI (212635) RESPONSE: Sending response: 150929408[0m
+[0;32mI (212835) STATE: 2[0m
+[0;32mI (212835) RESPONSE: Sending response: 150929408[0m
+[0;32mI (213035) STATE: 2[0m
+[0;32mI (213035) RESPONSE: Sending response: 150929408[0m
+[0;32mI (213235) STATE: 2[0m
+[0;32mI (213235) RESPONSE: Sending response: 150929408[0m
+[0;32mI (213435) STATE: 2[0m
+[0;32mI (213435) RESPONSE: Sending response: 150929408[0m
+[0;32mI (213635) STATE: 2[0m
+[0;32mI (213635) RESPONSE: Sending response: 150929408[0m
+[0;32mI (213835) STATE: 2[0m
+[0;32mI (213835) RESPONSE: Sending response: 150929408[0m
+[0;32mI (214035) STATE: 2[0m
+[0;32mI (214035) RESPONSE: Sending response: 150929408[0m
+[0;32mI (214235) STATE: 2[0m
+[0;32mI (214235) RESPONSE: Sending response: 150929408[0m
+[0;32mI (214435) STATE: 2[0m
+[0;32mI (214435) RESPONSE: Sending response: 150929408[0m
+[0;32mI (214635) STATE: 2[0m
+[0;32mI (214635) RESPONSE: Sending response: 150929408[0m
+[0;32mI (214835) STATE: 2[0m
+[0;32mI (214835) RESPONSE: Sending response: 150929408[0m
+[0;32mI (215035) STATE: 2[0m
+[0;32mI (215035) RESPONSE: Sending response: 150929408[0m
+[0;32mI (215235) STATE: 2[0m
+[0;32mI (215235) RESPONSE: Sending response: 150929408[0m
+[0;32mI (215435) STATE: 2[0m
+[0;32mI (215435) RESPONSE: Sending response: 150929408[0m
+[0;32mI (215635) STATE: 2[0m
+[0;32mI (215635) RESPONSE: Sending response: 150929408[0m
+[0;32mI (215835) STATE: 2[0m
+[0;32mI (215835) RESPONSE: Sending response: 150929408[0m
+[0;32mI (216035) STATE: 2[0m
+[0;32mI (216035) RESPONSE: Sending response: 150929408[0m
+[0;32mI (216235) STATE: 2[0m
+[0;32mI (216235) RESPONSE: Sending response: 150929408[0m
+[0;32mI (216435) STATE: 2[0m
+[0;32mI (216435) RESPONSE: Sending response: 150929408[0m
+[0;32mI (216635) STATE: 2[0m
+[0;32mI (216635) RESPONSE: Sending response: 150929408[0m
+[0;32mI (216835) STATE: 2[0m
+[0;32mI (216835) RESPONSE: Sending response: 150929408[0m
+[0;32mI (217035) STATE: 2[0m
+[0;32mI (217035) RESPONSE: Sending response: 150929408[0m
+[0;32mI (217235) STATE: 2[0m
+[0;32mI (217235) RESPONSE: Sending response: 150929408[0m
+[0;32mI (217435) STATE: 2[0m
+[0;32mI (217435) RESPONSE: Sending response: 150929408[0m
+[0;32mI (217635) STATE: 2[0m
+[0;32mI (217635) RESPONSE: Sending response: 150929408[0m
+[0;32mI (217835) STATE: 2[0m
+[0;32mI (217835) RESPONSE: Sending response: 150929408[0m
+[0;32mI (218035) STATE: 2[0m
+[0;32mI (218035) RESPONSE: Sending response: 150929408[0m
+[0;32mI (218235) STATE: 2[0m
+[0;32mI (218235) RESPONSE: Sending response: 150929408[0m
+[0;32mI (218435) STATE: 2[0m
+[0;32mI (218435) RESPONSE: Sending response: 150929408[0m
+[0;32mI (218635) STATE: 2[0m
+[0;32mI (218635) RESPONSE: Sending response: 150929408[0m
+[0;32mI (218835) STATE: 2[0m
+[0;32mI (218835) RESPONSE: Sending response: 150929408[0m
+[0;32mI (219035) STATE: 2[0m
+[0;32mI (219035) RESPONSE: Sending response: 150929408[0m
+[0;32mI (219235) STATE: 2[0m
+[0;32mI (219235) RESPONSE: Sending response: 150929408[0m
+[0;32mI (219435) STATE: 2[0m
+[0;32mI (219435) RESPONSE: Sending response: 150929408[0m
+[0;32mI (219635) STATE: 2[0m
+[0;32mI (219635) RESPONSE: Sending response: 150929408[0m
+[0;32mI (219835) STATE: 2[0m
+[0;32mI (219835) RESPONSE: Sending response: 150929408[0m
+[0;32mI (220035) STATE: 2[0m
+[0;32mI (220035) RESPONSE: Sending response: 150929408[0m
+[0;32mI (220235) STATE: 2[0m
+[0;32mI (220235) RESPONSE: Sending response: 150929408[0m
+[0;32mI (220435) STATE: 2[0m
+[0;32mI (220435) RESPONSE: Sending response: 150929408[0m
+[0;32mI (220635) STATE: 2[0m
+[0;32mI (220635) RESPONSE: Sending response: 150929408[0m
+[0;32mI (220835) STATE: 2[0m
+[0;32mI (220835) RESPONSE: Sending response: 150929408[0m
+[0;32mI (221035) STATE: 2[0m
+[0;32mI (221035) RESPONSE: Sending response: 150929408[0m
+[0;32mI (221235) STATE: 2[0m
+[0;32mI (221235) RESPONSE: Sending response: 150929408[0m
+[0;32mI (221435) STATE: 2[0m
+[0;32mI (221435) RESPONSE: Sending response: 150929408[0m
+[0;32mI (221635) STATE: 2[0m
+[0;32mI (221635) RESPONSE: Sending response: 150929408[0m
+[0;32mI (221835) STATE: 2[0m
+[0;32mI (221835) RESPONSE: Sending response: 150929408[0m
+[0;32mI (222035) STATE: 2[0m
+[0;32mI (222035) RESPONSE: Sending response: 150929408[0m
+[0;32mI (222235) STATE: 2[0m
+[0;32mI (222235) RESPONSE: Sending response: 150929408[0m
+[0;32mI (222435) STATE: 2[0m
+[0;32mI (222435) RESPONSE: Sending response: 150929408[0m
+[0;32mI (222635) STATE: 2[0m
+[0;32mI (222635) RESPONSE: Sending response: 150929408[0m
+[0;32mI (222835) STATE: 2[0m
+[0;32mI (222835) RESPONSE: Sending response: 150929408[0m
+[0;32mI (223035) STATE: 2[0m
+[0;32mI (223035) RESPONSE: Sending response: 150929408[0m
+[0;32mI (223235) STATE: 2[0m
+[0;32mI (223235) RESPONSE: Sending response: 150929408[0m
+[0;32mI (223435) STATE: 2[0m
+[0;32mI (223435) RESPONSE: Sending response: 150929408[0m
+[0;32mI (223635) STATE: 2[0m
+[0;32mI (223635) RESPONSE: Sending response: 150929408[0m
+[0;32mI (223835) STATE: 2[0m
+[0;32mI (223835) RESPONSE: Sending response: 150929408[0m
+[0;32mI (224035) STATE: 2[0m
+[0;32mI (224035) RESPONSE: Sending response: 150929408[0m
+[0;32mI (224235) STATE: 2[0m
+[0;32mI (224235) RESPONSE: Sending response: 150929408[0m
+[0;32mI (224435) STATE: 2[0m
+[0;32mI (224435) RESPONSE: Sending response: 150929408[0m
+[0;32mI (224635) STATE: 2[0m
+[0;32mI (224635) RESPONSE: Sending response: 150929408[0m
+[0;32mI (224835) STATE: 2[0m
+[0;32mI (224835) RESPONSE: Sending response: 150929408[0m
+[0;32mI (225035) STATE: 2[0m
+[0;32mI (225035) RESPONSE: Sending response: 150929408[0m
+[0;32mI (225235) STATE: 2[0m
+[0;32mI (225235) RESPONSE: Sending response: 150929408[0m
+[0;32mI (225435) STATE: 2[0m
+[0;32mI (225435) RESPONSE: Sending response: 150929408[0m
+[0;32mI (225635) STATE: 2[0m
+[0;32mI (225635) RESPONSE: Sending response: 150929408[0m
+[0;32mI (225835) STATE: 2[0m
+[0;32mI (225835) RESPONSE: Sending response: 150929408[0m
+[0;32mI (226035) STATE: 2[0m
+[0;32mI (226035) RESPONSE: Sending response: 150929408[0m
+[0;32mI (226235) STATE: 2[0m
+[0;32mI (226235) RESPONSE: Sending response: 150929408[0m
+[0;32mI (226435) STATE: 2[0m
+[0;32mI (226435) RESPONSE: Sending response: 150929408[0m
+[0;32mI (226635) STATE: 2[0m
+[0;32mI (226635) RESPONSE: Sending response: 150929408[0m
+[0;32mI (226835) STATE: 2[0m
+[0;32mI (226835) RESPONSE: Sending response: 150929408[0m
+[0;32mI (227035) STATE: 2[0m
+[0;32mI (227035) RESPONSE: Sending response: 150929408[0m
+[0;32mI (227235) STATE: 2[0m
+[0;32mI (227235) RESPONSE: Sending response: 150929408[0m
+[0;32mI (227435) STATE: 2[0m
+[0;32mI (227435) RESPONSE: Sending response: 150929408[0m
+[0;32mI (227635) STATE: 2[0m
+[0;32mI (227635) RESPONSE: Sending response: 150929408[0m
+[0;32mI (227835) STATE: 2[0m
+[0;32mI (227835) RESPONSE: Sending response: 150929408[0m
+[0;32mI (228035) STATE: 2[0m
+[0;32mI (228035) RESPONSE: Sending response: 150929408[0m
+[0;32mI (228235) STATE: 2[0m
+[0;32mI (228235) RESPONSE: Sending response: 150929408[0m
+[0;32mI (228435) STATE: 2[0m
+[0;32mI (228435) RESPONSE: Sending response: 150929408[0m
+[0;32mI (228635) STATE: 2[0m
+[0;32mI (228635) RESPONSE: Sending response: 150929408[0m
+[0;32mI (228835) STATE: 2[0m
+[0;32mI (228835) RESPONSE: Sending response: 150929408[0m
+[0;32mI (229035) STATE: 2[0m
+[0;32mI (229035) RESPONSE: Sending response: 150929408[0m
+[0;32mI (229235) STATE: 2[0m
+[0;32mI (229235) RESPONSE: Sending response: 150929408[0m
+[0;32mI (229435) STATE: 2[0m
+[0;32mI (229435) RESPONSE: Sending response: 150929408[0m
+[0;32mI (229635) STATE: 2[0m
+[0;32mI (229635) RESPONSE: Sending response: 150929408[0m
+[0;32mI (229835) STATE: 2[0m
+[0;32mI (229835) RESPONSE: Sending response: 150929408[0m
+[0;32mI (230035) STATE: 2[0m
+[0;32mI (230035) RESPONSE: Sending response: 150929408[0m
+[0;32mI (230235) STATE: 2[0m
+[0;32mI (230235) RESPONSE: Sending response: 150929408[0m
+[0;32mI (230435) STATE: 2[0m
+[0;32mI (230435) RESPONSE: Sending response: 150929408[0m
+[0;32mI (230635) STATE: 2[0m
+[0;32mI (230635) RESPONSE: Sending response: 150929408[0m
+[0;32mI (230835) STATE: 2[0m
+[0;32mI (230835) RESPONSE: Sending response: 150929408[0m
+[0;32mI (231035) STATE: 2[0m
+[0;32mI (231035) RESPONSE: Sending response: 150929408[0m
+[0;32mI (231235) STATE: 2[0m
+[0;32mI (231235) RESPONSE: Sending response: 150929408[0m
+[0;32mI (231435) STATE: 2[0m
+[0;32mI (231435) RESPONSE: Sending response: 150929408[0m
+[0;32mI (231635) STATE: 2[0m
+[0;32mI (231635) RESPONSE: Sending response: 150929408[0m
+[0;32mI (231835) STATE: 2[0m
+[0;32mI (231835) RESPONSE: Sending response: 150929408[0m
+[0;32mI (232035) STATE: 2[0m
+[0;32mI (232035) RESPONSE: Sending response: 150929408[0m
+[0;32mI (232235) STATE: 2[0m
+[0;32mI (232235) RESPONSE: Sending response: 150929408[0m
+[0;32mI (232435) STATE: 2[0m
+[0;32mI (232435) RESPONSE: Sending response: 150929408[0m
+[0;32mI (232635) STATE: 2[0m
+[0;32mI (232635) RESPONSE: Sending response: 150929408[0m
+[0;32mI (232835) STATE: 2[0m
+[0;32mI (232835) RESPONSE: Sending response: 150929408[0m
+[0;32mI (233035) STATE: 2[0m
+[0;32mI (233035) RESPONSE: Sending response: 150929408[0m
+[0;32mI (233235) STATE: 2[0m
+[0;32mI (233235) RESPONSE: Sending response: 150929408[0m
+[0;32mI (233435) STATE: 2[0m
+[0;32mI (233435) RESPONSE: Sending response: 150929408[0m
+[0;32mI (233635) STATE: 2[0m
+[0;32mI (233635) RESPONSE: Sending response: 150929408[0m
+[0;32mI (233835) STATE: 2[0m
+[0;32mI (233835) RESPONSE: Sending response: 150929408[0m
+[0;32mI (234035) STATE: 2[0m
+[0;32mI (234035) RESPONSE: Sending response: 150929408[0m
+[0;32mI (234235) STATE: 2[0m
+[0;32mI (234235) RESPONSE: Sending response: 150929408[0m
+[0;32mI (234435) STATE: 2[0m
+[0;32mI (234435) RESPONSE: Sending response: 150929408[0m
+[0;32mI (234635) STATE: 2[0m
+[0;32mI (234635) RESPONSE: Sending response: 150929408[0m
+[0;32mI (234835) STATE: 2[0m
+[0;32mI (234835) RESPONSE: Sending response: 150929408[0m
+[0;32mI (235035) STATE: 2[0m
+[0;32mI (235035) RESPONSE: Sending response: 150929408[0m
+[0;32mI (235235) STATE: 2[0m
+[0;32mI (235235) RESPONSE: Sending response: 150929408[0m
+[0;32mI (235435) STATE: 2[0m
+[0;32mI (235435) RESPONSE: Sending response: 150929408[0m
+[0;32mI (235635) STATE: 2[0m
+[0;32mI (235635) RESPONSE: Sending response: 150929408[0m
+[0;32mI (235835) STATE: 2[0m
+[0;32mI (235835) RESPONSE: Sending response: 150929408[0m
+[0;32mI (236035) STATE: 2[0m
+[0;32mI (236035) RESPONSE: Sending response: 150929408[0m
+[0;32mI (236235) STATE: 2[0m
+[0;32mI (236235) RESPONSE: Sending response: 150929408[0m
+[0;32mI (236435) STATE: 2[0m
+[0;32mI (236435) RESPONSE: Sending response: 150929408[0m
+[0;32mI (236635) STATE: 2[0m
+[0;32mI (236635) RESPONSE: Sending response: 150929408[0m
+[0;32mI (236835) STATE: 2[0m
+[0;32mI (236835) RESPONSE: Sending response: 150929408[0m
+[0;32mI (237035) STATE: 2[0m
+[0;32mI (237035) RESPONSE: Sending response: 150929408[0m
+[0;32mI (237235) STATE: 2[0m
+[0;32mI (237235) RESPONSE: Sending response: 150929408[0m
+[0;32mI (237435) STATE: 2[0m
+[0;32mI (237435) RESPONSE: Sending response: 150929408[0m
+[0;32mI (237635) STATE: 2[0m
+[0;32mI (237635) RESPONSE: Sending response: 150929408[0m
+[0;32mI (237835) STATE: 2[0m
+[0;32mI (237835) RESPONSE: Sending response: 150929408[0m
+[0;32mI (238035) STATE: 2[0m
+[0;32mI (238035) RESPONSE: Sending response: 150929408[0m
+[0;32mI (238235) STATE: 2[0m
+[0;32mI (238235) RESPONSE: Sending response: 150929408[0m
+[0;32mI (238435) STATE: 2[0m
+[0;32mI (238435) RESPONSE: Sending response: 150929408[0m
+[0;32mI (238635) STATE: 2[0m
+[0;32mI (238635) RESPONSE: Sending response: 150929408[0m
+[0;32mI (238835) STATE: 2[0m
+[0;32mI (238835) RESPONSE: Sending response: 150929408[0m
+[0;32mI (239035) STATE: 2[0m
+[0;32mI (239035) RESPONSE: Sending response: 150929408[0m
+[0;32mI (239235) STATE: 2[0m
+[0;32mI (239235) RESPONSE: Sending response: 150929408[0m
+[0;32mI (239435) STATE: 2[0m
+[0;32mI (239435) RESPONSE: Sending response: 150929408[0m
+[0;32mI (239635) STATE: 2[0m
+[0;32mI (239635) RESPONSE: Sending response: 150929408[0m
+[0;32mI (239835) STATE: 2[0m
+[0;32mI (239835) RESPONSE: Sending response: 150929408[0m
+[0;32mI (240035) STATE: 2[0m
+[0;32mI (240035) RESPONSE: Sending response: 150929408[0m
+[0;32mI (240235) STATE: 2[0m
+[0;32mI (240235) RESPONSE: Sending response: 150929408[0m
+[0;32mI (240435) STATE: 2[0m
+[0;32mI (240435) RESPONSE: Sending response: 150929408[0m
+[0;32mI (240635) STATE: 2[0m
+[0;32mI (240635) RESPONSE: Sending response: 150929408[0m
+[0;32mI (240835) STATE: 2[0m
+[0;32mI (240835) RESPONSE: Sending response: 150929408[0m
+[0;32mI (241035) STATE: 2[0m
+[0;32mI (241035) RESPONSE: Sending response: 150929408[0m
+[0;32mI (241235) STATE: 2[0m
+[0;32mI (241235) RESPONSE: Sending response: 150929408[0m
+[0;32mI (241435) STATE: 2[0m
+[0;32mI (241435) RESPONSE: Sending response: 150929408[0m
+[0;32mI (241635) STATE: 2[0m
+[0;32mI (241635) RESPONSE: Sending response: 150929408[0m
+[0;32mI (241835) STATE: 2[0m
+[0;32mI (241835) RESPONSE: Sending response: 150929408[0m
+[0;32mI (242035) STATE: 2[0m
+[0;32mI (242035) RESPONSE: Sending response: 150929408[0m
+[0;32mI (242235) STATE: 2[0m
+[0;32mI (242235) RESPONSE: Sending response: 150929408[0m
+[0;32mI (242435) STATE: 2[0m
+[0;32mI (242435) RESPONSE: Sending response: 150929408[0m
+[0;32mI (242635) STATE: 2[0m
+[0;32mI (242635) RESPONSE: Sending response: 150929408[0m
+[0;32mI (242835) STATE: 2[0m
+[0;32mI (242835) RESPONSE: Sending response: 150929408[0m
+[0;32mI (243035) STATE: 2[0m
+[0;32mI (243035) RESPONSE: Sending response: 150929408[0m
+[0;32mI (243235) STATE: 2[0m
+[0;32mI (243235) RESPONSE: Sending response: 150929408[0m
+[0;32mI (243435) STATE: 2[0m
+[0;32mI (243435) RESPONSE: Sending response: 150929408[0m
+[0;32mI (243635) STATE: 2[0m
+[0;32mI (243635) RESPONSE: Sending response: 150929408[0m
+[0;32mI (243835) STATE: 2[0m
+[0;32mI (243835) RESPONSE: Sending response: 150929408[0m
+[0;32mI (244035) STATE: 2[0m
+[0;32mI (244035) RESPONSE: Sending response: 150929408[0m
+[0;32mI (244235) STATE: 2[0m
+[0;32mI (244235) RESPONSE: Sending response: 150929408[0m
+[0;32mI (244435) STATE: 2[0m
+[0;32mI (244435) RESPONSE: Sending response: 150929408[0m
+[0;32mI (244635) STATE: 2[0m
+[0;32mI (244635) RESPONSE: Sending response: 150929408[0m
+[0;32mI (244835) STATE: 2[0m
+[0;32mI (244835) RESPONSE: Sending response: 150929408[0m
+[0;32mI (245035) STATE: 2[0m
+[0;32mI (245035) RESPONSE: Sending response: 150929408[0m
+[0;32mI (245235) STATE: 2[0m
+[0;32mI (245235) RESPONSE: Sending response: 150929408[0m
+[0;32mI (245435) STATE: 2[0m
+[0;32mI (245435) RESPONSE: Sending response: 150929408[0m
+[0;32mI (245635) STATE: 2[0m
+[0;32mI (245635) RESPONSE: Sending response: 150929408[0m
+[0;32mI (245835) STATE: 2[0m
+[0;32mI (245835) RESPONSE: Sending response: 150929408[0m
+[0;32mI (246035) STATE: 2[0m
+[0;32mI (246035) RESPONSE: Sending response: 150929408[0m
+[0;32mI (246235) STATE: 2[0m
+[0;32mI (246235) RESPONSE: Sending response: 150929408[0m
+[0;32mI (246435) STATE: 2[0m
+[0;32mI (246435) RESPONSE: Sending response: 150929408[0m
+[0;32mI (246635) STATE: 2[0m
+[0;32mI (246635) RESPONSE: Sending response: 150929408[0m
+[0;32mI (246835) STATE: 2[0m
+[0;32mI (246835) RESPONSE: Sending response: 150929408[0m
+[0;32mI (247035) STATE: 2[0m
+[0;32mI (247035) RESPONSE: Sending response: 150929408[0m
+[0;32mI (247235) STATE: 2[0m
+[0;32mI (247235) RESPONSE: Sending response: 150929408[0m
+[0;32mI (247435) STATE: 2[0m
+[0;32mI (247435) RESPONSE: Sending response: 150929408[0m
+[0;32mI (247635) STATE: 2[0m
+[0;32mI (247635) RESPONSE: Sending response: 150929408[0m
+[0;32mI (247835) STATE: 2[0m
+[0;32mI (247835) RESPONSE: Sending response: 150929408[0m
+[0;32mI (248035) STATE: 2[0m
+[0;32mI (248035) RESPONSE: Sending response: 150929408[0m
+[0;32mI (248235) STATE: 2[0m
+[0;32mI (248235) RESPONSE: Sending response: 150929408[0m
+[0;32mI (248435) STATE: 2[0m
+[0;32mI (248435) RESPONSE: Sending response: 150929408[0m
+[0;32mI (248635) STATE: 2[0m
+[0;32mI (248635) RESPONSE: Sending response: 150929408[0m
+[0;32mI (248835) STATE: 2[0m
+[0;32mI (248835) RESPONSE: Sending response: 150929408[0m
+[0;32mI (249035) STATE: 2[0m
+[0;32mI (249035) RESPONSE: Sending response: 150929408[0m
+[0;32mI (249235) STATE: 2[0m
+[0;32mI (249235) RESPONSE: Sending response: 150929408[0m
+[0;32mI (249435) STATE: 2[0m
+[0;32mI (249435) RESPONSE: Sending response: 150929408[0m
+[0;32mI (249635) STATE: 2[0m
+[0;32mI (249635) RESPONSE: Sending response: 150929408[0m
+[0;32mI (249835) STATE: 2[0m
+[0;32mI (249835) RESPONSE: Sending response: 150929408[0m
+[0;32mI (250035) STATE: 2[0m
+[0;32mI (250035) RESPONSE: Sending response: 150929408[0m
+[0;32mI (250235) STATE: 2[0m
+[0;32mI (250235) RESPONSE: Sending response: 150929408[0m
+[0;32mI (250435) STATE: 2[0m
+[0;32mI (250435) RESPONSE: Sending response: 150929408[0m
+[0;32mI (250635) STATE: 2[0m
+[0;32mI (250635) RESPONSE: Sending response: 150929408[0m
+[0;32mI (250835) STATE: 2[0m
+[0;32mI (250835) RESPONSE: Sending response: 150929408[0m
+[0;32mI (251035) STATE: 2[0m
+[0;32mI (251035) RESPONSE: Sending response: 150929408[0m
+[0;32mI (251235) STATE: 2[0m
+[0;32mI (251235) RESPONSE: Sending response: 150929408[0m
+[0;32mI (251435) STATE: 2[0m
+[0;32mI (251435) RESPONSE: Sending response: 150929408[0m

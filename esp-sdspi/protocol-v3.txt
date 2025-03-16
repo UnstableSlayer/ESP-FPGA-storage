@@ -1,0 +1,38 @@
+Command format:
+
+Initialization:
+1   000     1111 1111   0000 0000 0000 0000
+rd  sta     crc         val
+
+Set Command:
+1   000     XXXX XXXX   XXXX XXXX XXXX XXXX
+rd  cmd     crc         val
+
+Response:
+1   000     0000 0000   0000 0000 0000 0000
+rd  sta     crc         val
+    err
+
+rd: esp_ready
+0 - command from fpga
+1 - response from esp32
+
+cmd:
+000     get_page_addr
+001     set_page_addr
+010     get_mcu_page_addr
+011     set_mcu_page_addr
+100     write_page_op
+101     read_page_op
+110     reset
+111     undefined
+
+status/errors:
+000     no errors
+001     reached end of page.
+010     reached end of memory.
+011     failed to seek in the file.
+100     failed to read from the current address.
+101     failed to write to the current address.
+110     failed to open section file on microcontroller.
+111     failed to initialize the filesystem on microcontroller.

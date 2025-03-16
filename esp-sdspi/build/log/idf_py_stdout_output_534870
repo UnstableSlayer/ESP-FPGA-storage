@@ -1,0 +1,2021 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x2b (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x17ec
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xf28
+load:0x403cb700,len:0x35c8
+entry 0x403c89c8
+[0;32mI (24) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Mar  6 2025 23:38:28[0m
+[0;32mI (24) boot: Multicore bootloader[0m
+[0;32mI (26) boot: chip revision: v0.1[0m
+[0;32mI (29) boot: efuse block revision: v1.2[0m
+[0;32mI (33) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (37) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (41) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (45) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (53) boot: Partition Table:[0m
+[0;32mI (55) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (62) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (68) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (75) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (81) boot: End of partition table[0m
+[0;32mI (85) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0d408h ( 54280) map[0m
+[0;32mI (100) esp_image: segment 1: paddr=0001d430 vaddr=3fc93400 size=02948h ( 10568) load[0m
+[0;32mI (107) esp_image: segment 2: paddr=0001fd80 vaddr=40374000 size=00298h (   664) load[0m
+[0;32mI (109) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=2e674h (190068) map[0m
+[0;32mI (142) esp_image: segment 4: paddr=0004e69c vaddr=40374298 size=0f14ch ( 61772) load[0m
+[0;32mI (153) esp_image: segment 5: paddr=0005d7f0 vaddr=600fe100 size=00018h (    24) load[0m
+[0;32mI (159) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (159) boot: Disabling RNG early entropy source...[0m
+[0;32mI (171) cpu_start: Multicore app[0m
+[0;32mI (180) cpu_start: Pro cpu start user code[0m
+[0;32mI (180) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (180) app_init: Application information:[0m
+[0;32mI (180) app_init: Project name:     sd_card[0m
+[0;32mI (184) app_init: App version:      v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (190) app_init: Compile time:     Mar  6 2025 23:38:39[0m
+[0;32mI (195) app_init: ELF file SHA256:  9765697b1...[0m
+[0;32mI (199) app_init: ESP-IDF:          v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (205) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (209) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (213) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (217) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (223) heap_init: At 3FC96688 len 00053088 (332 KiB): RAM[0m
+[0;32mI (228) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (233) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (238) heap_init: At 600FE118 len 00001ED0 (7 KiB): RTCRAM[0m
+[0;32mI (244) spi_flash: detected chip: gd[0m
+[0;32mI (247) spi_flash: flash io: qio[0m
+[0;32mI (250) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (256) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (263) main_task: Started on CPU0[0m
+[0;32mI (303) main_task: Calling app_main()[0m
+[0;32mI (303) SDCARD: Initializing SD card[0m
+[0;32mI (303) SDCARD: Mounting filesystem[0m
+[0;32mI (343) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+[0;32mI (383) SDCARD: Filesystem mounted[0m
+Name: SE32G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 30436MB
+CSD: ver=2, sector_size=512, capacity=62333952 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (383) GEN_FILES: Count: 15[0m
+[1;31mE (463) GEN_FILES: Couldn't create or read file /sdcard/DATA9.BIN[0m
+[1;31mE (463) GEN_FILES: Couldn't create or read file /sdcard/DATAA.BIN[0m
+[1;31mE (473) GEN_FILES: Couldn't create or read file /sdcard/DATAB.BIN[0m
+[1;31mE (473) GEN_FILES: Couldn't create or read file /sdcard/DATAC.BIN[0m
+[1;31mE (483) GEN_FILES: Couldn't create or read file /sdcard/DATAD.BIN[0m
+[1;31mE (483) GEN_FILES: Couldn't create or read file /sdcard/DATAE.BIN[0m
+[0;32mI (493) CURRENT_FILE: size: 4194304[0m
+[0;33mW (18453) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18463) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18463) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18503) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;32mI (18543) FILESYS_WRITE_INC: Writing data and incrementing: 0 to addr: 0[0m
+[0;33mW (18583) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18663) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18743) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18823) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18903) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (18983) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19063) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19143) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19223) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19303) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19383) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19463) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19543) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19623) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19703) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19783) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19863) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (19943) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[1;31mE (20703) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[0;33mW (20743) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (20783) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (20823) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (20863) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (20903) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (20943) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (20983) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (21023) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (21063) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (21103) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (21143) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (21183) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (21223) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (21263) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (21303) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (21343) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (22363) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (22403) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (22443) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (22483) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (22523) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (22563) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (22603) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (22643) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (22683) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (22723) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (22763) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (22803) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (22843) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (22883) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (22923) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (22963) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (23003) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (23043) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (23083) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (23123) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (23163) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (23203) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (23993) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (24023) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (24103) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (24183) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (24263) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (24343) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (24423) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (24503) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (24583) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (24663) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (24743) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (24823) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (24903) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (24983) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (25063) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (25143) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (25223) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (25303) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (25383) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (25653) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[1;31mE (25683) FPGA_FILESYS_HANDLE_COMMAND: Sender bit set for esp instead of fpga, ignoring command![0m
+[0;33mW (25723) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (25763) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (25803) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (25843) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (25883) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (26083) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (26123) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (26163) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (26203) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (26243) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (26283) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (26443) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (26483) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (26523) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (26563) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (26603) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (26643) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (26843) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (26883) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (26923) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (26963) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (27003) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (27043) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x17ec
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xf28
+load:0x403cb700,len:0x35c8
+entry 0x403c89c8
+[0;32mI (27) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Mar  6 2025 23:38:28[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v0.1[0m
+[0;32mI (32) boot: efuse block revision: v1.2[0m
+[0;32mI (36) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (44) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (84) boot: End of partition table[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0d408h ( 54280) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001d430 vaddr=3fc93400 size=02948h ( 10568) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001fd80 vaddr=40374000 size=00298h (   664) load[0m
+[0;32mI (110) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=2e674h (190068) map[0m
+[0;32mI (144) esp_image: segment 4: paddr=0004e69c vaddr=40374298 size=0f14ch ( 61772) load[0m
+[0;32mI (155) esp_image: segment 5: paddr=0005d7f0 vaddr=600fe100 size=00018h (    24) load[0m
+[0;32mI (161) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (161) boot: Disabling RNG early entropy source...[0m
+[0;32mI (172) cpu_start: Multicore app[0m
+[0;32mI (181) cpu_start: Pro cpu start user code[0m
+[0;32mI (181) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (181) app_init: Application information:[0m
+[0;32mI (181) app_init: Project name:     sd_card[0m
+[0;32mI (185) app_init: App version:      v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (191) app_init: Compile time:     Mar  6 2025 23:38:39[0m
+[0;32mI (196) app_init: ELF file SHA256:  9765697b1...[0m
+[0;32mI (200) app_init: ESP-IDF:          v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (206) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (210) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (214) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (218) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (224) heap_init: At 3FC96688 len 00053088 (332 KiB): RAM[0m
+[0;32mI (230) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (235) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 600FE118 len 00001ED0 (7 KiB): RTCRAM[0m
+[0;32mI (246) spi_flash: detected chip: gd[0m
+[0;32mI (248) spi_flash: flash io: qio[0m
+[0;32mI (251) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (258) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (265) main_task: Started on CPU0[0m
+[0;32mI (305) main_task: Calling app_main()[0m
+[0;32mI (305) SDCARD: Initializing SD card[0m
+[0;32mI (305) SDCARD: Mounting filesystem[0m
+[0;32mI (305) sdspi_transaction: cmd=52, R1 response: command CRC error[0m
+[1;31mE (305) sdmmc_io: sdmmc_io_reset: unexpected return: 0x109[0m
+[1;31mE (315) vfs_fat_sdmmc: sdmmc_card_init failed (0x109).[0m
+[1;31mE (315) SDCARD: Failed to initialize the card (ESP_ERR_INVALID_CRC). Make sure SD card lines have pull-up resistors in place.[0m
+[1;31mE (335) FILESYS_INIT: Failed to initialize sdcard[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0xb (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x17ec
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xf28
+load:0x403cb700,len:0x35c8
+entry 0x403c89c8
+[0;32mI (27) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Mar  6 2025 23:38:28[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v0.1[0m
+[0;32mI (32) boot: efuse block revision: v1.2[0m
+[0;32mI (36) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (44) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (84) boot: End of partition table[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0d408h ( 54280) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001d430 vaddr=3fc93400 size=02948h ( 10568) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001fd80 vaddr=40374000 size=00298h (   664) load[0m
+[0;32mI (110) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=2e674h (190068) map[0m
+[0;32mI (144) esp_image: segment 4: paddr=0004e69c vaddr=40374298 size=0f14ch ( 61772) load[0m
+[0;32mI (155) esp_image: segment 5: paddr=0005d7f0 vaddr=600fe100 size=00018h (    24) load[0m
+[0;32mI (161) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (161) boot: Disabling RNG early entropy source...[0m
+[0;32mI (172) cpu_start: Multicore app[0m
+[0;32mI (181) cpu_start: Pro cpu start user code[0m
+[0;32mI (181) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (181) app_init: Application information:[0m
+[0;32mI (181) app_init: Project name:     sd_card[0m
+[0;32mI (185) app_init: App version:      v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (191) app_init: Compile time:     Mar  6 2025 23:38:39[0m
+[0;32mI (196) app_init: ELF file SHA256:  9765697b1...[0m
+[0;32mI (200) app_init: ESP-IDF:          v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (206) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (210) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (214) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (218) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (224) heap_init: At 3FC96688 len 00053088 (332 KiB): RAM[0m
+[0;32mI (230) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (235) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 600FE118 len 00001ED0 (7 KiB): RTCRAM[0m
+[0;32mI (246) spi_flash: detected chip: gd[0m
+[0;32mI (248) spi_flash: flash io: qio[0m
+[0;32mI (251) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (258) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (265) main_task: Started on CPU0[0m
+[0;32mI (305) main_task: Calling app_main()[0m
+[0;32mI (305) SDCARD: Initializing SD card[0m
+[0;32mI (305) SDCARD: Mounting filesystem[0m
+[0;32mI (345) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+[0;32mI (385) SDCARD: Filesystem mounted[0m
+Name: SE32G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 30436MB
+CSD: ver=2, sector_size=512, capacity=62333952 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (385) GEN_FILES: Count: 15[0m
+[1;31mE (475) GEN_FILES: Couldn't create or read file /sdcard/DATA9.BIN[0m
+[1;31mE (475) GEN_FILES: Couldn't create or read file /sdcard/DATAA.BIN[0m
+[1;31mE (475) GEN_FILES: Couldn't create or read file /sdcard/DATAB.BIN[0m
+[1;31mE (475) GEN_FILES: Couldn't create or read file /sdcard/DATAC.BIN[0m
+[1;31mE (485) GEN_FILES: Couldn't create or read file /sdcard/DATAD.BIN[0m
+[1;31mE (495) GEN_FILES: Couldn't create or read file /sdcard/DATAE.BIN[0m
+[0;32mI (495) CURRENT_FILE: size: 4194304[0m
+[0;33mW (3225) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;32mI (3265) FILESYS_WRITE_INC: Writing data and incrementing: 0 to addr: 0[0m
+[0;33mW (3305) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (3385) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (3465) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (3545) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (3625) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (3705) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (3785) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (3865) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (3945) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (4025) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (4105) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (4185) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (4265) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (4345) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (4425) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (4505) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (4585) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (4665) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (4745) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (4825) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (4905) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (4985) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (5065) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (5145) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (5225) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (5305) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (5385) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (5465) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (5545) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (5625) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (5705) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (5785) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (5865) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (5945) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (6025) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (6105) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (6185) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (6265) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (6345) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (6425) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (6505) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (6585) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (6665) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (6745) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (6825) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (6905) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (6985) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (7065) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (7145) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (7225) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (7305) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (7385) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12545) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12585) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12625) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12665) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12705) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12745) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12785) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12825) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12865) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12905) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12945) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12985) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13025) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13065) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13105) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13145) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13185) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13225) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13265) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13305) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13345) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13385) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13425) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13465) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13505) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13545) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13585) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13625) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13665) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13705) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13745) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13785) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13825) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0xb (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x17ec
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xf28
+load:0x403cb700,len:0x35c8
+entry 0x403c89c8
+[0;32mI (27) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Mar  6 2025 23:38:28[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v0.1[0m
+[0;32mI (32) boot: efuse block revision: v1.2[0m
+[0;32mI (36) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (44) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (84) boot: End of partition table[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0d408h ( 54280) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001d430 vaddr=3fc93400 size=02948h ( 10568) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001fd80 vaddr=40374000 size=00298h (   664) load[0m
+[0;32mI (110) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=2e674h (190068) map[0m
+[0;32mI (144) esp_image: segment 4: paddr=0004e69c vaddr=40374298 size=0f14ch ( 61772) load[0m
+[0;32mI (155) esp_image: segment 5: paddr=0005d7f0 vaddr=600fe100 size=00018h (    24) load[0m
+[0;32mI (161) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (161) boot: Disabling RNG early entropy source...[0m
+[0;32mI (172) cpu_start: Multicore app[0m
+[0;32mI (181) cpu_start: Pro cpu start user code[0m
+[0;32mI (181) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (181) app_init: Application information:[0m
+[0;32mI (181) app_init: Project name:     sd_card[0m
+[0;32mI (185) app_init: App version:      v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (191) app_init: Compile time:     Mar  6 2025 23:38:39[0m
+[0;32mI (196) app_init: ELF file SHA256:  9765697b1...[0m
+[0;32mI (200) app_init: ESP-IDF:          v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (206) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (210) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (214) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (218) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (224) heap_init: At 3FC96688 len 00053088 (332 KiB): RAM[0m
+[0;32mI (230) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (235) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 600FE118 len 00001ED0 (7 KiB): RTCRAM[0m
+[0;32mI (246) spi_flash: detected chip: gd[0m
+[0;32mI (248) spi_flash: flash io: qio[0m
+[0;32mI (251) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (258) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (265) main_task: Started on CPU0[0m
+[0;32mI (305) main_task: Calling app_main()[0m
+[0;32mI (305) SDCARD: Initializing SD card[0m
+[0;32mI (305) SDCARD: Mounting filesystem[0m
+[0;32mI (345) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+[0;32mI (385) SDCARD: Filesystem mounted[0m
+Name: SE32G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 30436MB
+CSD: ver=2, sector_size=512, capacity=62333952 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (385) GEN_FILES: Count: 15[0m
+[1;31mE (475) GEN_FILES: Couldn't create or read file /sdcard/DATA9.BIN[0m
+[1;31mE (475) GEN_FILES: Couldn't create or read file /sdcard/DATAA.BIN[0m
+[1;31mE (475) GEN_FILES: Couldn't create or read file /sdcard/DATAB.BIN[0m
+[1;31mE (475) GEN_FILES: Couldn't create or read file /sdcard/DATAC.BIN[0m
+[1;31mE (485) GEN_FILES: Couldn't create or read file /sdcard/DATAD.BIN[0m
+[1;31mE (495) GEN_FILES: Couldn't create or read file /sdcard/DATAE.BIN[0m
+[0;32mI (495) CURRENT_FILE: size: 4194304[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0xb (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x17ec
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xf28
+load:0x403cb700,len:0x35c8
+entry 0x403c89c8
+[0;32mI (27) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Mar  6 2025 23:38:28[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v0.1[0m
+[0;32mI (32) boot: efuse block revision: v1.2[0m
+[0;32mI (36) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (44) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (84) boot: End of partition table[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0d408h ( 54280) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001d430 vaddr=3fc93400 size=02948h ( 10568) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001fd80 vaddr=40374000 size=00298h (   664) load[0m
+[0;32mI (110) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=2e674h (190068) map[0m
+[0;32mI (144) esp_image: segment 4: paddr=0004e69c vaddr=40374298 size=0f14ch ( 61772) load[0m
+[0;32mI (155) esp_image: segment 5: paddr=0005d7f0 vaddr=600fe100 size=00018h (    24) load[0m
+[0;32mI (161) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (161) boot: Disabling RNG early entropy source...[0m
+[0;32mI (172) cpu_start: Multicore app[0m
+[0;32mI (181) cpu_start: Pro cpu start user code[0m
+[0;32mI (181) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (181) app_init: Application information:[0m
+[0;32mI (181) app_init: Project name:     sd_card[0m
+[0;32mI (185) app_init: App version:      v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (191) app_init: Compile time:     Mar  6 2025 23:38:39[0m
+[0;32mI (196) app_init: ELF file SHA256:  9765697b1...[0m
+[0;32mI (200) app_init: ESP-IDF:          v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (206) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (210) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (214) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (218) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (224) heap_init: At 3FC96688 len 00053088 (332 KiB): RAM[0m
+[0;32mI (230) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (235) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 600FE118 len 00001ED0 (7 KiB): RTCRAM[0m
+[0;32mI (246) spi_flash: detected chip: gd[0m
+[0;32mI (248) spi_flash: flash io: qio[0m
+[0;32mI (251) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (258) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (265) main_task: Started on CPU0[0m
+[0;32mI (305) main_task: Calling app_main()[0m
+[0;32mI (305) SDCARD: Initializing SD card[0m
+[0;32mI (305) SDCARD: Mounting filesystem[0m
+[0;32mI (305) sdspi_transaction: cmd=52, R1 response: command CRC error[0m
+[1;31mE (305) sdmmc_io: sdmmc_io_reset: unexpected return: 0x109[0m
+[1;31mE (315) vfs_fat_sdmmc: sdmmc_card_init failed (0x109).[0m
+[1;31mE (315) SDCARD: Failed to initialize the card (ESP_ERR_INVALID_CRC). Make sure SD card lines have pull-up resistors in place.[0m
+[1;31mE (335) FILESYS_INIT: Failed to initialize sdcard[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x17ec
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xf28
+load:0x403cb700,len:0x35c8
+entry 0x403c89c8
+[0;32mI (27) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Mar  6 2025 23:38:28[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v0.1[0m
+[0;32mI (32) boot: efuse block revision: v1.2[0m
+[0;32mI (36) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (44) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (84) boot: End of partition table[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0d408h ( 54280) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001d430 vaddr=3fc93400 size=02948h ( 10568) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001fd80 vaddr=40374000 size=00298h (   664) load[0m
+[0;32mI (110) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=2e674h (190068) map[0m
+[0;32mI (144) esp_image: segment 4: paddr=0004e69c vaddr=40374298 size=0f14ch ( 61772) load[0m
+[0;32mI (155) esp_image: segment 5: paddr=0005d7f0 vaddr=600fe100 size=00018h (    24) load[0m
+[0;32mI (161) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (161) boot: Disabling RNG early entropy source...[0m
+[0;32mI (172) cpu_start: Multicore app[0m
+[0;32mI (181) cpu_start: Pro cpu start user code[0m
+[0;32mI (181) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (181) app_init: Application information:[0m
+[0;32mI (181) app_init: Project name:     sd_card[0m
+[0;32mI (185) app_init: App version:      v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (191) app_init: Compile time:     Mar  6 2025 23:38:39[0m
+[0;32mI (196) app_init: ELF file SHA256:  9765697b1...[0m
+[0;32mI (200) app_init: ESP-IDF:          v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (206) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (210) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (214) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (218) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (224) heap_init: At 3FC96688 len 00053088 (332 KiB): RAM[0m
+[0;32mI (230) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (235) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 600FE118 len 00001ED0 (7 KiB): RTCRAM[0m
+[0;32mI (246) spi_flash: detected chip: gd[0m
+[0;32mI (248) spi_flash: flash io: qio[0m
+[0;32mI (251) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (258) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (265) main_task: Started on CPU0[0m
+[0;32mI (305) main_task: Calling app_main()[0m
+[0;32mI (305) SDCARD: Initializing SD card[0m
+[0;32mI (305) SDCARD: Mounting filesystem[0m
+[0;32mI (305) sdspi_transaction: cmd=52, R1 response: command CRC error[0m
+[1;31mE (305) sdmmc_io: sdmmc_io_reset: unexpected return: 0x109[0m
+[1;31mE (315) vfs_fat_sdmmc: sdmmc_card_init failed (0x109).[0m
+[1;31mE (315) SDCARD: Failed to initialize the card (ESP_ERR_INVALID_CRC). Make sure SD card lines have pull-up resistors in place.[0m
+[1;31mE (335) FILESYS_INIT: Failed to initialize sdcard[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0xb (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x17ec
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xf28
+load:0x403cb700,len:0x35c8
+entry 0x403c89c8
+[0;32mI (27) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Mar  6 2025 23:38:28[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v0.1[0m
+[0;32mI (32) boot: efuse block revision: v1.2[0m
+[0;32mI (36) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (44) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (84) boot: End of partition table[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0d408h ( 54280) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001d430 vaddr=3fc93400 size=02948h ( 10568) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001fd80 vaddr=40374000 size=00298h (   664) load[0m
+[0;32mI (110) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=2e674h (190068) map[0m
+[0;32mI (144) esp_image: segment 4: paddr=0004e69c vaddr=40374298 size=0f14ch ( 61772) load[0m
+[0;32mI (155) esp_image: segment 5: paddr=0005d7f0 vaddr=600fe100 size=00018h (    24) load[0m
+[0;32mI (161) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (161) boot: Disabling RNG early entropy source...[0m
+[0;32mI (172) cpu_start: Multicore app[0m
+[0;32mI (181) cpu_start: Pro cpu start user code[0m
+[0;32mI (181) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (181) app_init: Application information:[0m
+[0;32mI (181) app_init: Project name:     sd_card[0m
+[0;32mI (185) app_init: App version:      v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (191) app_init: Compile time:     Mar  6 2025 23:38:39[0m
+[0;32mI (196) app_init: ELF file SHA256:  9765697b1...[0m
+[0;32mI (200) app_init: ESP-IDF:          v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (206) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (210) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (214) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (218) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (224) heap_init: At 3FC96688 len 00053088 (332 KiB): RAM[0m
+[0;32mI (230) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (235) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 600FE118 len 00001ED0 (7 KiB): RTCRAM[0m
+[0;32mI (246) spi_flash: detected chip: gd[0m
+[0;32mI (248) spi_flash: flash io: qio[0m
+[0;32mI (251) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (258) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (265) main_task: Started on CPU0[0m
+[0;32mI (305) main_task: Calling app_main()[0m
+[0;32mI (305) SDCARD: Initializing SD card[0m
+[0;32mI (305) SDCARD: Mounting filesystem[0m
+[0;32mI (305) sdspi_transaction: cmd=52, R1 response: command CRC error[0m
+[1;31mE (305) sdmmc_io: sdmmc_io_reset: unexpected return: 0x109[0m
+[1;31mE (315) vfs_fat_sdmmc: sdmmc_card_init failed (0x109).[0m
+[1;31mE (315) SDCARD: Failed to initialize the card (ESP_ERR_INVALID_CRC). Make sure SD card lines have pull-up resistors in place.[0m
+[1;31mE (335) FILESYS_INIT: Failed to initialize sdcard[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0xb (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x17ec
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xf28
+load:0x403cb700,len:0x35c8
+entry 0x403c89c8
+[0;32mI (27) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Mar  6 2025 23:38:28[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v0.1[0m
+[0;32mI (32) boot: efuse block revision: v1.2[0m
+[0;32mI (36) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (44) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (84) boot: End of partition table[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0d408h ( 54280) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001d430 vaddr=3fc93400 size=02948h ( 10568) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001fd80 vaddr=40374000 size=00298h (   664) load[0m
+[0;32mI (110) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=2e674h (190068) map[0m
+[0;32mI (144) esp_image: segment 4: paddr=0004e69c vaddr=40374298 size=0f14ch ( 61772) load[0m
+[0;32mI (155) esp_image: segment 5: paddr=0005d7f0 vaddr=600fe100 size=00018h (    24) load[0m
+[0;32mI (161) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (161) boot: Disabling RNG early entropy source...[0m
+[0;32mI (172) cpu_start: Multicore app[0m
+[0;32mI (181) cpu_start: Pro cpu start user code[0m
+[0;32mI (181) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (181) app_init: Application information:[0m
+[0;32mI (181) app_init: Project name:     sd_card[0m
+[0;32mI (185) app_init: App version:      v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (191) app_init: Compile time:     Mar  6 2025 23:38:39[0m
+[0;32mI (196) app_init: ELF file SHA256:  9765697b1...[0m
+[0;32mI (200) app_init: ESP-IDF:          v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (206) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (210) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (214) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (218) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (224) heap_init: At 3FC96688 len 00053088 (332 KiB): RAM[0m
+[0;32mI (230) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (235) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 600FE118 len 00001ED0 (7 KiB): RTCRAM[0m
+[0;32mI (246) spi_flash: detected chip: gd[0m
+[0;32mI (248) spi_flash: flash io: qio[0m
+[0;32mI (251) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (258) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (265) main_task: Started on CPU0[0m
+[0;32mI (305) main_task: Calling app_main()[0m
+[0;32mI (305) SDCARD: Initializing SD card[0m
+[0;32mI (305) SDCARD: Mounting filesystem[0m
+[0;32mI (305) sdspi_transaction: cmd=52, R1 response: command CRC error[0m
+[1;31mE (305) sdmmc_io: sdmmc_io_reset: unexpected return: 0x109[0m
+[1;31mE (315) vfs_fat_sdmmc: sdmmc_card_init failed (0x109).[0m
+[1;31mE (315) SDCARD: Failed to initialize the card (ESP_ERR_INVALID_CRC). Make sure SD card lines have pull-up resistors in place.[0m
+[1;31mE (335) FILESYS_INIT: Failed to initialize sdcard[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0xb (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x17ec
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xf28
+load:0x403cb700,len:0x35c8
+entry 0x403c89c8
+[0;32mI (27) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Mar  6 2025 23:38:28[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v0.1[0m
+[0;32mI (32) boot: efuse block revision: v1.2[0m
+[0;32mI (36) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (44) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (84) boot: End of partition table[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0d408h ( 54280) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001d430 vaddr=3fc93400 size=02948h ( 10568) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001fd80 vaddr=40374000 size=00298h (   664) load[0m
+[0;32mI (110) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=2e674h (190068) map[0m
+[0;32mI (144) esp_image: segment 4: paddr=0004e69c vaddr=40374298 size=0f14ch ( 61772) load[0m
+[0;32mI (155) esp_image: segment 5: paddr=0005d7f0 vaddr=600fe100 size=00018h (    24) load[0m
+[0;32mI (161) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (161) boot: Disabling RNG early entropy source...[0m
+[0;32mI (172) cpu_start: Multicore app[0m
+[0;32mI (181) cpu_start: Pro cpu start user code[0m
+[0;32mI (181) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (181) app_init: Application information:[0m
+[0;32mI (181) app_init: Project name:     sd_card[0m
+[0;32mI (185) app_init: App version:      v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (191) app_init: Compile time:     Mar  6 2025 23:38:39[0m
+[0;32mI (196) app_init: ELF file SHA256:  9765697b1...[0m
+[0;32mI (200) app_init: ESP-IDF:          v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (206) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (210) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (214) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (218) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (224) heap_init: At 3FC96688 len 00053088 (332 KiB): RAM[0m
+[0;32mI (230) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (235) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 600FE118 len 00001ED0 (7 KiB): RTCRAM[0m
+[0;32mI (246) spi_flash: detected chip: gd[0m
+[0;32mI (248) spi_flash: flash io: qio[0m
+[0;32mI (251) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (258) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (265) main_task: Started on CPU0[0m
+[0;32mI (305) main_task: Calling app_main()[0m
+[0;32mI (305) SDCARD: Initializing SD card[0m
+[0;32mI (305) SDCARD: Mounting filesystem[0m
+[0;32mI (305) sdspi_transaction: cmd=52, R1 response: command CRC error[0m
+[1;31mE (305) sdmmc_io: sdmmc_io_reset: unexpected return: 0x109[0m
+[1;31mE (315) vfs_fat_sdmmc: sdmmc_card_init failed (0x109).[0m
+[1;31mE (315) SDCARD: Failed to initialize the card (ESP_ERR_INVALID_CRC). Make sure SD card lines have pull-up resistors in place.[0m
+[1;31mE (335) FILESYS_INIT: Failed to initialize sdcard[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x17ec
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xf28
+load:0x403cb700,len:0x35c8
+entry 0x403c89c8
+[0;32mI (27) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Mar  6 2025 23:38:28[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v0.1[0m
+[0;32mI (32) boot: efuse block revision: v1.2[0m
+[0;32mI (36) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (44) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (84) boot: End of partition table[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0d408h ( 54280) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001d430 vaddr=3fc93400 size=02948h ( 10568) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001fd80 vaddr=40374000 size=00298h (   664) load[0m
+[0;32mI (110) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=2e674h (190068) map[0m
+[0;32mI (144) esp_image: segment 4: paddr=0004e69c vaddr=40374298 size=0f14ch ( 61772) load[0m
+[0;32mI (155) esp_image: segment 5: paddr=0005d7f0 vaddr=600fe100 size=00018h (    24) load[0m
+[0;32mI (161) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (161) boot: Disabling RNG early entropy source...[0m
+[0;32mI (172) cpu_start: Multicore app[0m
+[0;32mI (181) cpu_start: Pro cpu start user code[0m
+[0;32mI (181) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (181) app_init: Application information:[0m
+[0;32mI (181) app_init: Project name:     sd_card[0m
+[0;32mI (185) app_init: App version:      v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (191) app_init: Compile time:     Mar  6 2025 23:38:39[0m
+[0;32mI (196) app_init: ELF file SHA256:  9765697b1...[0m
+[0;32mI (200) app_init: ESP-IDF:          v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (206) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (210) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (214) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (218) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (224) heap_init: At 3FC96688 len 00053088 (332 KiB): RAM[0m
+[0;32mI (230) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (235) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 600FE118 len 00001ED0 (7 KiB): RTCRAM[0m
+[0;32mI (246) spi_flash: detected chip: gd[0m
+[0;32mI (248) spi_flash: flash io: qio[0m
+[0;32mI (251) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (258) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (265) main_task: Started on CPU0[0m
+[0;32mI (305) main_task: Calling app_main()[0m
+[0;32mI (305) SDCARD: Initializing SD card[0m
+[0;32mI (305) SDCARD: Mounting filesystem[0m
+[0;32mI (345) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+[0;32mI (555) SDCARD: Filesystem mounted[0m
+Name: SE32G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 30436MB
+CSD: ver=2, sector_size=512, capacity=62333952 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (565) GEN_FILES: Count: 15[0m
+[1;31mE (645) GEN_FILES: Couldn't create or read file /sdcard/DATA9.BIN[0m
+[1;31mE (645) GEN_FILES: Couldn't create or read file /sdcard/DATAA.BIN[0m
+[1;31mE (645) GEN_FILES: Couldn't create or read file /sdcard/DATAB.BIN[0m
+[1;31mE (655) GEN_FILES: Couldn't create or read file /sdcard/DATAC.BIN[0m
+[1;31mE (655) GEN_FILES: Couldn't create or read file /sdcard/DATAD.BIN[0m
+[1;31mE (665) GEN_FILES: Couldn't create or read file /sdcard/DATAE.BIN[0m
+[0;32mI (665) CURRENT_FILE: size: 4194304[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0xa (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x17ec
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xf28
+load:0x403cb700,len:0x35c8
+entry 0x403c89c8
+[0;32mI (27) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Mar  6 2025 23:38:28[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v0.1[0m
+[0;32mI (32) boot: efuse block revision: v1.2[0m
+[0;32mI (36) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (44) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (84) boot: End of partition table[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0d408h ( 54280) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001d430 vaddr=3fc93400 size=02948h ( 10568) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001fd80 vaddr=40374000 size=00298h (   664) load[0m
+[0;32mI (110) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=2e674h (190068) map[0m
+[0;32mI (144) esp_image: segment 4: paddr=0004e69c vaddr=40374298 size=0f14ch ( 61772) load[0m
+[0;32mI (155) esp_image: segment 5: paddr=0005d7f0 vaddr=600fe100 size=00018h (    24) load[0m
+[0;32mI (161) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (161) boot: Disabling RNG early entropy source...[0m
+[0;32mI (172) cpu_start: Multicore app[0m
+[0;32mI (181) cpu_start: Pro cpu start user code[0m
+[0;32mI (181) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (181) app_init: Application information:[0m
+[0;32mI (181) app_init: Project name:     sd_card[0m
+[0;32mI (185) app_init: App version:      v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (191) app_init: Compile time:     Mar  6 2025 23:38:39[0m
+[0;32mI (196) app_init: ELF file SHA256:  9765697b1...[0m
+[0;32mI (200) app_init: ESP-IDF:          v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (206) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (210) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (214) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (218) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (224) heap_init: At 3FC96688 len 00053088 (332 KiB): RAM[0m
+[0;32mI (230) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (235) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 600FE118 len 00001ED0 (7 KiB): RTCRAM[0m
+[0;32mI (246) spi_flash: detected chip: gd[0m
+[0;32mI (248) spi_flash: flash io: qio[0m
+[0;32mI (251) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (258) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (265) main_task: Started on CPU0[0m
+[0;32mI (305) main_task: Calling app_main()[0m
+[0;32mI (305) SDCARD: Initializing SD card[0m
+[0;32mI (305) SDCARD: Mounting filesystem[0m
+[0;32mI (305) sdspi_transaction: cmd=52, R1 response: command CRC error[0m
+[1;31mE (305) sdmmc_io: sdmmc_io_reset: unexpected return: 0x109[0m
+[1;31mE (315) vfs_fat_sdmmc: sdmmc_card_init failed (0x109).[0m
+[1;31mE (315) SDCARD: Failed to initialize the card (ESP_ERR_INVALID_CRC). Make sure SD card lines have pull-up resistors in place.[0m
+[1;31mE (335) FILESYS_INIT: Failed to initialize sdcard[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0xb (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x17ec
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xf28
+load:0x403cb700,len:0x35c8
+entry 0x403c89c8
+[0;32mI (27) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Mar  6 2025 23:38:28[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v0.1[0m
+[0;32mI (32) boot: efuse block revision: v1.2[0m
+[0;32mI (36) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (44) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (84) boot: End of partition table[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0d408h ( 54280) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001d430 vaddr=3fc93400 size=02948h ( 10568) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001fd80 vaddr=40374000 size=00298h (   664) load[0m
+[0;32mI (110) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=2e674h (190068) map[0m
+[0;32mI (144) esp_image: segment 4: paddr=0004e69c vaddr=40374298 size=0f14ch ( 61772) load[0m
+[0;32mI (155) esp_image: segment 5: paddr=0005d7f0 vaddr=600fe100 size=00018h (    24) load[0m
+[0;32mI (161) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (161) boot: Disabling RNG early entropy source...[0m
+[0;32mI (172) cpu_start: Multicore app[0m
+[0;32mI (181) cpu_start: Pro cpu start user code[0m
+[0;32mI (181) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (181) app_init: Application information:[0m
+[0;32mI (181) app_init: Project name:     sd_card[0m
+[0;32mI (185) app_init: App version:      v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (191) app_init: Compile time:     Mar  6 2025 23:38:39[0m
+[0;32mI (196) app_init: ELF file SHA256:  9765697b1...[0m
+[0;32mI (200) app_init: ESP-IDF:          v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (206) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (210) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (214) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (218) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (224) heap_init: At 3FC96688 len 00053088 (332 KiB): RAM[0m
+[0;32mI (230) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (235) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 600FE118 len 00001ED0 (7 KiB): RTCRAM[0m
+[0;32mI (246) spi_flash: detected chip: gd[0m
+[0;32mI (248) spi_flash: flash io: qio[0m
+[0;32mI (251) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (258) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (265) main_task: Started on CPU0[0m
+[0;32mI (305) main_task: Calling app_main()[0m
+[0;32mI (305) SDCARD: Initializing SD card[0m
+[0;32mI (305) SDCARD: Mounting filesystem[0m
+[0;32mI (345) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+[0;32mI (385) SDCARD: Filesystem mounted[0m
+Name: SE32G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 30436MB
+CSD: ver=2, sector_size=512, capacity=62333952 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (385) GEN_FILES: Count: 15[0m
+[1;31mE (475) GEN_FILES: Couldn't create or read file /sdcard/DATA9.BIN[0m
+[1;31mE (475) GEN_FILES: Couldn't create or read file /sdcard/DATAA.BIN[0m
+[1;31mE (475) GEN_FILES: Couldn't create or read file /sdcard/DATAB.BIN[0m
+[1;31mE (475) GEN_FILES: Couldn't create or read file /sdcard/DATAC.BIN[0m
+[1;31mE (485) GEN_FILES: Couldn't create or read file /sdcard/DATAD.BIN[0m
+[1;31mE (495) GEN_FILES: Couldn't create or read file /sdcard/DATAE.BIN[0m
+[0;32mI (495) CURRENT_FILE: size: 4194304[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0xb (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x17ec
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xf28
+load:0x403cb700,len:0x35c8
+entry 0x403c89c8
+[0;32mI (27) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Mar  6 2025 23:38:28[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v0.1[0m
+[0;32mI (32) boot: efuse block revision: v1.2[0m
+[0;32mI (36) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (44) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (84) boot: End of partition table[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0d408h ( 54280) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001d430 vaddr=3fc93400 size=02948h ( 10568) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001fd80 vaddr=40374000 size=00298h (   664) load[0m
+[0;32mI (110) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=2e674h (190068) map[0m
+[0;32mI (144) esp_image: segment 4: paddr=0004e69c vaddr=40374298 size=0f14ch ( 61772) load[0m
+[0;32mI (155) esp_image: segment 5: paddr=0005d7f0 vaddr=600fe100 size=00018h (    24) load[0m
+[0;32mI (161) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (161) boot: Disabling RNG early entropy source...[0m
+[0;32mI (172) cpu_start: Multicore app[0m
+[0;32mI (181) cpu_start: Pro cpu start user code[0m
+[0;32mI (181) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (181) app_init: Application information:[0m
+[0;32mI (181) app_init: Project name:     sd_card[0m
+[0;32mI (185) app_init: App version:      v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (191) app_init: Compile time:     Mar  6 2025 23:38:39[0m
+[0;32mI (196) app_init: ELF file SHA256:  9765697b1...[0m
+[0;32mI (200) app_init: ESP-IDF:          v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (206) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (210) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (214) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (218) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (224) heap_init: At 3FC96688 len 00053088 (332 KiB): RAM[0m
+[0;32mI (230) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (235) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 600FE118 len 00001ED0 (7 KiB): RTCRAM[0m
+[0;32mI (246) spi_flash: detected chip: gd[0m
+[0;32mI (248) spi_flash: flash io: qio[0m
+[0;32mI (251) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (258) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (265) main_task: Started on CPU0[0m
+[0;32mI (305) main_task: Calling app_main()[0m
+[0;32mI (305) SDCARD: Initializing SD card[0m
+[0;32mI (305) SDCARD: Mounting filesystem[0m
+[0;32mI (305) sdspi_transaction: cmd=52, R1 response: command CRC error[0m
+[1;31mE (305) sdmmc_io: sdmmc_io_reset: unexpected return: 0x109[0m
+[1;31mE (315) vfs_fat_sdmmc: sdmmc_card_init failed (0x109).[0m
+[1;31mE (315) SDCARD: Failed to initialize the card (ESP_ERR_INVALID_CRC). Make sure SD card lines have pull-up resistors in place.[0m
+[1;31mE (335) FILESYS_INIT: Failed to initialize sdcard[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0xb (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x17ec
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xf28
+load:0x403cb700,len:0x35c8
+entry 0x403c89c8
+[0;32mI (27) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Mar  6 2025 23:38:28[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v0.1[0m
+[0;32mI (32) boot: efuse block revision: v1.2[0m
+[0;32mI (36) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (44) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (84) boot: End of partition table[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0d408h ( 54280) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001d430 vaddr=3fc93400 size=02948h ( 10568) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001fd80 vaddr=40374000 size=00298h (   664) load[0m
+[0;32mI (110) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=2e674h (190068) map[0m
+[0;32mI (144) esp_image: segment 4: paddr=0004e69c vaddr=40374298 size=0f14ch ( 61772) load[0m
+[0;32mI (155) esp_image: segment 5: paddr=0005d7f0 vaddr=600fe100 size=00018h (    24) load[0m
+[0;32mI (161) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (161) boot: Disabling RNG early entropy source...[0m
+[0;32mI (172) cpu_start: Multicore app[0m
+[0;32mI (181) cpu_start: Pro cpu start user code[0m
+[0;32mI (181) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (181) app_init: Application information:[0m
+[0;32mI (181) app_init: Project name:     sd_card[0m
+[0;32mI (185) app_init: App version:      v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (191) app_init: Compile time:     Mar  6 2025 23:38:39[0m
+[0;32mI (196) app_init: ELF file SHA256:  9765697b1...[0m
+[0;32mI (200) app_init: ESP-IDF:          v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (206) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (210) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (214) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (218) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (224) heap_init: At 3FC96688 len 00053088 (332 KiB): RAM[0m
+[0;32mI (230) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (235) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 600FE118 len 00001ED0 (7 KiB): RTCRAM[0m
+[0;32mI (246) spi_flash: detected chip: gd[0m
+[0;32mI (248) spi_flash: flash io: qio[0m
+[0;32mI (251) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (258) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (265) main_task: Started on CPU0[0m
+[0;32mI (305) main_task: Calling app_main()[0m
+[0;32mI (305) SDCARD: Initializing SD card[0m
+[0;32mI (305) SDCARD: Mounting filesystem[0m
+[0;32mI (305) sdspi_transaction: cmd=52, R1 response: command CRC error[0m
+[1;31mE (305) sdmmc_io: sdmmc_io_reset: unexpected return: 0x109[0m
+[1;31mE (315) vfs_fat_sdmmc: sdmmc_card_init failed (0x109).[0m
+[1;31mE (315) SDCARD: Failed to initialize the card (ESP_ERR_INVALID_CRC). Make sure SD card lines have pull-up resistors in place.[0m
+[1;31mE (335) FILESYS_INIT: Failed to initialize sdcard[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0xb (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x17ec
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xf28
+load:0x403cb700,len:0x35c8
+entry 0x403c89c8
+[0;32mI (27) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Mar  6 2025 23:38:28[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v0.1[0m
+[0;32mI (32) boot: efuse block revision: v1.2[0m
+[0;32mI (36) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (44) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (84) boot: End of partition table[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0d408h ( 54280) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001d430 vaddr=3fc93400 size=02948h ( 10568) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001fd80 vaddr=40374000 size=00298h (   664) load[0m
+[0;32mI (110) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=2e674h (190068) map[0m
+[0;32mI (144) esp_image: segment 4: paddr=0004e69c vaddr=40374298 size=0f14ch ( 61772) load[0m
+[0;32mI (155) esp_image: segment 5: paddr=0005d7f0 vaddr=600fe100 size=00018h (    24) load[0m
+[0;32mI (161) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (161) boot: Disabling RNG early entropy source...[0m
+[0;32mI (172) cpu_start: Multicore app[0m
+[0;32mI (181) cpu_start: Pro cpu start user code[0m
+[0;32mI (181) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (181) app_init: Application information:[0m
+[0;32mI (181) app_init: Project name:     sd_card[0m
+[0;32mI (185) app_init: App version:      v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (191) app_init: Compile time:     Mar  6 2025 23:38:39[0m
+[0;32mI (196) app_init: ELF file SHA256:  9765697b1...[0m
+[0;32mI (200) app_init: ESP-IDF:          v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (206) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (210) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (214) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (218) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (224) heap_init: At 3FC96688 len 00053088 (332 KiB): RAM[0m
+[0;32mI (230) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (235) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 600FE118 len 00001ED0 (7 KiB): RTCRAM[0m
+[0;32mI (246) spi_flash: detected chip: gd[0m
+[0;32mI (248) spi_flash: flash io: qio[0m
+[0;32mI (251) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (258) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (265) main_task: Started on CPU0[0m
+[0;32mI (305) main_task: Calling app_main()[0m
+[0;32mI (305) SDCARD: Initializing SD card[0m
+[0;32mI (305) SDCARD: Mounting filesystem[0m
+[0;32mI (305) sdspi_transaction: cmd=52, R1 response: command CRC error[0m
+[1;31mE (305) sdmmc_io: sdmmc_io_reset: unexpected return: 0x109[0m
+[1;31mE (315) vfs_fat_sdmmc: sdmmc_card_init failed (0x109).[0m
+[1;31mE (315) SDCARD: Failed to initialize the card (ESP_ERR_INVALID_CRC). Make sure SD card lines have pull-up resistors in place.[0m
+[1;31mE (335) FILESYS_INIT: Failed to initialize sdcard[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0xb (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x17ec
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xf28
+load:0x403cb700,len:0x35c8
+entry 0x403c89c8
+[0;32mI (27) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Mar  6 2025 23:38:28[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v0.1[0m
+[0;32mI (32) boot: efuse block revision: v1.2[0m
+[0;32mI (36) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (44) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (84) boot: End of partition table[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0d408h ( 54280) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001d430 vaddr=3fc93400 size=02948h ( 10568) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001fd80 vaddr=40374000 size=00298h (   664) load[0m
+[0;32mI (110) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=2e674h (190068) map[0m
+[0;32mI (144) esp_image: segment 4: paddr=0004e69c vaddr=40374298 size=0f14ch ( 61772) load[0m
+[0;32mI (155) esp_image: segment 5: paddr=0005d7f0 vaddr=600fe100 size=00018h (    24) load[0m
+[0;32mI (161) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (161) boot: Disabling RNG early entropy source...[0m
+[0;32mI (172) cpu_start: Multicore app[0m
+[0;32mI (181) cpu_start: Pro cpu start user code[0m
+[0;32mI (181) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (181) app_init: Application information:[0m
+[0;32mI (181) app_init: Project name:     sd_card[0m
+[0;32mI (185) app_init: App version:      v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (191) app_init: Compile time:     Mar  6 2025 23:38:39[0m
+[0;32mI (196) app_init: ELF file SHA256:  9765697b1...[0m
+[0;32mI (200) app_init: ESP-IDF:          v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (206) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (210) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (214) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (218) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (224) heap_init: At 3FC96688 len 00053088 (332 KiB): RAM[0m
+[0;32mI (230) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (235) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 600FE118 len 00001ED0 (7 KiB): RTCRAM[0m
+[0;32mI (246) spi_flash: detected chip: gd[0m
+[0;32mI (248) spi_flash: flash io: qio[0m
+[0;32mI (251) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (258) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (265) main_task: Started on CPU0[0m
+[0;32mI (305) main_task: Calling app_main()[0m
+[0;32mI (305) SDCARD: Initializing SD card[0m
+[0;32mI (305) SDCARD: Mounting filesystem[0m
+[0;32mI (345) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+[0;32mI (385) SDCARD: Filesystem mounted[0m
+Name: SE32G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 30436MB
+CSD: ver=2, sector_size=512, capacity=62333952 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (385) GEN_FILES: Count: 15[0m
+[1;31mE (475) GEN_FILES: Couldn't create or read file /sdcard/DATA9.BIN[0m
+[1;31mE (475) GEN_FILES: Couldn't create or read file /sdcard/DATAA.BIN[0m
+[1;31mE (475) GEN_FILES: Couldn't create or read file /sdcard/DATAB.BIN[0m
+[1;31mE (475) GEN_FILES: Couldn't create or read file /sdcard/DATAC.BIN[0m
+[1;31mE (485) GEN_FILES: Couldn't create or read file /sdcard/DATAD.BIN[0m
+[1;31mE (495) GEN_FILES: Couldn't create or read file /sdcard/DATAE.BIN[0m
+[0;32mI (495) CURRENT_FILE: size: 4194304[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x2b (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x17ec
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xf28
+load:0x403cb700,len:0x35c8
+entry 0x403c89c8
+[0;32mI (27) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Mar  6 2025 23:38:28[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v0.1[0m
+[0;32mI (32) boot: efuse block revision: v1.2[0m
+[0;32mI (36) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (44) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (59) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (84) boot: End of partition table[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0d408h ( 54280) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001d430 vaddr=3fc93400 size=02948h ( 10568) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001fd80 vaddr=40374000 size=00298h (   664) load[0m
+[0;32mI (110) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=2e674h (190068) map[0m
+[0;32mI (144) esp_image: segment 4: paddr=0004e69c vaddr=40374298 size=0f14ch ( 61772) load[0m
+[0;32mI (155) esp_image: segment 5: paddr=0005d7f0 vaddr=600fe100 size=00018h (    24) load[0m
+[0;32mI (161) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (161) boot: Disabling RNG early entropy source...[0m
+[0;32mI (172) cpu_start: Multicore app[0m
+[0;32mI (181) cpu_start: Pro cpu start user code[0m
+[0;32mI (181) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (181) app_init: Application information:[0m
+[0;32mI (181) app_init: Project name:     sd_card[0m
+[0;32mI (185) app_init: App version:      v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (191) app_init: Compile time:     Mar  6 2025 23:38:39[0m
+[0;32mI (196) app_init: ELF file SHA256:  9765697b1...[0m
+[0;32mI (201) app_init: ESP-IDF:          v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (207) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (210) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (214) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (218) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (224) heap_init: At 3FC96688 len 00053088 (332 KiB): RAM[0m
+[0;32mI (230) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (235) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 600FE118 len 00001ED0 (7 KiB): RTCRAM[0m
+[0;32mI (246) spi_flash: detected chip: gd[0m
+[0;32mI (249) spi_flash: flash io: qio[0m
+[0;32mI (252) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (258) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (265) main_task: Started on CPU0[0m
+[0;32mI (305) main_task: Calling app_main()[0m
+[0;32mI (305) SDCARD: Initializing SD card[0m
+[0;32mI (305) SDCARD: Mounting filesystem[0m
+[0;32mI (305) sdspi_transaction: cmd=52, R1 response: command CRC error[0m
+[1;31mE (305) sdmmc_io: sdmmc_io_reset: unexpected return: 0x109[0m
+[1;31mE (315) vfs_fat_sdmmc: sdmmc_card_init failed (0x109).[0m
+[1;31mE (315) SDCARD: Failed to initialize the card (ESP_ERR_INVALID_CRC). Make sure SD card lines have pull-up resistors in place.[0m
+[1;31mE (335) FILESYS_INIT: Failed to initialize sdcard[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0xb (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x17ec
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xf28
+load:0x403cb700,len:0x35c8
+entry 0x403c89c8
+[0;32mI (27) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Mar  6 2025 23:38:28[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v0.1[0m
+[0;32mI (32) boot: efuse block revision: v1.2[0m
+[0;32mI (36) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (44) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (84) boot: End of partition table[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0d408h ( 54280) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001d430 vaddr=3fc93400 size=02948h ( 10568) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001fd80 vaddr=40374000 size=00298h (   664) load[0m
+[0;32mI (110) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=2e674h (190068) map[0m
+[0;32mI (144) esp_image: segment 4: paddr=0004e69c vaddr=40374298 size=0f14ch ( 61772) load[0m
+[0;32mI (155) esp_image: segment 5: paddr=0005d7f0 vaddr=600fe100 size=00018h (    24) load[0m
+[0;32mI (161) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (161) boot: Disabling RNG early entropy source...[0m
+[0;32mI (172) cpu_start: Multicore app[0m
+[0;32mI (181) cpu_start: Pro cpu start user code[0m
+[0;32mI (181) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (181) app_init: Application information:[0m
+[0;32mI (181) app_init: Project name:     sd_card[0m
+[0;32mI (185) app_init: App version:      v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (191) app_init: Compile time:     Mar  6 2025 23:38:39[0m
+[0;32mI (196) app_init: ELF file SHA256:  9765697b1...[0m
+[0;32mI (200) app_init: ESP-IDF:          v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (206) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (210) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (214) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (218) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (224) heap_init: At 3FC96688 len 00053088 (332 KiB): RAM[0m
+[0;32mI (230) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (235) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 600FE118 len 00001ED0 (7 KiB): RTCRAM[0m
+[0;32mI (246) spi_flash: detected chip: gd[0m
+[0;32mI (248) spi_flash: flash io: qio[0m
+[0;32mI (251) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (258) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (265) main_task: Started on CPU0[0m
+[0;32mI (305) main_task: Calling app_main()[0m
+[0;32mI (305) SDCARD: Initializing SD card[0m
+[0;32mI (305) SDCARD: Mounting filesystem[0m
+[0;32mI (305) sdspi_transaction: cmd=52, R1 response: command CRC error[0m
+[1;31mE (305) sdmmc_io: sdmmc_io_reset: unexpected return: 0x109[0m
+[1;31mE (315) vfs_fat_sdmmc: sdmmc_card_init failed (0x109).[0m
+[1;31mE (315) SDCARD: Failed to initialize the card (ESP_ERR_INVALID_CRC). Make sure SD card lines have pull-up resistors in place.[0m
+[1;31mE (335) FILESYS_INIT: Failed to initialize sdcard[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x28 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x17ec
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xf28
+load:0x403cb700,len:0x35c8
+entry 0x403c89c8
+[0;32mI (27) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Mar  6 2025 23:38:28[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v0.1[0m
+[0;32mI (32) boot: efuse block revision: v1.2[0m
+[0;32mI (36) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (44) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (59) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (84) boot: End of partition table[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0d408h ( 54280) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001d430 vaddr=3fc93400 size=02948h ( 10568) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001fd80 vaddr=40374000 size=00298h (   664) load[0m
+[0;32mI (110) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=2e674h (190068) map[0m
+[0;32mI (144) esp_image: segment 4: paddr=0004e69c vaddr=40374298 size=0f14ch ( 61772) load[0m
+[0;32mI (155) esp_image: segment 5: paddr=0005d7f0 vaddr=600fe100 size=00018h (    24) load[0m
+[0;32mI (161) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (161) boot: Disabling RNG early entropy source...[0m
+[0;32mI (172) cpu_start: Multicore app[0m
+[0;32mI (181) cpu_start: Pro cpu start user code[0m
+[0;32mI (181) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (181) app_init: Application information:[0m
+[0;32mI (181) app_init: Project name:     sd_card[0m
+[0;32mI (185) app_init: App version:      v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (191) app_init: Compile time:     Mar  6 2025 23:38:39[0m
+[0;32mI (196) app_init: ELF file SHA256:  9765697b1...[0m
+[0;32mI (201) app_init: ESP-IDF:          v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (207) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (210) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (214) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (218) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (224) heap_init: At 3FC96688 len 00053088 (332 KiB): RAM[0m
+[0;32mI (230) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (235) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 600FE118 len 00001ED0 (7 KiB): RTCRAM[0m
+[0;32mI (246) spi_flash: detected chip: gd[0m
+[0;32mI (249) spi_flash: flash io: qio[0m
+[0;32mI (252) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (258) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (265) main_task: Started on CPU0[0m
+[0;32mI (305) main_task: Calling app_main()[0m
+[0;32mI (305) SDCARD: Initializing SD card[0m
+[0;32mI (305) SDCARD: Mounting filesystem[0m
+[0;32mI (305) sdspi_transaction: cmd=52, R1 response: command CRC error[0m
+[1;31mE (305) sdmmc_io: sdmmc_io_reset: unexpected return: 0x109[0m
+[1;31mE (315) vfs_fat_sdmmc: sdmmc_card_init failed (0x109).[0m
+[1;31mE (315) SDCARD: Failed to initialize the card (ESP_ERR_INVALID_CRC). Make sure SD card lines have pull-up resistors in place.[0m
+[1;31mE (335) FILESYS_INIT: Failed to initialize sdcard[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0xb (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x17ec
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xf28
+load:0x403cb700,len:0x35c8
+entry 0x403c89c8
+[0;32mI (27) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Mar  6 2025 23:38:28[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v0.1[0m
+[0;32mI (32) boot: efuse block revision: v1.2[0m
+[0;32mI (36) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (44) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (84) boot: End of partition table[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0d408h ( 54280) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001d430 vaddr=3fc93400 size=02948h ( 10568) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001fd80 vaddr=40374000 size=00298h (   664) load[0m
+[0;32mI (110) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=2e674h (190068) map[0m
+[0;32mI (144) esp_image: segment 4: paddr=0004e69c vaddr=40374298 size=0f14ch ( 61772) load[0m
+[0;32mI (155) esp_image: segment 5: paddr=0005d7f0 vaddr=600fe100 size=00018h (    24) load[0m
+[0;32mI (161) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (161) boot: Disabling RNG early entropy source...[0m
+[0;32mI (172) cpu_start: Multicore app[0m
+[0;32mI (181) cpu_start: Pro cpu start user code[0m
+[0;32mI (181) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (181) app_init: Application information:[0m
+[0;32mI (181) app_init: Project name:     sd_card[0m
+[0;32mI (185) app_init: App version:      v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (191) app_init: Compile time:     Mar  6 2025 23:38:39[0m
+[0;32mI (196) app_init: ELF file SHA256:  9765697b1...[0m
+[0;32mI (200) app_init: ESP-IDF:          v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (206) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (210) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (214) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (218) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (224) heap_init: At 3FC96688 len 00053088 (332 KiB): RAM[0m
+[0;32mI (230) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (235) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 600FE118 len 00001ED0 (7 KiB): RTCRAM[0m
+[0;32mI (246) spi_flash: detected chip: gd[0m
+[0;32mI (248) spi_flash: flash io: qio[0m
+[0;32mI (251) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (258) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (265) main_task: Started on CPU0[0m
+[0;32mI (305) main_task: Calling app_main()[0m
+[0;32mI (305) SDCARD: Initializing SD card[0m
+[0;32mI (305) SDCARD: Mounting filesystem[0m
+[0;32mI (305) sdspi_transaction: cmd=52, R1 response: command CRC error[0m
+[1;31mE (305) sdmmc_io: sdmmc_io_reset: unexpected return: 0x109[0m
+[1;31mE (315) vfs_fat_sdmmc: sdmmc_card_init failed (0x109).[0m
+[1;31mE (315) SDCARD: Failed to initialize the card (ESP_ERR_INVALID_CRC). Make sure SD card lines have pull-up resistors in place.[0m
+[1;31mE (335) FILESYS_INIT: Failed to initialize sdcard[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0xb (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x17ec
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xf28
+load:0x403cb700,len:0x35c8
+entry 0x403c89c8
+[0;32mI (27) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Mar  6 2025 23:38:28[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v0.1[0m
+[0;32mI (32) boot: efuse block revision: v1.2[0m
+[0;32mI (36) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (44) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (84) boot: End of partition table[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0d408h ( 54280) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001d430 vaddr=3fc93400 size=02948h ( 10568) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001fd80 vaddr=40374000 size=00298h (   664) load[0m
+[0;32mI (110) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=2e674h (190068) map[0m
+[0;32mI (144) esp_image: segment 4: paddr=0004e69c vaddr=40374298 size=0f14ch ( 61772) load[0m
+[0;32mI (155) esp_image: segment 5: paddr=0005d7f0 vaddr=600fe100 size=00018h (    24) load[0m
+[0;32mI (161) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (161) boot: Disabling RNG early entropy source...[0m
+[0;32mI (172) cpu_start: Multicore app[0m
+[0;32mI (181) cpu_start: Pro cpu start user code[0m
+[0;32mI (181) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (181) app_init: Application information:[0m
+[0;32mI (181) app_init: Project name:     sd_card[0m
+[0;32mI (185) app_init: App version:      v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (191) app_init: Compile time:     Mar  6 2025 23:38:39[0m
+[0;32mI (196) app_init: ELF file SHA256:  9765697b1...[0m
+[0;32mI (200) app_init: ESP-IDF:          v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (206) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (210) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (214) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (218) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (224) heap_init: At 3FC96688 len 00053088 (332 KiB): RAM[0m
+[0;32mI (230) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (235) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 600FE118 len 00001ED0 (7 KiB): RTCRAM[0m
+[0;32mI (246) spi_flash: detected chip: gd[0m
+[0;32mI (248) spi_flash: flash io: qio[0m
+[0;32mI (251) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (258) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (265) main_task: Started on CPU0[0m
+[0;32mI (305) main_task: Calling app_main()[0m
+[0;32mI (305) SDCARD: Initializing SD card[0m
+[0;32mI (305) SDCARD: Mounting filesystem[0m
+[0;32mI (345) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+[0;32mI (555) SDCARD: Filesystem mounted[0m
+Name: SE32G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 30436MB
+CSD: ver=2, sector_size=512, capacity=62333952 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (565) GEN_FILES: Count: 15[0m
+[1;31mE (645) GEN_FILES: Couldn't create or read file /sdcard/DATA9.BIN[0m
+[1;31mE (645) GEN_FILES: Couldn't create or read file /sdcard/DATAA.BIN[0m
+[1;31mE (645) GEN_FILES: Couldn't create or read file /sdcard/DATAB.BIN[0m
+[1;31mE (655) GEN_FILES: Couldn't create or read file /sdcard/DATAC.BIN[0m
+[1;31mE (655) GEN_FILES: Couldn't create or read file /sdcard/DATAD.BIN[0m
+[1;31mE (665) GEN_FILES: Couldn't create or read file /sdcard/DATAE.BIN[0m
+[0;32mI (665) CURRENT_FILE: size: 4194304[0m
+[0;33mW (3245) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;32mI (3285) FILESYS_WRITE_INC: Writing data and incrementing: 0 to addr: 0[0m
+[0;33mW (3325) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (3405) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (3485) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (3565) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (3645) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (3725) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (3805) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (3885) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (3965) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (4045) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (4125) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (4205) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (4285) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (4365) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (4445) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (4525) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (4605) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (4685) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (4765) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (4845) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (154275) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0xb (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x17ec
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xf28
+load:0x403cb700,len:0x35c8
+entry 0x403c89c8
+[0;32mI (27) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Mar  6 2025 23:38:28[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v0.1[0m
+[0;32mI (32) boot: efuse block revision: v1.2[0m
+[0;32mI (36) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (44) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (84) boot: End of partition table[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0d408h ( 54280) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001d430 vaddr=3fc93400 size=02948h ( 10568) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001fd80 vaddr=40374000 size=00298h (   664) load[0m
+[0;32mI (110) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=2e674h (190068) map[0m
+[0;32mI (144) esp_image: segment 4: paddr=0004e69c vaddr=40374298 size=0f14ch ( 61772) load[0m
+[0;32mI (155) esp_image: segment 5: paddr=0005d7f0 vaddr=600fe100 size=00018h (    24) load[0m
+[0;32mI (161) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (161) boot: Disabling RNG early entropy source...[0m
+[0;32mI (172) cpu_start: Multicore app[0m
+[0;32mI (181) cpu_start: Pro cpu start user code[0m
+[0;32mI (181) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (181) app_init: Application information:[0m
+[0;32mI (181) app_init: Project name:     sd_card[0m
+[0;32mI (185) app_init: App version:      v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (191) app_init: Compile time:     Mar  6 2025 23:38:39[0m
+[0;32mI (196) app_init: ELF file SHA256:  9765697b1...[0m
+[0;32mI (200) app_init: ESP-IDF:          v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (206) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (210) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (214) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (218) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (224) heap_init: At 3FC96688 len 00053088 (332 KiB): RAM[0m
+[0;32mI (230) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (235) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 600FE118 len 00001ED0 (7 KiB): RTCRAM[0m
+[0;32mI (246) spi_flash: detected chip: gd[0m
+[0;32mI (248) spi_flash: flash io: qio[0m
+[0;32mI (251) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (258) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (265) main_task: Started on CPU0[0m
+[0;32mI (305) main_task: Calling app_main()[0m
+[0;32mI (305) SDCARD: Initializing SD card[0m
+[0;32mI (305) SDCARD: Mounting filesystem[0m
+[0;32mI (345) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+[0;32mI (385) SDCARD: Filesystem mounted[0m
+Name: SE32G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 30436MB
+CSD: ver=2, sector_size=512, capacity=62333952 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (385) GEN_FILES: Count: 15[0m
+[1;31mE (475) GEN_FILES: Couldn't create or read file /sdcard/DATA9.BIN[0m
+[1;31mE (475) GEN_FILES: Couldn't create or read file /sdcard/DATAA.BIN[0m
+[1;31mE (475) GEN_FILES: Couldn't create or read file /sdcard/DATAB.BIN[0m
+[1;31mE (475) GEN_FILES: Couldn't create or read file /sdcard/DATAC.BIN[0m
+[1;31mE (485) GEN_FILES: Couldn't create or read file /sdcard/DATAD.BIN[0m
+[1;31mE (495) GEN_FILES: Couldn't create or read file /sdcard/DATAE.BIN[0m
+[0;32mI (495) CURRENT_FILE: size: 4194304[0m
+[0;32mI (2785) FILESYS_WRITE_INC: Writing data and incrementing: 0 to addr: 0[0m
+[0;33mW (349725) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x17ec
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xf28
+load:0x403cb700,len:0x35c8
+entry 0x403c89c8
+[0;32mI (27) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Mar  6 2025 23:38:28[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v0.1[0m
+[0;32mI (32) boot: efuse block revision: v1.2[0m
+[0;32mI (36) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (44) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (84) boot: End of partition table[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0d408h ( 54280) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001d430 vaddr=3fc93400 size=02948h ( 10568) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001fd80 vaddr=40374000 size=00298h (   664) load[0m
+[0;32mI (110) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=2e674h (190068) map[0m
+[0;32mI (144) esp_image: segment 4: paddr=0004e69c vaddr=40374298 size=0f14ch ( 61772) load[0m
+[0;32mI (155) esp_image: segment 5: paddr=0005d7f0 vaddr=600fe100 size=00018h (    24) load[0m
+[0;32mI (161) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (161) boot: Disabling RNG early entropy source...[0m
+[0;32mI (172) cpu_start: Multicore app[0m
+[0;32mI (181) cpu_start: Pro cpu start user code[0m
+[0;32mI (181) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (181) app_init: Application information:[0m
+[0;32mI (181) app_init: Project name:     sd_card[0m
+[0;32mI (185) app_init: App version:      v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (191) app_init: Compile time:     Mar  6 2025 23:38:39[0m
+[0;32mI (196) app_init: ELF file SHA256:  9765697b1...[0m
+[0;32mI (200) app_init: ESP-IDF:          v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (206) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (210) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (214) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (218) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (224) heap_init: At 3FC96688 len 00053088 (332 KiB): RAM[0m
+[0;32mI (230) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (235) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 600FE118 len 00001ED0 (7 KiB): RTCRAM[0m
+[0;32mI (246) spi_flash: detected chip: gd[0m
+[0;32mI (248) spi_flash: flash io: qio[0m
+[0;32mI (251) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (258) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (265) main_task: Started on CPU0[0m
+[0;32mI (305) main_task: Calling app_main()[0m
+[0;32mI (305) SDCARD: Initializing SD card[0m
+[0;32mI (305) SDCARD: Mounting filesystem[0m
+[0;32mI (345) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+[0;32mI (385) SDCARD: Filesystem mounted[0m
+Name: SE32G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 30436MB
+CSD: ver=2, sector_size=512, capacity=62333952 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (385) GEN_FILES: Count: 15[0m
+[1;31mE (475) GEN_FILES: Couldn't create or read file /sdcard/DATA9.BIN[0m
+[1;31mE (475) GEN_FILES: Couldn't create or read file /sdcard/DATAA.BIN[0m
+[1;31mE (475) GEN_FILES: Couldn't create or read file /sdcard/DATAB.BIN[0m
+[1;31mE (475) GEN_FILES: Couldn't create or read file /sdcard/DATAC.BIN[0m
+[1;31mE (485) GEN_FILES: Couldn't create or read file /sdcard/DATAD.BIN[0m
+[1;31mE (495) GEN_FILES: Couldn't create or read file /sdcard/DATAE.BIN[0m
+[0;32mI (495) CURRENT_FILE: size: 4194304[0m
+[0;33mW (5205) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;32mI (5245) FILESYS_WRITE_INC: Writing data and incrementing: 0 to addr: 0[0m
+[0;33mW (5285) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (5325) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (5365) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (5405) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (5445) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (5485) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (5525) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (5565) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (5605) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (5645) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (5685) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (5725) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (5765) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (5805) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (5845) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (5885) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (5925) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (5965) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (6005) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (6045) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (6085) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (6125) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (6165) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (6205) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (6245) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (6285) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (6325) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (6365) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (6405) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (6445) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (6485) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (6525) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (6565) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (6605) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (108875) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (129875) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (129905) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (129945) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (129985) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (130025) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (130065) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (130105) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (130145) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (130185) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (130225) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (130265) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (130305) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (130345) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (130385) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (130425) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (130465) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (130505) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (130545) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (130585) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (130625) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (130665) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (130705) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (130745) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (130785) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (130825) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (130865) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (130905) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (130945) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (130985) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (131025) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (131065) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (131105) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (131145) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (131185) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (131225) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (131265) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (131305) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (131345) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (131385) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (131425) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (131465) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (131505) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (131545) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (131585) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (131625) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (131665) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (131705) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (131745) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (131785) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (131825) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (131865) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (131905) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (131945) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (131985) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (132025) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (132065) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (132105) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (132145) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (132185) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (132225) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (132265) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (132305) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (132345) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (132385) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (132425) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (132465) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (132505) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (132545) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (132585) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (132625) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (132665) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (132705) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (132745) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (132785) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (132825) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (132865) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (132905) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (132945) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (132985) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (133025) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (133065) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0xb (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x17ec
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xf28
+load:0x403cb700,len:0x35c8
+entry 0x403c89c8
+[0;32mI (27) boot: ESP-IDF v5.4-dev-3602-ga97a7b0962-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Mar  6 2025 23:38:28[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (29) boot: chip revision: v0.1[0m
+[0;32mI (32) boot: efuse block revision: v1.2[0m
+[0;32mI (36) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (44) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (58) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (78) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (84) boot: End of partition table[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0d408h ( 54280) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=0001d430 vaddr=3fc93400 size=02948h ( 10568) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001fd80 vaddr=40374000 size=00298h (   664) load[0m
+[0;32mI (110) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=2e674h (190068) map[0m
+[0;32mI (144) esp_image: segment 4: paddr=0004e69c vaddr=40374298 size=0f14ch ( 61772) load[0m
+[0;32mI (155) esp_image: segment 5: paddr=0005d7f0 vaddr=600fe100 size=00018h (    24) load[0m
+[0;32mI (161) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (161) boot: Disabling RNG early entropy source...[0m
+[0;32mI (172) cpu_start: Multicore app[0m
+[0;32mI (181) cpu_start: Pro cpu start user code[0m
+[0;32mI (181) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (181) app_init: Application information:[0m
+[0;32mI (181) app_init: Project name:     sd_card[0m
+[0;32mI (185) app_init: App version:      v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (191) app_init: Compile time:     Mar  6 2025 23:38:39[0m
+[0;32mI (196) app_init: ELF file SHA256:  9765697b1...[0m
+[0;32mI (200) app_init: ESP-IDF:          v5.4-dev-3602-ga97a7b0962-dirty[0m
+[0;32mI (206) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (210) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (214) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (218) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (224) heap_init: At 3FC96688 len 00053088 (332 KiB): RAM[0m
+[0;32mI (230) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (235) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (240) heap_init: At 600FE118 len 00001ED0 (7 KiB): RTCRAM[0m
+[0;32mI (246) spi_flash: detected chip: gd[0m
+[0;32mI (248) spi_flash: flash io: qio[0m
+[0;32mI (251) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (258) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (265) main_task: Started on CPU0[0m
+[0;32mI (305) main_task: Calling app_main()[0m
+[0;32mI (305) SDCARD: Initializing SD card[0m
+[0;32mI (305) SDCARD: Mounting filesystem[0m
+[0;32mI (345) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+[0;32mI (385) SDCARD: Filesystem mounted[0m
+Name: SE32G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 30436MB
+CSD: ver=2, sector_size=512, capacity=62333952 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (385) GEN_FILES: Count: 15[0m
+[1;31mE (465) GEN_FILES: Couldn't create or read file /sdcard/DATA9.BIN[0m
+[1;31mE (465) GEN_FILES: Couldn't create or read file /sdcard/DATAA.BIN[0m
+[1;31mE (475) GEN_FILES: Couldn't create or read file /sdcard/DATAB.BIN[0m
+[1;31mE (475) GEN_FILES: Couldn't create or read file /sdcard/DATAC.BIN[0m
+[1;31mE (485) GEN_FILES: Couldn't create or read file /sdcard/DATAD.BIN[0m
+[1;31mE (485) GEN_FILES: Couldn't create or read file /sdcard/DATAE.BIN[0m
+[0;32mI (495) CURRENT_FILE: size: 4194304[0m
+[0;33mW (10495) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;32mI (10535) FILESYS_WRITE_INC: Writing data and incrementing: 0 to addr: 0[0m
+[0;33mW (10575) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (10655) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (10735) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (10815) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (10895) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (10975) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11055) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11135) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11215) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11295) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11375) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11455) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11535) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11615) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11695) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11775) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11855) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (11935) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12015) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12095) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12175) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12255) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12335) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12415) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12495) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12575) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12655) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12735) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12815) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12895) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (12975) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13055) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13135) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13215) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13295) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13375) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m
+[0;33mW (13455) STATE_MACHINE: No reaction on sent response from fpga. Sending response again![0m

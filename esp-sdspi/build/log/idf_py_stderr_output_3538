@@ -1,0 +1,14 @@
+/home/unstable/Documents/esp-idf/examples/storage/sd_card/sdspi/main/sd_card_example_main.c: In function 'app_main':
+/home/unstable/Documents/esp-idf/examples/storage/sd_card/sdspi/main/sd_card_example_main.c:109:16: warning: variable 'prev_state' set but not used [-Wunused-but-set-variable]
+  109 |     enum State prev_state = Initialize;
+      |                ^~~~~~~~~~
+/home/unstable/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld: esp-idf/main/libmain.a(fpga_filesys.c.obj):(.literal.fpga_filesys_set_command+0xc): undefined reference to `read_cmd_pins'
+/home/unstable/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld: esp-idf/main/libmain.a(fpga_filesys.c.obj):(.literal.fpga_filesys_send_response+0x0): undefined reference to `write_to_cmd_pins'
+/home/unstable/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld: esp-idf/main/libmain.a(fpga_filesys.c.obj): in function `fpga_filesys_set_command':
+/home/unstable/Documents/esp-idf/examples/storage/sd_card/sdspi/main/fpga_filesys.c:358:(.text.fpga_filesys_set_command+0x17): undefined reference to `read_cmd_pins'
+/home/unstable/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20240906/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld: esp-idf/main/libmain.a(fpga_filesys.c.obj): in function `fpga_filesys_send_response':
+/home/unstable/Documents/esp-idf/examples/storage/sd_card/sdspi/main/fpga_filesys.c:411:(.text.fpga_filesys_send_response+0x14): undefined reference to `write_to_cmd_pins'
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/sd_card.elf.dir/build.make:329: sd_card.elf] Error 1
+make[1]: *** [CMakeFiles/Makefile2:2145: CMakeFiles/sd_card.elf.dir/all] Error 2
+make: *** [Makefile:136: all] Error 2

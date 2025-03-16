@@ -1,0 +1,74 @@
+module esp_storage(
+	input [27:0] cmd_in,
+	output [27:0] cmd_out,
+	output cmd_out_valid,
+	
+	inout [27:0] esp_cmd,
+	output esp_clk,
+
+	input clk,
+	input enable,
+	input reset,
+	
+	output [1:0] debug_state
+);	
+	reg rw = 0;
+	reg [27:0] inner_esp_cmd, inner_cmd_out;
+	reg inner_cmd_out_valid = 0;
+	
+	assign cmd_out = (!rw & enable) ? inner_cmd_out: 1'bZ;
+	assign cmd_out_valid = inner_cmd_out_valid;
+	
+	assign esp_cmd = (rw & enable) ? inner_esp_cmd : 1'bZ;
+	assign esp_clk = clk & enable;
+	
+	localparam WAIT_FOR_ESP_INIT = 0, SEND_COMMAND = 1, AWAIT_RESPONSE = 2;
+	reg [2:0] state = 0, next_state = 0;
+	
+	assign debug_state = state;
+	
+	always @(posedge clk or posedge reset)
+	begin
+		if(reset) begin
+			state <= 0;
+		end
+		else if(enable) begin
+			state <= next_state;
+			case(state)
+			WAIT_FOR_ESP_INIT:begin
+				next_state <= WAIT_FOR_ESP_INIT;
+				
+				rw <= 0;
+				inner_cmd_out <= esp_cmd;
+				inner_cmd_out_valid <= 0;
+				
+				if(esp_cmd == 28'b1_000_11111111_0000000000000000)
+				begin
+					next_state <= SEND_COMMAND;
+				end
+			end
+			
+			SEND_COMMAND:begin
+				next_state <= AWAIT_RESPONSE;
+				
+				rw <= 1;
+				inner_esp_cmd <= cmd_in;
+				inner_cmd_out_valid <= 0;
+			end
+				
+			AWAIT_RESPONSE:begin
+				next_state <= AWAIT_RESPONSE;			
+				rw <= 0;
+				inner_cmd_out <= esp_cmd;
+				inner_cmd_out_valid <= 0;
+				
+				if(esp_cmd[27] && (inner_esp_cmd[7:0] == esp_cmd[7:0]))
+				begin
+					next_state <= SEND_COMMAND;
+					inner_cmd_out_valid <= 1;
+				end
+			end		
+		endcase
+		end
+	end
+endmodule

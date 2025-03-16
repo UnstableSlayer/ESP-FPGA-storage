@@ -1,0 +1,49 @@
+Command format:
+
+Command from FPGA:
+0   000     0000 0000 0000 0000 0000 0000
+st  cmd     val
+
+Response from ESP32:
+1   000     0000 0000 0000 0000 0000 0000
+st  err     val
+
+
+
+Command types:
+
+set_addr_reg:
+0   000     XXXX XXXX 0000 0000 0000 0000
+st  cmd               addr
+
+read_op/write_op and increment:
+0   000     XXXX XXXX 0000 0000 0000 0000
+st  cmd               data
+
+get_page_addr/set_page_addr:
+0   000     0000 0000 0000 0000 0000 0000
+st  cmd     page_addr
+
+st: status
+0 - command from fpga
+1 - response from esp32
+
+cmd:
+000     special_commands
+001     set_addr_reg
+010     read_op
+011     write_op
+100     read_and_increment_op
+101     write_and_increment_op
+110     get_page_addr
+111     set_page_addr
+
+errors:
+000     no errors
+001     address out of bounds.
+010     bank out of bounds.
+011     failed to seek in the file.
+100     failed to read from the current address.
+101     failed to write to the current address.
+110     failed to open section file on microcontroller.
+111     failed to initialize the filesystem on microcontroller.

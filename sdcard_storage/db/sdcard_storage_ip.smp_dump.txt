@@ -1,0 +1,12 @@
+
+State Machine - |baseline_c5gx|esp_storage:espstr|next_state
+Name next_state.WAIT_FOR_ESP_INIT next_state.AWAIT_RESPONSE next_state.SEND_COMMAND 
+next_state.WAIT_FOR_ESP_INIT 0 0 0 
+next_state.SEND_COMMAND 1 0 1 
+next_state.AWAIT_RESPONSE 1 1 0 
+
+State Machine - |baseline_c5gx|esp_storage:espstr|state
+Name state.WAIT_FOR_ESP_INIT state.AWAIT_RESPONSE state.SEND_COMMAND 
+state.WAIT_FOR_ESP_INIT 0 0 0 
+state.SEND_COMMAND 1 0 1 
+state.AWAIT_RESPONSE 1 1 0 
